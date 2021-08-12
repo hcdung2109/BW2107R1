@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <style>
+        .dollars {
+            display: inline-grid;
+            
+        }
+        .cents {
+            display: inline-grid;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid gainsboro;
+        }
+        td {
+        
+            text-align: center;
+            border: 1px solid gainsboro;
+        }
+        th.titQuestion {
+            text-align: left;
+            border: 1px solid gainsboro;
+        }
+        th.yourChoose {
+            text-align: center;
+            border: 1px solid gainsboro;
+        }
+        tr:nth-child(odd) {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <form action="">
+        <label for="ageRangeSelect">What is your age range?</label> <br>
+        <select name="ageRange" id="ageRangeSelect">
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-50">35-50</option>
+            <option value="50+">50+</option>
+        </select> <br>
+        <label for="salaryRangeSelect">What is your age range?</label> <br>
+        <select name="salaryRange" id="salaryRangeSelect">
+            <option value="$0 - $25,000">$0 - $25,000</option>
+            <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+            <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+            <option value="$100,000+">$100,000+</option>
+        </select> <br>
+        <label for="genderMale">Gender</label> <br>
+        <input type="radio" name="gender" id="genderMale"> <span>Male</span> <br>
+        <input type="radio" name="gender" id="genderFemale"> <span>Female</span> <br>
+        <label for="produce1">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label> <br>
+        <input type="checkbox" name="produce" id="produce1"><span>Produce 1</span> <br>
+        <input type="checkbox" name="produce" id="produce2"><span>Produce 2</span> <br>
+        <input type="checkbox" name="produce" id="produce3"><span>Produce 3</span> <br>
+        <label for="oftenUseDay">How often would you use our new product?</label> <br>
+        <input type="radio" name="oftenUse" id="oftenUseDay"> <span>Daily</span> <br>
+        <input type="radio" name="oftenUse" id="oftenUseWeek"> <span>Weekly</span> <br>
+        <input type="radio" name="oftenUse" id="oftenUseMonth"> <span>Monthly</span> <br>
+        <label for="">What would you pay for the new product?</label>
+        <span>$</span>
+        <span class="dollars">
+            <input type="text" id="dollars" style="width: 60px;">
+            <label for="dollars">Dollars</label>
+        </span>
+        <span>.</span>
+        <span class="cents">
+            <input type="text" id="cents" style="width: 20px;">
+            <label for="cents">Cents</label>
+        </span> <br>
+        <label for="features">What features would you like to see in the new product.</label> <br>
+        <textarea name="features" id="features" cols="150" rows="10"></textarea> <br>
+        <label for="">Please rate your level of agreement with the following statements.</label>
+        <table>
+            <tr>
+                <th></th>
+                <th class="yourChoose">Strongly Disagree</th>
+                <th class="yourChoose">Disagree</th>
+                <th class="yourChoose">Agree</th>
+                <th class="yourChoose">Strongly Agree</th>
+            </tr>
+            <tr>
+                <th class="titQuestion">Our products are priced fairly.</th>
+                <td>
+                    <input type="radio" name="yourChoose01" id="strDis01"> <br>
+                    <label for="strDis01">1</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose01" id="Dis01"> <br>
+                    <label for="Dis01">2</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose01" id="Agr01"> <br>
+                    <label for="Agr01">3</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose01" id="strAgr01"> <br>
+                    <label for="strAgr01">4</label>
+                </td>
+            </tr>
+            <tr>
+                <th class="titQuestion">Our products are high quality.</th>
+                <td>
+                    <input type="radio" name="yourChoose02" id="strDis02"> <br>
+                    <label for="strDis02">1</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose02" id="Dis02"> <br>
+                    <label for="Dis02">2</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose02" id="Agr02"> <br>
+                    <label for="Agr02">3</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose02" id="strAgr02"> <br>
+                    <label for="strAgr02">4</label>
+                </td>
+            </tr>
+            <tr>
+                <th class="titQuestion">You would recommend our product to a friend or coworker.</th>
+                <td>
+                    <input type="radio" name="yourChoose03" id="strDis03"> <br>
+                    <label for="strDis03">1</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose03" id="Dis03"> <br>
+                    <label for="Dis013">2</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose03" id="Agr03"> <br>
+                    <label for="Agr03">3</label>
+                </td>
+                <td>
+                    <input type="radio" name="yourChoose03" id="strAgr03"> <br>
+                    <label for="strAgr03">4</label>
+                </td>
+            </tr>
+        </table> <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
