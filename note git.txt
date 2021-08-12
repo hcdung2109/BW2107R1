@@ -9,3 +9,10 @@ Bước 5 : gõ các câu lệnh sau
 	git add .
 	git commit -m  "abcde.."
 	git push -u origin master
+	
+	
+	------------------
+	esc
+	shift :
+	
+	:qa => enter
