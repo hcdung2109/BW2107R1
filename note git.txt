@@ -1,0 +1,11 @@
+Bước 1 : tạo folder mới
+bước 2 chạy câu lệnh trong folder vừa tạo:
+	git clone https://github.com/hcdung2109/BW2107R1.git
+Bước 3 : tạo fodler theo tên , và tạo 1 file bất kỳ trong folder tên vừa tạo
+Bước 4 : quay lại thư chính
+Bước 5 : gõ các câu lệnh sau
+	// lấy code mới nhất của dự án về
+	git pull origin master
+	git add .
+	git commit -m  "abcde.."
+	git push -u origin master
