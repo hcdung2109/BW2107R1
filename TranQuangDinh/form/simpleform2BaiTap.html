@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+</head>
+<body>
+    <form action="">
+    <p><h2>ĐĂNG KÝ HỌC VIÊN</h2></p>
+    <p>
+        <label for="name">Họ và tên <span style="color: red;" >*</span></label>
+        <input type="text" name="name" id="name" placeholder="John Cater" size="30">
+    </p>
+    <p>
+        <label for="brd">Sinh nhật <span style="color: red;" >*</span></label>
+        <input type="date" name="brd" id="brd">
+    </p>
+    <p>
+        <label for="gender">Giới tính</label>
+        <input type="radio" name="gender" id="gender"> Nam
+        <input type="radio" name="gender" id="gender"> Nữ
+    </p>
+    <p>
+        <label for="adr">Địa chỉ <span style="color: red;" >*</span></label> <br/>
+        <textarea name="adr" id="adr" cols="30" rows="5"></textarea>
+    </p>
+    <p>
+        <label for="class">Chọn lớp</label>
+        <select name="class" id="class">
+            <option value="true">- Chọn lớp -</option>
+            <option value="">Lớp nền tảng</option>
+            <option value="">Lớp nâng cao</option>
+        </select>
+    </p>
+    <p>
+        <label for="email">Email <span style="color: red;" >*</span></label>
+        <input type="email" name="email" id="email" placeholder="abcxyz@email.com">
+    </p>
+    <p>
+        <label for="n0phone">Số điện thoại <span style="color: red;">*</span></label>
+        <input type="tel" name="n0phone" id="n0phone" placeholder="348125146">
+    </p>
+    <p>
+        <input type="submit" value="Đăng ký">
+        <input type="reset" value="Nhập lại">
+    </p>
+</form>
+</body>
+</html>
