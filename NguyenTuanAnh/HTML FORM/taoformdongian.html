@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #0c0b0b;
+}
+form {
+    text-align: center;
+}
+.khoi2 {
+    margin-left: 72px;
+}
+.khoi1 {
+    margin-left: 70px;
+}
+h1 {
+    background: orange;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <h1>SỞ THÍCH CỦA BẠN</h1>
+    <form action="/" method="GET">
+        <div class="ten">
+            <label for="">Họ và Tên:</label>
+            <input type="text" name="fullname" value="" size="30" required><br>
+        </div>
+        <div class="mail">
+            <label for="">Email</label>
+            <input type="email" name="email" id="" size="32"><br>
+        </div>
+        <label for="">Sở Thích :</label>
+        <input type="checkbox" name="hobby" value="sport">Thể Thao 
+        <input type="checkbox" name="hobby" value="music">Âm Nhạc 
+        <input type="checkbox" name="hobby" value="reading">Đọc Sách <br>
+        <div class="khoi1">
+            <input type="checkbox" name="hobby" value="go online">Lướt Web 
+            <input type="checkbox" name="hobby" value="play game">Chơi Game 
+            <input type="checkbox" name="hobby" value="photographer">Điện Ảnh <br>
+        </div>
+        <div class="khoi2">
+            <input type="checkbox" name="hobby" value="travel">Du Lịch 
+            <input type="checkbox" name="hobby" value="shopping">Shopping
+            <input type="checkbox" name="hobby" value="talk">Communicate <br> 
+        </div>
+        <button>Gửi thông tin</button>
+        <input type="reset" value="Nhập lại">
+    </form>
+</body>        
+</html>
