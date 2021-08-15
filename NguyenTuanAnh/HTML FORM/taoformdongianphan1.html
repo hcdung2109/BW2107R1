@@ -25,6 +25,12 @@ h1 {
     background: orange;
     color: white;
 }
+.mail {
+    margin-left: 35px;
+}
+.ten,.mail,.hobby{
+    color:rgb(74, 19, 163);
+}
 </style>
 </head>
 <body>
@@ -32,16 +38,18 @@ h1 {
     <form action="/" method="GET">
         <div class="ten">
             <label for="">Họ và Tên:</label>
-            <input type="text" name="fullname" value="" size="30" required><br>
+            <input type="text" name="fullname" value="" size="30" required><br> <br>
         </div>
         <div class="mail">
             <label for="">Email</label>
-            <input type="email" name="email" id="" size="32"><br>
+            <input type="email" name="email" id="" size="32"><br> <br>
         </div>
-        <label for="">Sở Thích :</label>
-        <input type="checkbox" name="hobby" value="sport">Thể Thao 
-        <input type="checkbox" name="hobby" value="music">Âm Nhạc 
-        <input type="checkbox" name="hobby" value="reading">Đọc Sách <br>
+        
+        <label for="" class="hobby">Sở Thích :</label>  
+            <input type="checkbox" name="hobby" value="sport">Thể Thao 
+            <input type="checkbox" name="hobby" value="music">Âm Nhạc 
+            <input type="checkbox" name="hobby" value="reading">Đọc Sách <br>
+
         <div class="khoi1">
             <input type="checkbox" name="hobby" value="go online">Lướt Web 
             <input type="checkbox" name="hobby" value="play game">Chơi Game 

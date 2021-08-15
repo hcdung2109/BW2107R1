@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+th, table, td {
+    border: 2px solid #000000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+</style>
+</head>
+<body>
+    <div class="khoi">
+        <h2>Market Research Survey</h2>
+        <p class="small">Please a new moments to complate this satisfaction survey</p>
+        <hr>
+        <form action="/" method="POST">
+            <div class="folder1">
+                <label for="">What is yoour age range?</label><br>
+                <select name="age" id="">
+                    <option value="18-24" >18-24</option>
+                    <option value="">25-34</option>
+                    <option value="">35-50</option>
+                    <option value="">50+</option>
+                </select>
+            </div>
+            <div class="folder2">
+                <label for="">What is your yearly income range?</label><br>
+                    <select id="Field504" name="Field504" class="field select medium" onchange="handleInput(this);" onkeyup="handleInput(this);" tabindex="0" data-wufoo-field="dropdown">
+                        <option value="$0 - $25,000">$0 - $25,000</option>
+                        <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+                        <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+                        <option value="$100,000+">$100,000+</option>
+                    </select>
+            </div>
+            <div class="folder3">
+                <label for="">Gender Identity</label> <br>
+                <span class="sex">
+                    <input type="radio" name="sex" value="Male"> Male <br>
+                    <input type="radio" name="sex" value="Female">Female <br>
+                    <input type="radio" name="sex" value="Nonbinary">Nonbinary <br>
+                    <input type="radio" name="sex" value="Other">Other <br>
+                </span>
+            </div>
+            <div class="folder4">
+                <label for="">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
+                <span class="product">
+                    <input type="checkbox" name="product" value="product1">Product 1 <br>
+                    <input type="checkbox" name="product" value="product2">Product 2 <br>
+                    <input type="checkbox" name="product" value="product3">Product 3 <br>
+                </span>
+            </div>
+            <div class="folder5">
+                <label for="">How often would you use our new product?</label> <br>
+                <span class="date">
+                    <input type="radio" name="date" value="daily">Daily <br>
+                    <input type="radio" name="date" value="weekly">Weekly <br>
+                    <input type="radio" name="date" value="monthly">Monthly <br>
+                </span>
+            </div>
+            <div class="folder6">
+                <label for="">What would you pay for the new product?</label><br>
+                <span>
+                    <label for="">$ <input type="text" name="dolla" size="5" value="Dollars">. <input type="text" name="cent" size="5" value="Cents"></label>
+                </span>
+            </div>
+            <div class="folder7">
+                <label for="">What features would you like to see in the new product.</label><br>
+                <span>
+                    <textarea name="a" id="" cols="50" rows="10"></textarea> <br>
+                </span>
+            </div>
+            <div class="folder8">
+                <label for="">Please rate your level of agreement with the following statements.</label> <br>
+                <span>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Strongly Disagree</th>
+                            <th>Disagree</th>
+                            <th>Agree</th>
+                            <th>Strongly Agree</th>
+                        </tr>
+                        <tr>
+                            <th>Our products are priced fairly.</th>
+                            <td><input type="radio" name="choose" value="1"><label for="">1</label></td>
+                            <td><input type="radio" name="choose" value="2"><label for="">2</label></td>
+                            <td><input type="radio" name="choose" value="3"><label for="">3</label></td>
+                            <td><input type="radio" name="choose" value="4"><label for="">4</label></td>
+                        </tr>
+                        <tr>
+                            <th>Our products are high quality.</th>
+                            <td><input type="radio" name="choose" value="1"><label for="">1</label></td>
+                            <td><input type="radio" name="choose" value="2"><label for="">2</label></td>
+                            <td><input type="radio" name="choose" value="3"><label for="">3</label></td>
+                            <td><input type="radio" name="choose" value="4"><label for="">4</label></td>
+                        </tr>
+                        <tr>
+                            <th>You would recommend our product to a friend or coworker.</th>
+                            <td><input type="radio" name="choose" value="1"><label for="">1</label></td>
+                            <td><input type="radio" name="choose" value="2"><label for="">2</label></td>
+                            <td><input type="radio" name="choose" value="3"><label for="">3</label></td>
+                            <td><input type="radio" name="choose" value="4"><label for="">4</label></td>
+                        </tr>
+                    </table>
+                </span>
+            </div>
+            <div class="folder9"><button>Submit</button></div>
+        </form>
+    </div>
+</body>
+</html>
