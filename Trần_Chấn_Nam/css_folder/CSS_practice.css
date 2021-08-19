@@ -1,0 +1,47 @@
+/* các thuộc tính list-style được sắp xếp theo thứ tự: 
++list-style-type
++list-style-position
++list-style-image*/
+
+ul {
+    list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+}
+
+ul.a {
+    list-style-type: circle;
+    list-style-position:inside;
+}
+
+ul.b {
+    list-style-type: square;
+    list-style-position:outside;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
+
+ul {
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+    background: #a5fd02;
+    padding: 50px;
+    margin-left: 40px;
+}
+
+ul li {
+    background: #f30505;
+    margin: 10px;
+}
