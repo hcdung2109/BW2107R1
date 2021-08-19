@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Ví dụ 1</H1>
+   <form action="/action_page.php">
+        <label for="fname">first name:</label><br>
+        <input type="text"id="fname" name="fname" value="Jhon"><br>
+        <label for="Lname">Last name</label><br>
+        <input type="text" id="Lname" name="Lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <H2>phương thưc Method GET</H2>
+    <form action="action_page.php" method="GET">
+        First name: <input type="text" name="fname"><br>
+        last name: <input type="text" name="lname"><br>
+        <input type="submit" value="submit">
+    </form>
+    <h3> phương thức method post</h3>
+    <form action="action_page.php" method="POST">
+        First name: <input type="text" name="fname"><br>
+        last name: <input type="text" name="lname"><br>
+        <input type="submit" value="submit">
+<h4>Các thuộc tính của input</h4>
+<p>Thuộc tính text</p>
+<p>dùng để nhập dữ liệu chuỗi ngắn trên 1 dòng!</p>
+<form>
+    First name: <br>
+    <input type="text" name="fisrtname"><br>
+    Last name: <br>
+    <input type="text" name="lastname">
+</form>
+<p>Thuộc tính password</p>
+<p>Dùng để nhập Mật khẩu</p>
+<form action="">
+    User name: <br>
+    <input type="text" name="username"> <br>
+    User password: <br>
+    <input type="password" name="password">
+</form>
+<p>Thuộc tính submit</p>
+<p>Dùng để hiển thị một nút, có chức năng đẩy dữ liệu từ form lên server khi bấm vào.</p>
+<form action="/action_page.php">
+First name: <br>
+<input type="text" name="firstname"> <br>
+Last name: <br>
+<input type="text" name="Lname"> <br>
+
+<input type="submit" value="submit">
+</form>
+<p>Thuộc tính reset</p>
+<p>dùng để xóa các giá trị trong một form, đưa các trường về giá trị mặc định của chúng.</p>
+<form action="/action_page.php">
+First name: <br>
+<input type="text" name="Fname">
+Last name : <br>
+<input type="type" name="Lname">
+<input type="submit" value="Gửi">
+<input type="reset">
+</form>
+<p> Thuộc tính radio</p>
+<p>dùng để chọn một hạng mục từ một danh sách</p>
+<form>
+    <input type="radio" name="sex" value=" male" checked>male <br>
+    <input type="radio" name="sex" value="female"> female <br>
+    <input type="radio" name="sex" value="other"> khác <br>
+
+</form>
+<ul>Thuộc tính checkbox</ul>
+<ol>Dùng để lực chọn nhiều hoạng mục từ một danh sách </ol>
+<form action="">
+    <input type="checkbox" name="phương tiện" value="Bike"> tôi có xe đạp <br>
+    <input type="checkbox" name="phương tiện" value="car"> Tôi có xe hơi <br>
+    <input style="background-color: black; color:white;" type="submit"   name="phương tiện" value="gửi đi"> <br>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fserano.vn%2Ftop-cac-kieu-ly-uong-ca-phe-dep-an-tuong-nhat-2019%2F&psig=AOvVaw1grPu_eEyLfSh0JNBeBmYp&ust=1629366861390000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDj_9imuvICFQAAAAAdAAAAABAO");
+}
+
+ul.a {
+    list-style-type: circle;
+    color: red;
+    list-style-position: inside;
+    border: 1px solid grey;
+    padding: 40px;
+    background-color: cornsilk;
+    font-size: 25px;
+}
+
+ul.b {
+    color: white;
+    margin-left: 30px;
+    border: 5px double pink;
+    padding: 40px;
+    background-color: black
+}
+
+ol.c {
+    list-style-type: lower-alpha;
+    border: 4px outset rgb(96, 96, 226);
+    padding: 30px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+th.d {
+    text-align: center;
+}
+
+td.d {
+    vertical-align: bottom;
+    height: 40px
+}
+
+th.d,
+td.d {
+    padding: 20px
+}
