@@ -4,17 +4,19 @@
 +list-style-image*/
 
 ul {
-    list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+    background: #3399ff;
+    padding: 20px;
+    list-style: square outside url("https://www.w3schools.com/cssref/sqpurple.gif");
 }
 
-ul.a {
-    list-style-type: circle;
-    list-style-position:inside;
+ul li {
+    background: #f30505;
+    margin: 10px;
 }
 
-ul.b {
-    list-style-type: square;
-    list-style-position:outside;
+ol {
+    background: #ff9999;
+    padding: 20px;
 }
 
 ol.c {
@@ -25,23 +27,10 @@ ol.d {
     list-style-type: lower-alpha;
 }
 
-ol {
-    background: #ff9999;
-    padding: 20px;
-}
-
-ul {
-    background: #3399ff;
-    padding: 20px;
-}
-
 ol li {
     background: #a5fd02;
-    padding: 50px;
+    padding: 20px;
     margin-left: 40px;
 }
 
-ul li {
-    background: #f30505;
-    margin: 10px;
-}
+
