@@ -1,0 +1,36 @@
+/* các thuộc tính list-style được sắp xếp theo thứ tự: 
++list-style-type
++list-style-position
++list-style-image*/
+
+ul {
+    background: #3399ff;
+    padding: 20px;
+    list-style: square outside url("https://www.w3schools.com/cssref/sqpurple.gif");
+}
+
+ul li {
+    background: #f30505;
+    margin: 10px;
+}
+
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+ol li {
+    background: #a5fd02;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+

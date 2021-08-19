@@ -1,5 +1,6 @@
 body {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fserano.vn%2Ftop-cac-kieu-ly-uong-ca-phe-dep-an-tuong-nhat-2019%2F&psig=AOvVaw1grPu_eEyLfSh0JNBeBmYp&ust=1629366861390000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDj_9imuvICFQAAAAAdAAAAABAO");
+    background: url("anhnen.jpg") repeat-x;
+    height: 120%;
 }
 
 ul.a {
@@ -10,6 +11,7 @@ ul.a {
     padding: 40px;
     background-color: cornsilk;
     font-size: 25px;
+    list-style-image: url("sqpurple.gif");
 }
 
 ul.b {
