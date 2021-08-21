@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    border: 2px solid #000000;
+    width: 400px;
+    margin: 20px auto;
+}
+.khoi {
+    background: #0f8e65;
+    padding-top: 0;
+}
+.div {
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    margin-left: 45px;
+    border-radius: 4px;
+}
+input[type="date"] {
+    margin-left: 47px;
+    border-radius: 4px;
+}
+input[type="radio"] {
+    margin-left: 55px;
+}
+textarea {
+    margin: -10px 101px 0;
+}
+select {
+    margin-left: 73px;
+}
+input[type="email"] {
+    margin-left: 63px;
+    border-radius: 4px;
+}
+input[type="tel"] {
+    margin-left: 21px;
+    border-radius: 4px;
+}
+select {
+    margin-left: 73px;
+}
+input[type="email"] {
+    margin-left: 63px;
+    border-radius: 4px;
+}
+.botton {
+    text-align: center;
+    margin-bottom: 10px;
+}
+button {
+    border: 2px solid;
+    border-radius: 4px;
+}
+input[type="reset"] {
+    border: 2px solid;
+    border-radius: 4px;
+}
+</style>
+</head>
+<body>
+    <div class="khoi">
+        <h2 class="title">ĐĂNG KÍ HỌC VIÊN</h2>
+    <form action="/" method="GET">
+    <div class="name">
+        <label for="">Họ và Tên: <input type="text" name="fullname" size="30" required></label> <br>
+    </div>
+    <div class="date">
+        <label for="">Ngày sinh: <input type="date" name="date" required></label>    <br>
+    </div>
+    <div class="sex">
+        <label for="">Giới tính:</label>
+        <input type="radio" name="sex" value="1">Nam
+        <input type="radio" name="sex" value="0">Nữ <br>
+    </div>
+    <div class="address">
+        <label for="">Địa chỉ: <br><textarea name="address" id="" cols="30" rows="10"></textarea></label>
+    </div>
+    <div class="class">
+        <label for="">Lớp:</label>
+        <select name="class" id="">
+            <option value="-chọn lớp-">-Chọn lớp-</option>
+            <option value="">CT4B</option>
+            <option value="">CT3B</option>
+            <option value="">AT12</option>
+        </select>
+    </div>
+    <div class="mail">
+        <label for="">Email: <input type="email"></label> <br>
+    </div>
+    <div class="phone">
+        <label for="">Phone:</label>
+        <input type="tel" size="5" maxlength="3">- <input type="tel" size="5" maxlength="3"> - <input type="tel" size="5" maxlength="4"> <br>
+    </div>
+    <div class="botton">
+        <button>Đăng ký</button>
+        <input type="reset" value="nhập lại">
+    </div>
+    </form>
+    </div>
+</body>
+</html>

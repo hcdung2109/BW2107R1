@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .head{
+            text-align: center;
+        }
+        
+
+        input:valid{
+            background-color: powderblue;
+            border: 20px;
+        }
+        input + span{
+            position: relative;
+        }
+        input + span::before{
+            position: absolute;
+            right: -20px;
+            top: 5px;
+        }
+        input:valid{
+            border: 2px solid red;
+        }
+        input:invalid + span::before{
+            content: '✓';
+            color: green;
+        }
+        
+     /* demo form */
+     h1::first-line{
+         color: red;   
+     }
+
+ 
+
+        form.form-ex{
+            display: table;
+        }
+        div.form-ex{
+            display: table-row;
+        }
+        label, input{
+            display: table-cell;
+            margin-bottom: 10px;
+        }
+        label{
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <table width="400" cellspacing="10" cellpadding="5">
+
+        <thead width="150"> Date </thead>
+        <thead width="150"> Time  </thead>
+        <thead width="150"> Ependiture  </thead>
+        <br>
+        <tr >
+            <th width="150">abc</th>
+            <th width="150">bbc</th>
+            <th width="150">cnn</th>
+        </tr>
+        <tr>
+            <th>6pm - 7mp</th>
+            <td rowspan="2">Movie</td>
+            <td>Comedy</td>
+            <td>News</td>
+        </tr>
+        <tr>7pm - 8pm</tr>
+        <td>Sport</td>
+        <td>Current Affairs</td>
+    </table> -->
+
+    <br>
+    
+     <div>
+         <label for="fname"> First Name *: </label>
+         <input type="text" name="fname" id="fname" required>
+         <span></span>
+     </div>
+        
+
+     <br>
+     <h1>The ::first-line CSS pseudo-element applies styles to the first line of a block-level element. Note that the length of the first line depends on many factors, including the width of the element, the width of the document, and the font size of the text. </h1>
+
+     <form action="" method="get" class="form-ex">
+         <div class="form-ex">
+             <label for="name">Enter your name: </label>
+             <input type="text" name="fname" id="fname" required>
+             <span> </span>
+         </div>
+         <div class="form-ex">
+             <label for="email">Enter your email: </label>
+             <input type="email" name="email" id="email" required>
+             <span> </span>
+         </div>
+         <div class="form-ex">
+             <input type="submit" value="Subscrible">
+         </div>
+     </form>
+
+     <br>
+
+     <table class="standard-table">
+        <tbody>
+          <tr>
+            <th>Browser</th>
+            <th>Lowest Version</th>
+            <th>Support of</th>
+          </tr>
+          <tr>
+            <td rowspan="2">Internet Explorer</td>
+            <td>8.0</td>
+            <td><code>:pseudo-element</code></td>
+          </tr>
+          <tr>
+            <td>9.0</td>
+            <td><code>:pseudo-element ::pseudo-element</code></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Firefox (Gecko)</td>
+            <td>1.0 (1.0)</td>
+            <td><code>:pseudo-element</code></td>
+          </tr>
+          <tr>
+            <td>1.0 (1.5)</td>
+            <td><code>:pseudo-element ::pseudo-element</code></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Opera</td>
+            <td>4.0</td>
+            <td><code>:pseudo-element</code></td>
+          </tr>
+          <tr>
+            <td>7.0</td>
+            <td><code>:pseudo-element ::pseudo-element</code></td>
+          </tr>
+          <tr>
+            <td>Safari (WebKit)</td>
+            <td>1.0 (85)</td>
+            <td><code>:pseudo-element ::pseudo-element</code></td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+</body>
+</html>

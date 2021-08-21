@@ -1,0 +1,42 @@
+div#menu, ul, li {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+ul li {
+    height: 30px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+}
+ul li:hover{
+    background-color: red;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+ul li:hover ul{
+    visibility: visible;
+}
+ul ul {
+    position: absolute;
+    left: 104px;
+    top: 0;
+    visibility: hidden;
+}
+ul ul li {
+    width: 200px;
+    text-align: left;
+}
+ul ul li a {
+    display: block;
+    float: left;
+}
