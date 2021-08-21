@@ -1,0 +1,14 @@
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    background-color: aquamarine;
+}
+div{
+    margin:50px ;
+    padding: 50px 50px 50px 50px; 
+    border: 40px solid rgb(45, 126, 45);
+    text-align:justify; 
+    height: 160px;
+    width: 220px;
+}
