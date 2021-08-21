@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, tr, td {
+      height:25px;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Phần 1: Tạo một form sở thích</h1>
+  <form>
+    <table style="width: auto;">
+      <tr>
+        <td colspan="4" style="text-align: center; color: white; background-color: orange;"> SỞ THÍCH CỦA BẠN </td>
+      </tr>
+      <tr>
+        <td style="text-align: right; color: blue; width:90px">
+          Họ và tên
+        </td>
+        <td colspan="2">
+          <input type="text" name="name">
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right; color: blue;">
+          Email
+        </td>
+        <td colspan="2">
+          <input type="text" name="name">
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right; color: blue;">
+          Sở thích
+        </td>
+        <td style="color: orange;">
+          <input type="checkbox" name="Hobby"> Thể thao
+        </td>
+        <td style="color: orange;">
+          <input type="checkbox" name="Hobby"> Âm nhạc
+        </td>
+        <td style="color: orange;">
+          <input type="checkbox" name="Hobby"> Đọc sách
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td style="color: orange;">
+          <input type="checkbox" name="Hobby"> Lướt web
+        </td>
+        <td style="color: orange;">
+          <input type="checkbox" name="Hobby"> Chơi game
+        </td>
+        <td style="color: orange;">
+          <input type="checkbox" name="Hobby"> Điện ảnh
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td style="color: orange;">
+          <input type="checkbox" name="Hobby"> Du lịch
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <input type="submit" value="Gửi thông tin">
+        </td>
+        <td>
+          <input type="reset" value="Nhập lại">
+        </td>
+      </tr>
+    </table>
+  </form>
+  
+
+  <h1>Tạo một form đăng kí học viên</h1>
+  <form action="" style="background-color: rgb(238, 255, 0); color: blue;">
+    <table>
+      <tr>
+        <td colspan="3">ĐĂNG KÝ HỌC VIÊN</td>
+      </tr>
+      <tr>
+        <td style="width: 120px;">
+          Họ và tên
+        </td>
+        <td colspan="2">
+          <input type="text" name="name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ngày sinh
+        </td>
+        <td colspan="2">
+          <input type="text" name="dob">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Giới tính
+        </td>
+        <td style="color:black">
+          <input type="radio" name="sex" value="male"> Nam
+        </td>
+        <td style="color:black">
+          <input type="radio" name="sex" value="female"> Nữ
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Địa chỉ
+        </td>
+        <td colspan="2">
+          <textarea name="address" id="" cols="30" rows="5"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Lớp
+        </td>
+        <td colspan="2">
+          <select name="classSelect">
+            <option value="default">--Chọn lớp--</option>
+            <option value="1">Lớp 1</option>
+            <option value="2">Lóp 2</option>
+            <option value="3">Lớp 3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Email
+        </td>
+        <td colspan="2">
+          <input type="text" name="email">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Điện thoại
+        </td>
+        <td colspan="2">
+          <input type="number" name="phone">
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td style="width:30px">
+          <input type="submit" value="Đăng ký">
+        </td>
+        <td>
+          <input type="reset" value="Nhập lại">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
