@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+
+        div.relative1 {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+            top: 30px;
+        }
+
+        div.relative2 {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+            top: 30px;
+        }
+
+        #to_top {
+            width: 40px;
+            height: 40px;
+            background: red;
+            border: 1px solid #E5E5E5;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>position: static;</h2>
+
+    <p>An element with position: static; is not positioned in any special way; it is 
+    always positioned according to the normal flow of the page:</p>
+
+    <div class="static">
+        This div element has position: static;
+    </div>
+
+    <div class="relative1">
+        <p> This div element has position: relative </p>
+    </div>
+
+    <a href="javascript:;" id="to_top" title="Lên đầu trang">
+        <svg class="ic ic-arrow-up"><use xlink:href="#Arrow-Up-1"></use></svg>
+    </a>
+    
+</body>
+</html>
