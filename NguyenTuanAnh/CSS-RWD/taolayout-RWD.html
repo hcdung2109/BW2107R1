@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <title>Document</title>
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+}
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding: 0;
+    }
+    header {
+    height: 80px;
+}
+header, footer {
+    background-color: black;
+}
+.header-logo {
+    float: left;
+    margin: 5px;
+}
+img {
+    width: 100px;
+    height: 70px;
+}
+nav {
+    float: left;
+}
+ul.header-menu {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+    margin: 0 10px;
+}
+li {
+    margin-right: 20px;
+    float: left;
+}
+a {
+    display: block;
+    height: 80px;
+    width: 100px;
+    text-decoration: none;
+    line-height: 80px;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+}
+.sign-up {
+    float: right;
+}
+i.fa.fa-sign-in-alt {
+    width: 20px;
+    height: 28px;
+}
+section {
+    float: left;
+    width: 60%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+section article{
+    border: 2px solid #000000;
+    margin-top: 10px;
+    box-shadow: 0 1px 1px red;
+    border-radius: 4px;
+}
+aside {
+    width: 30%;
+    float: right;
+    height: 80px;
+    margin-top: 10px;
+}
+aside .ads-1,aside .ads-2 {
+    height: 80px;
+    text-align: center;
+    line-height: 70px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+footer {
+    clear: both;
+    height: 40px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+}
+section article div{
+    height: 400px;
+    padding: 20px;
+}
+    /* for smart phone */
+    @media only screen and (max-width:420px)
+    {
+        header,footer{
+            background-color: chartreuse;
+            border-radius: 4px;
+        }
+        header{
+            height: 40px;
+        }
+        header div.header-logo {
+            float: left;
+            margin: 0 2px;
+            padding: 0;
+        }
+        header div img{
+            width: 50px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        header nav {
+            float: left;
+        }
+        header nav ul.header-menu {
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin-right: 7px;
+        }
+        header nav ul li a {
+            color: black;
+            height: 40px;
+            font-size: 12px;
+            width: 30px;
+            line-height: 40px;
+        }
+        header div.sign-up{
+            float:right;
+        }
+        header div.sign-up a{
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+        }
+        section{
+            width: 100%;
+            margin: auto;
+        }
+        section article{
+            margin: 10px auto;
+            width: 90%;
+        }
+        aside{
+            width: 100%;
+            margin-bottom: 110px;
+        }
+        aside .ads-1,aside .ads-2 {
+            width: 90%;
+            margin: 10px auto;
+        }
+        footer{
+            margin-top:20px;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="/image/logo.jpg" alt="logo" >
+        </div>
+        <nav>
+            <ul class="header-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sign-up">
+            <a href="#" class="sign-up-text"><i class="fa fa-sign-in-alt"></i>login</a>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div class="text-1">
+                <h3 class="title">Welcome</h3>
+                <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error modi earum fuga minima placeat aliquid atque, vero voluptates unde fugit commodi, blanditiis provident cumque magnam adipisci quasi, delectus quisquam?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio similique aspernatur tempora assumenda unde necessitatibus officia autem dignissimos eius quisquam, quae amet, consequuntur eveniet magnam! Sint autem libero blanditiis deleniti?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium consequatur, natus delectus deleniti vel necessitatibus minima, nostrum dolor odio accusantium ipsam aliquam soluta nihil similique fuga beatae in? Illum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta perspiciatis ipsam cupiditate, facere temporibus modi deleniti in harum, illo id. Molestiae pariatur consequuntur facilis voluptas sequi laboriosam magni at.
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="text-2">
+                <h3>Text</h3>
+                <p>lorem text ...</p>
+            </div>
+        </article>
+    </section>
+    <aside>
+        <div class="ads-1">
+            <p>ads</p>
+        </div>
+        <div class="ads-2">
+            <p>
+                ads
+            </p>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer-text">
+            <p>Footer</p>
+        </div>
+    </footer>
+</body>
+</html>
