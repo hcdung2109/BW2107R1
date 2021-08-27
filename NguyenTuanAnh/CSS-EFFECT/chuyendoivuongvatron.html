@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .element{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        background-color: lime;
+        animation-name:abc ;
+        animation-duration: 2.0s;
+        animation-timing-function: ease-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+    @keyframes abc{
+        0%{
+            transform: scale(0.5);
+            background-color: green;
+            border-radius: 100%;
+        }
+        50%{
+            background-color: orange;
+        }
+        100%{
+            transform:scale(2.0);
+            background-color: red;
+        }
+    }
+    html,body{
+        height: 100%;
+    }
+    element{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+    <div class="element"></div>
+</body>
+</html>
