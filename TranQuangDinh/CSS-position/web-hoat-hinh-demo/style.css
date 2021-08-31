@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #f2fcf5;
+    z-index: 2;
+}
+.header img {
+    height: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#header-link {
+    position: relative;
+    width: 100%;
+    background-color: #f2fcf5;
+    text-align: end;
+    padding: 20px 50px 20px 5px;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Style Script', cursive;
+}
+#header-link a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+#header-link :hover {
+    color: tomato;
+}
+.main {
+    display: flex;
+    z-index: 1;
+}
+#playlist {
+    display: grid;
+    top: 100px;
+    position: relative;
+    padding-left: 50px;
+}
+#display {
+    position: relative;
+    top: 110px;
+    left: 50px;
+}
+#playlist span {
+    font-size: 18px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+
+#display p {
+    font-size: 20px;
+}
+#playlist a {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#playlist :hover {
+    color: tomato;
+}
+.titleVid {
+    font-weight: bold;
+}
+.viewtotal {
+    color: #9ca19d;
+}
+.author {
+    color: #9ca19d;
+}
+.footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: larger;
+    color: #6b706c;
+    background-color: #f2fcf5;
+    padding: 20px;
+    font-family: 'Style Script', cursive;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      html{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #menu {
+        background-color: black;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+      }
+      #menu ul li {
+        position: relative;
+        list-style: none;
+        float: left;
+        width: 100px;
+        line-height: 50px;
+        padding-left: 10px;
+      }
+      #menu ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      #menu ul ul {
+        visibility: hidden;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background-color: black;
+        border-radius: 10px;
+      }
+      #menu ul ul li {
+        width: 200px;
+        border-bottom: white solid 1px;
+      }
+      #menu ul li:hover ul{
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li>
+          <a href="#">Sem 1</a>
+          <ul>
+            <li><a href="#">Computing Fundametal</a></li>
+            <li><a href="#">C Programming</a></li>
+            <li><a href="#">Building Dynamic Website</a></li>
+            <li><a href="#">MS Transact-SQL</a></li>
+            <li><a href="#">Project</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Sem 2 </a>
+          <ul>
+            <li><a href="#">Cloud Computing</a></li>
+            <li><a href="#">APJ - I</a></li>
+            <li><a href="#">APJ - II</a></li>
+            <li><a href="#">APJ - III</a></li>
+            <li><a href="#">eProject</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sem 3</a></li>
+        <li><a href="#">Sem 4</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

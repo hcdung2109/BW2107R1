@@ -1,0 +1,69 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    width: 100%;
+    height: 56px;
+    background:gold;
+}
+
+#header_content {
+    position: relative;
+    height: inherit;
+    width: 85%;
+    margin: 0px auto;
+}
+
+#header_content img {
+    margin-top: 10px;
+    width: 151px;
+    height: 40px;
+    float: left;
+}
+
+#header_form {
+    float: left;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+#header_form {
+    width: 30%;
+    height: inherit;
+}
+
+#header_form form input {
+    border: none;
+    height: 33px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#header_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+#header_menu li {
+    height: 33px;
+    list-style: none;
+    float: left;
+    padding-left: 15px;
+    padding-top: 18px;
+}
+
+#header_menu a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
