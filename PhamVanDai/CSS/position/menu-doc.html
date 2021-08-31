@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #menu ul li {
+            position: relative;
+            background-color: black;
+            list-style: none;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        #menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #menu ul ul {
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            left: 170px;
+        }
+        #menu ul li:hover ul{
+            visibility: visible;
+
+        }
+        #menu ul :hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li>
+                <a href="">Mạng xã hội</a>
+                <ul>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Lập Trình</a>
+                <ul>
+                    <li><a href="">Front-End</a></li>
+                    <li><a href="">Back-End</a></li>
+                </ul>
+            </li>
+            <li><a href="">Thông tin</a></li>
+        </ul>
+    </div>
+</body>
+</html>

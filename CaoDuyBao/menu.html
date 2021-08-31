@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu li {
+            background-color: black;
+            list-style: none;
+            font-size: 20px;
+            padding: 10 20px;
+            width: 200px;
+            height: 30px;
+            position: relative;
+        }
+        
+        #menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #menu ul ul {
+            position: absolute;
+            left: 220px;
+            top: 0px;
+            visibility: hidden;
+        }
+        
+        #menu ul li:hover ul {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Danh mục sản phẩm</a>
+                <ul>
+                    <li><a href="#">Ti vi</a></li>
+                    <li><a href="#">Loa</li>
+                </ul>
+            </li>
+
+            <li><a href="#">Gia dụng</a>
+                        <ul>
+                            <li><a href="#">Máy xay sinh tố</a></li>
+                            <li><a href="#">Lọc nước</a></li>
+                            <li><a href="#">May đánh trứng</a></li>
+                        </ul>
+                    </li>
+    </div>
+</body>
+
+</html>
