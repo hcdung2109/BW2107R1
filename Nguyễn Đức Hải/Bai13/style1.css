@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    width: 100%;
+    height: 56px;
+    background:gold;
+}
+
+#header_content {
+    position: relative;
+    height: inherit;
+    width: 85%;
+    margin: 0px auto;
+}
+
+#header_content img {
+    margin-top: 10px;
+    width: 151px;
+    height: 40px;
+    float: left;
+}
+
+#header_form {
+    float: left;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+#header_form {
+    width: 30%;
+    height: inherit;
+}
+
+#header_form form input {
+    border: none;
+    height: 33px;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+#header_form button{
+    width:30px;
+    height: 33px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+}
+
+
+
+
+
+
+
