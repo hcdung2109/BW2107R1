@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .example1 {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            display: block;
+            margin: 5px;
+        }
+
+        #top {
+            width: 30px;
+            height: 30px;
+            background-color: brown;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Bai15</h3>
+    <img id="img1" style="display: block;" src="anh1.png" alt="" width="300">
+    <button id="btnShow" onclick="show()"  >show</button>
+    <button id="btnHide" onclick="hide()" >hide</button> 
+
+
+    <h3>Thiết lập css sử dụng JS</h3>
+    <button  onclick="background()"  >Thay đổi màu nền</button>
+    <button   onclick="resize()">Thay đổi kích thước</button>
+    <button   onclick="resizeheight()">Thay đổi kích thước chiều dài</button>
+
+    <div class="example1"  id="div1">
+
+    </div>
+
+    <div class="example1">
+
+    </div>
+
+    <div id="top" onclick="dautrang()">
+
+    </div>
+
+    <script  type="text/javascript">
+    // hiển thị
+    function show() {
+        $('#img1').show();
+    }
+    // Ân
+    function hide() {
+        $('#img1').hide();
+    }
+    //Thay đổi màu nền
+    function background () {
+        $('.example1').css('background-color', 'blue')
+    }
+
+    function resize()
+        {
+            $('#div1').css('width', '400px');
+        }
+
+        function dautrang()
+        {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
+
+        }
+
+        function resizeheight()
+        {
+            $('#div1').css('height', '300px');
+        }
+    </script>
+     
+</body>
+</html>
