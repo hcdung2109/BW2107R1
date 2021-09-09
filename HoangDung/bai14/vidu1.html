@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 0px;
+        }
+
+        p {
+            color: black;
+        }
+
+        p span {
+           color: red; 
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        .example2 a {
+            display: block
+        }
+
+    </style>
+
+</head>
+<body>
+    <p>The p : là thẻ đoạn <span> văn bản </span></p>
+
+    <ul>
+        <li><a href="/html/default.asp" target="_self">HTML</a></li>
+        <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+        <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+    </ul>
+    
+    <b>fas</b>
+
+    <h3>Conver inline to block</h3>
+    <div class="example2">
+        <a href="/html/default.asp" target="_blank">HTML</a>
+        <a href="/css/default.asp" target="_blank">CSS</a>
+        <a href="/js/default.asp" target="_blank">JavaScript</a>
+    </div>
+
+    <h3>Ví dụ : JavaScript</h3>
+
+    <p class="content1">doan van ban so 1</p>
+    <button onclick="changeContent()">Thay đổi nội dung 1</button>
+
+    <p class="content11">doan van ban so 11</p>
+    <button onclick="changeContent2()">Thay đổi nội dung 11</button>
+
+
+    <p class="content3" id="content3">doan van ban so 3</p>
+    <button onclick="changeContent3()">Thay đổi nội dung 3</button>
+
+    <p class="content4" id="content4">doan van ban so 4</p>
+    <button onclick="changeContent4()">Thay đổi nội dung 4</button>
+
+    <div style="" id="content">
+        <p>Test ẩn hiển sử dụng JS</p>
+    </div>
+
+    <button id="btnShow">Show</button>
+    <button id="btnHidden">Hidden</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="my_script.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function changeContent() {
+            var x = document.getElementsByClassName("content1");
+           
+            x[0].innerHTML = 'test content 1';
+        }
+
+        function changeContent2() {
+            var x = $('.content11');
+            x.html('doan van ban so 22');
+        }
+
+        function changeContent3()
+        {
+            document.getElementById("content3").innerHTML = "doan van ban so 33";
+        }
+
+        function changeContent4()
+        {
+            $('#content4').html('doan van ban so 44');
+        }
+    </script>
+
+</body>
+</html>
