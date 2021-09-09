@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline-list {
+            display: inline-block;
+            /* 1 */
+            padding: 0;
+            /* 2 */
+            line-height: 2em;
+            text-align: center;
+        }
+
+        .inline-list>li {
+            display: inline;
+            /* 3 */
+        }
+
+        .inline-list>li::after {
+            content: " ";
+            /* 4 */
+            letter-spacing: 1em;
+            /* 5 */
+            background: linear-gradient(90deg, transparent calc(50% - 0.03125em), currentColor 0, currentColor calc(50% + 0.03125em), transparent 0);
+            /* 6 */
+        }
+
+        /* Presentation styles */
+        html {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        body {
+            color: #efefef;
+            background: #0c0c0c;
+        }
+
+        a {
+            color: hotpink;
+        }
+
+        .container {
+            width: 12rem;
+            margin: 0 auto;
+
+            resize: horizontal;
+            overflow: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="inline-list">
+            <li><a href="/en">English</a></li>
+            <li><a href="/fr">Français</a></li>
+            <li><a href="/da">Dansk</a></li>
+            <li><a href="/it">Italiano</a></li>
+            <li><a href="/jp">日本語</a></li>
+        </ul>
+    </div>
+
+    <p>Resize the block above to see this in action!</p>
+
+    <p>PS: Wear a mask when you go outside.</p>
+</body>
+
+</html>

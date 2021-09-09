@@ -1,17 +1,45 @@
 *{
     padding:0; 
-    margin: 0; 
-    
+    margin: 0;   
+}
+body{
+    margin: 0;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 .header{
-    height:100px; 
+    height:95px; 
     background-image: linear-gradient(#c70707, #0f0f0f)
 }
 .header__navbar{
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
+    /* position: relative;    */
 }
+.header__navbar-search{
+    position: absolute;
+    top: 10px;
+    left: 261px;
+    right:546px; 
+    height: 38px;
+}
+ 
+
 .header__navbar-list{
+    position: absolute;
+    top: 10px;
+    left:1000px;
+    right: 73;
     list-style: none;
     padding-left: 3px;
 }
@@ -26,8 +54,7 @@ height:50px;
 }
 
 .input[type="text"]
-{
-  
+{ 
   width: 400px;
   height: 40px;
   border: none;
@@ -53,32 +80,24 @@ height:50px;
 .header__navbar-menu2{
     padding-left: 20px;
     background-color: #252525;
-    height: 38px;
+    height: 35px;
     width: 100%;
     color: rgb(255, 255, 255);
     position: fixed;
-    top: 60px;
+    top: 60px;  
 }
 
- .header__navbar-list2{
-    /* padding: 1px;
-    float: left;
-    list-style: none;
-    width: 100px;
-    position: relative;
-    list-style: none;   
-    margin: 4px 4px; */
-
-    
+ .header__navbar-item2{ 
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
+        justify-content: space-around;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         position: relative;
         z-index: 10;
         height: 100%;
+        
 }
 
 .header__navbar-item, 
