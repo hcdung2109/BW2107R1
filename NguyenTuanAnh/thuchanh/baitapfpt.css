@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding: 0;
+}
+ /* css header */
+ section#header {
+    height: 56px;
+    background: #ed0808;
+}
+#header .header-box {
+    width: 90%;
+    margin: 0 auto;
+}
+#header .header-logo {
+    float: left;
+    margin-top: 3px;
+}
+#header .header-logo img {
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+}
+.header-form {
+    float: left;
+    width: 38%;
+    margin-left: 10px;
+}
+.header-form {
+    float: left;
+    width: 38%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.header-form input {
+    width: 90%;
+    height: 36px;
+    border-radius: 3px;
+    border: none;
+}
+.header-form button.header-bt {
+    height: 36px;
+    width: 36px;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    margin-left: -3px;
+}
+.header-form i.fa.fa-search {
+    color: white;
+    font-size: 15px;
+}
+#header .header-menu{
+    float:right;
+}
+.header-menu ul {
+    list-style: none;
+    margin-top: 10px;
+}
+.header-menu li {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}
+.header-menu a {
+    text-decoration: none;
+    color: white;
+}
+.header-menu i.fa {
+    width: 20px;
+    margin: 0 26px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+i.fa.fa-moon {
+    margin-right: 0;
+}
+i.fa.fa-tint {
+    margin-left: 0;
+}
+ /* css nav */
+section#nav {
+    height: 40px;
+    background-color: #000;
+}
+#nav .nav-box {
+    width: 93%;
+    margin: 0 auto;
+}
+#nav .nav-box ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+#nav .nav-box li {
+    width: 9%;
+    padding-right: 1%;
+    height: inherit;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    /* position: relative; */
+}
+#nav .nav-box li:hover .nav-menu{
+    visibility: visible;
+}
+.nav-box a {
+    text-decoration: none;
+    color: white;
+}
+#nav .nav-box i.fa {
+    font-size: 14px;
+    margin-right: 5px;
+}
+#nav .nav-box .nav-menu {
+    border-top: 1px solid #fff;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    top: 40px;
+    border-radius: 4px;
+    visibility: hidden;
+}
+
+#nav .nav-box .nav-menu-td1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav .nav-box .nav-menu .td1-top {
+    border-right: 2px solid white;
+    width: 30%;
+}
+#nav .nav-box .td1-top h3 {
+    text-align: left;
+    color: white;
+}
+#nav .nav-box .nav-menu .td1-top ul {
+    display: inline-block;
+}
+#nav .nav-box .nav-menu .td1-top ul li {
+    width: 32%;
+    float: left;
+}
+#nav .nav-box .td1-top a p {
+    text-align: left;
+}
+#nav .nav-box .nav-menu .td1-center p {
+    color: white;
+    text-align: left;
+}
+.nav-menu .td1-center {
+    width: 20%;
+    border-right: 2px solid white;
+}
+#nav .nav-box .nav-menu .td1-center p {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+#nav .nav-box .nav-menu .td1-center ul.Ga {
+    display: block;
+}
+#nav .nav-box .td1-center li {
+    width: 50%;
+    font-size: 14px;
+}
+#nav .nav-box .td1-ct2 {
+    width: 25%;
+    border-right: 2px solid white;
+}
+#nav .nav-box .td1-ct2 p {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+.cd1-ct2-box {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+#nav .nav-box .cd1-ct2-img {
+    width: 80px;
+    margin-right: -10px;
+}
+#nav .nav-box .td1-ct2 a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+#nav .nav-box .cd1-ct2-text {
+    top: 0;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    font-size: 26px;
+    margin-top: 0;
+}
+#nav .nav-box .td1-ct2 span {
+    color: red;
+    font-size: 15px;
+}
+#nav .nav-box .cd1-end {
+    padding: 29px 0 0 0px;
+    width: 24%;
+}

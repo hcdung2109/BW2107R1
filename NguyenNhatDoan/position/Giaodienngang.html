@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu ngang</title>
+    <style>
+    body{
+        font-family: Arial;
+    }
+     
+    #menu{
+        height: 30px;
+        padding:0;
+        margin:0;
+        background-color: #000000;
+        border: 1px solid #CDCDCD;
+    }
+     
+    #menu ul, #menu li{
+        padding:0;
+        margin:0;
+        
+    }
+    
+    #menu li{
+        position: relative;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding:0;
+    }
+    
+    #menu li a{
+        width:100px;
+        height: 30px;
+        display: block;
+        text-decoration:none;
+        text-align: center;
+        line-height: 30px;
+        background-color: black;
+        color: white;
+    }
+     
+    #menu ul ul li a{
+        width: 200px;
+        text-align: left;
+        padding-left: 10px;
+        border-radius: 5px;
+        border-bottom: rgb(34, 160, 41) solid 1px;
+    }
+    
+    #menu li a:hover{
+         background-color: red;
+    }
+    
+    #menu ul ul{
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        visibility: hidden;
+    }
+    
+    #menu ul li:hover ul{
+        visibility: visible;
+    }
+    #menu li ul{
+      position: absolute; 
+      left: 0; 
+    }
+</style>  
+    
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Menu 1</a>
+                <ul>
+                <li><a href="#">Lẩu Bò</a></li>
+                <li><a href="#">Lẩu Gà</a></li>
+                <li><a href="#">Lẩu Hải sản </a></li>
+                <li><a href="#">Lẩu kim Chi</a></li>
+                <li><a href="#">Lẩu Dê</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 2 </a>
+                <ul>
+                <li><a href="#">Mojito Chanh dây</a></li>
+                <li><a href="#">Americano</a></li>
+                <li><a href="#">Latte</a></li>
+                <li><a href="#">Sting</a></li>
+                <li><a href="#">Trà Đào</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+         
+        </ul>
+        </div>
+</body>
+</html>
