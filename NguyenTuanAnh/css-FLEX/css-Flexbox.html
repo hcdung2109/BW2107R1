@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #flex-container{
+        background-color: blue;
+        display: flex;
+    }
+    #flex-container div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    }
+    /*column*/
+    #flex-container1{
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+    }
+    #flex-container1 div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    align-items: center;
+    }
+    /* column-reverse */
+    #flex-container2{
+        background-color: blue;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #flex-container2 div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    align-items: center;
+    }
+    /* row */
+    #flex-container3{
+        background-color: blue;
+        display: flex;
+        flex-direction: row;
+    }
+    #flex-container3 div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    align-items: center;
+    }
+    /* row-reverse */
+    #flex-container4{
+        background-color: blue;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #flex-container4 div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    align-items: center;
+    }
+</style>
+</head>
+<body>
+    <div id="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+   <!-- thuc tinh column -->
+   <div id="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>thuoc tinh column-reverse</h3>
+    <div id="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!-- thuoc tinh row -->
+    
+    <h3>thuoc tinh row</h3>
+    <div id="flex-container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!-- thuoc tinh row-reverse -->
+    <h3>thuoc tinh row-reverse</h3>
+    <div id="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

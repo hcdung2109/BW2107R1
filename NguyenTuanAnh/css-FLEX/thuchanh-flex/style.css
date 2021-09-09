@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+section#nav {
+    height: 40px;
+    width: 100%;
+    background: #c1c1c1;
+}
+.nav-box {
+    width: 90%;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+li {
+    flex-basis: 8%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    transition: color 0.5s;
+}
+li:hover{
+    color:cadetblue;
+}

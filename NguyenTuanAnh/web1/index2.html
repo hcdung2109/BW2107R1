@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <!-- banner  -->
-    <section class="banner">
-        <img src="/image/images/logo.png" alt="logo-web" title="logo-web" class="logo">
+    <section id="banner">
+        <img src="/image/images/logo.png" alt="" title="logo" class="logo">
         <div class="banner-text">
             <h1>Hair studio</h1>
-            <p>Style Your Hair Is Style Your Life</p>
+            <p>Style your hair is your life</p>
             <div class="banner-btn">
-                <a href="#"><span></span> Find Out</a>
-                <a href="#"><span></span> Read More</a>
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
             </div>
         </div>
     </section>
@@ -213,21 +213,20 @@
     </section>
     <!-- end footer -->
     <script type="text/javascript">
-    var menubtn=document.getElementById("menubtn");
     var sideNav=document.getElementById("sideNav");
+    var menubtn=document.getElementById("menubtn");
     var menu=document.getElementById("menu");
-        sideNav.style.right="-250px";
-        menubtn.onclick=function(){
-            if(sideNav.style.right=="-250px")
-            {
-                sideNav.style.right="0";
-                menu.src="/image/images/close.png";
-            }
-            else{
-                sideNav.style.right="-250px";
-                menu.src="/image/images/menu.png";
-            }
-        }
+    sideNav.style.right="-250px";
+     menubtn.onclick=function(){
+         if(sideNav.style.right=="-250px"){
+             sideNav.style.right="0";
+             menu.src="/image/images/close.png";
+         }
+         else{
+            sideNav.style.right="-250px";
+            menu.src="/image/images/menu.png";
+         }
+     }
     </script>
 </body>
 </html>
