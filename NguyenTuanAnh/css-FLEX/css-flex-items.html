@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .flex-container{
+        display: flex;
+        background-color:burlywood;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .flex-container div{
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+</head>
+<body>
+    <h1>Flex-items</h1>
+    <!-- thuoc tinh order -->
+    <h3> thuoc tinh order</h3>
+    <div class="flex-container">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div> 
+        <div style="order: 1">4</div>
+    </div>
+    <!-- thuoc tinh flex-grow -->
+    <h3>thuoc tinh flex-grow</h3>
+    <div class="flex-container">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+      </div>
+    <!-- thuoc tinh flex-shrink -->
+    <h3>thuoc tinh flex-shrink</h3>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <!-- thuoc tinh flex-basis -->
+    <h3>thuoc tinh flex-basis</h3>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis:200px">3</div>
+        <div>4</div>
+      </div>
+      <!-- thuoc tinh align-seft -->
+   <h3>thuoc tinh align-seft</h3>
+   <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div style="align-self: center">3</div>
+    <div>4</div>
+  </div>
+  
+</body>
+</html>

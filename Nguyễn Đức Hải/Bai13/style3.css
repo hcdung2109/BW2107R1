@@ -1,0 +1,17 @@
+#product{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+#product li{
+    float: left;
+    list-style-type: none;
+    position: relative;
+    padding: 10px;
+}
+
+#product li a{
+    text-decoration-line: none;
+    color: white;
+}

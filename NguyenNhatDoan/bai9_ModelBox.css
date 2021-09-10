@@ -3,6 +3,8 @@ h1{
     text-align: center;
     font-size: 36px;
     background-color: aquamarine;
+    border:10px solid gray transparent;
+
 }
 div{
     margin:50px ;
@@ -11,4 +13,5 @@ div{
     text-align:justify; 
     height: 160px;
     width: 220px;
+    
 }

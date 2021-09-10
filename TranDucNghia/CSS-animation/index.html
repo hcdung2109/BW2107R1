@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .icon{
+        position: relative;
+        background-color: cadetblue;
+        width: 200px;
+        height: 100px;
+        animation: name 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes name {
+        0%{background-color: cadetblue; left: 0px; top: 0px;}
+        25%{background-color: chartreuse ; left: 500px; top: 0px;}
+        50%{background-color: chocolate; left: 500px; top: 500px;}
+        75%{background-color: crimson; left: 0px; top: 500px;}
+        100%{background-color: darkblue;left: 0px; top: 0px;}
+    }
+</style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class="icon"></div>
+</body>
+</html>
