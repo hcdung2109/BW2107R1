@@ -1,0 +1,13 @@
+/* banner */
+section.banner {
+    background: url(/image/images/banner.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+img.logo {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    width: 140px;
+}

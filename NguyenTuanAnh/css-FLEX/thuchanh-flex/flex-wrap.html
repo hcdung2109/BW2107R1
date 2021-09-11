@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+h1 {
+    color: #157f7f;
+    margin: 37px;
+    position: relative;
+    z-index: 1;
+}
+h1::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(rgb(255, 0, 0,.5),#fff);
+    position: absolute;
+    left: 12px;
+    top: -24px;
+    border-top-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    transform: rotate(17deg);
+    z-index: -1;
+}
+div#main {
+    align-content: center;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#main div {
+    width: 99px;
+    height: 50px;
+}
+/* thuoc tinh nowrap */
+div#main1{
+    align-content: center;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#main1 div {
+    width: 99px;
+    height: 50px;
+}
+/* thuoc tinh wrap-reverse */
+div#main2{
+    align-content: center;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+#main2 div {
+    width: 99px;
+    height: 50px;
+}
+</style>
+</head>
+<body>
+    <h1>GeeksforGeeks</h1>
+	<h3>The flex-wrap:wrap property</h3>
+	<div id="main">
+		<div style="background-color:#009900;">1</div>
+		<div style="background-color:#00cc99;">2</div>
+		<div style="background-color:#0066ff;">3</div>
+		<div style="background-color:#66ffff;">4</div>
+		<div style="background-color:#660066;">5</div>
+		<div style="background-color:#663300;">6</div>
+	</div>
+    <!-- thuoc tinh nowrap -->
+    <h1>GeeksforGeeks</h1>
+	<h3>The flex-wrap:nowrap property</h3>
+	<div id="main1">
+		<div style="background-color:#009900;">1</div>
+		<div style="background-color:#00cc99;">2</div>
+		<div style="background-color:#0066ff;">3</div>
+		<div style="background-color:#66ffff;">4</div>
+		<div style="background-color:#660066;">5</div>
+		<div style="background-color:#663300;">6</div>
+	</div>
+    <!-- thuoc tinh wrap-reverse -->
+    <h1>GeeksforGeeks</h1>
+	<h3>The flex-wrap:wrap-severse property</h3>
+	<div id="main2">
+		<div style="background-color:#009900;">1</div>
+		<div style="background-color:#00cc99;">2</div>
+		<div style="background-color:#0066ff;">3</div>
+		<div style="background-color:#66ffff;">4</div>
+		<div style="background-color:#660066;">5</div>
+		<div style="background-color:#663300;">6</div>
+	</div>
+</body>
+</html>

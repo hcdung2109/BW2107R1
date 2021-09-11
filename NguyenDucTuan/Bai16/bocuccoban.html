@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LESSON 11, TOPIC 9</title>
+	<style>
+		body {box-sizing: border-box; margin: 0px; padding: 0px;}
+		#main {width: 90%; margin: auto;}
+		#head {width: 100%; height: 100px; background: grey; line-height: 100px;}
+		#link {width: 700px; height: 100px; background: red; position: relative; float: left;}
+		#link ul {line-height: 50px; list-style: none;}
+		#link a {text-decoration: none;}
+		#link ul li {width: 100px; height: auto; text-align: center; float: left;}
+		#link ul ul li {width: 100px; background: black; display: none; margin: 0px 0px 1px -30px;}
+		#link ul li:hover li {display: block;}
+		#container {width: 100%; min-height: 400px; background: green; clear: both;}
+		#left {width: 20%; min-height: 400px; float: left; background: pink; line-height: 400px;}
+		#content {width: 50%; min-height: 400px; float: left; background: blue; line-height: 400px;}
+		#right {width: 30%; min-height: 400px; float: left; background: yellow; line-height: 400px;}
+		#footer {width: 100%; height: 100px; background: grey; line-height: 100px; clear: both;}
+		#footer ul {display: inline; float: right; margin-right: 20px;}
+		#footer li {display: inline-block;}
+		p {font-size: 20px; font-weight: bold; text-align: center; color: red;}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="head"><p>Header</p></div>
+		<div id="link">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Students</a></li>
+				<li><a href="#">Courses</a>
+					<ul>
+						<li><a href="#">HTML/CSS</a></li>
+						<li><a href="#">Java crypt</a></li>
+						<li><a href="#">Front end</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a>
+					<ul>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Tel</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="container">
+			<div id="left"><p>Left</p></div>
+			<div id="content"><p>Content</p></div>
+			<div id="right"><p>Right</p></div>
+		</div>
+		<div id="footer"><span>Footer</span>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Students</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

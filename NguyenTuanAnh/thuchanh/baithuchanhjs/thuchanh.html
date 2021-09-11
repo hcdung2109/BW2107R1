@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .example2{
+        border:2px solid black;
+        width: 300px;
+        height: 300px;
+        margin:5px;
+    }
+    #top{
+        width: 30px;
+        height: 30px;
+        border-radius: 1px;
+        background-color: chartreuse;
+        position: fixed;
+        bottom:20px;
+        right:20px;
+    }
+</style>
+</head>
+<body>
+    <h3>thuc hanh ve js</h3>
+    <img id="img" src="/image/logo.jpg" alt="" width="300">
+    <button id="btnShow" onclick="show()">Show</button>
+    <button id="btnHide" onclick="hide()">Hide</button>
+    <h3>thay doi css</h3>
+    <button onclick="change()">thay doi mau nen</button>
+    <button onclick="big()">thay doi kich thuoc</button>
+    <button onclick="height()">thay doi chieu cao</button>
+    <p class="example2" id="s1">
+
+    </p>
+    <p class="example2" id="s2">
+        
+    </p>
+    <div id="top" onclick="len()">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        function show(){
+            $("#img").show();
+        }
+        function hide(){
+            $("#img").hide();
+        }
+        function change(){
+            $(".example2").css("background-color","green");
+        }
+        function big(){
+            $("#s1").css("width","400px");
+        }
+        function height(){
+            $("#s2").css("height","400px");
+        }
+        function len(){
+            $("html,body").animate({scrollTop:0},"slow");
+        }
+    </script>
+</body>
+</html>

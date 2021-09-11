@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .example2 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            display: block;
+            margin: 5px;
+        }
+
+        #top {
+            width: 30px;
+            height: 30px;
+            background-color: brown;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bài 15 </h1>
+
+    <h3>ẩn hiện thành phần</h3>
+    <button id="btnShow" onclick="show()" >Show</button>
+    <button id="btnHide" onclick="hide()" >Hide</button>
+
+    <img id="img1" style="display: block;"  src="codo.png" alt="" width="300">
+
+    <h3>thiết lập css sử dụng js</h3>
+
+    <button onclick="background()">thay đổi màu nền</button>
+    <button onclick="resize()">thay đổi kích thước chiều rộng</button>
+    <button onclick="resizeh() ">thay đổi kích thước chiều dài</button>
+
+    <div class="example2" id="div1">
+
+    </div>
+
+    <div class="example2">
+
+    </div>
+
+    <div id="top" onclick="dautrang()">
+
+    </div>
+
+    <script type="text/javascript">
+        // hiển thị
+        function show() {
+            $('#img1').show();
+        }
+
+        // ẩn
+        function hide() {
+            $('#img1').hide();
+        }
+
+        // thay đổi màu nền
+        function background()
+        {
+            // element.css('thuộc tính','giá trị')
+            $('.example2').css('background-color', 'blue');
+        }
+
+        function resize()
+        {
+            $('#div1').css('width', '400px');
+        }
+
+        function dautrang()
+        {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
+
+        }
+function resizeh()
+{
+	$('#div1').css('height','400px');
+
+}
+    </script>
+</body>
+</html>
