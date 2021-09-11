@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #content {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        img {
+            float: right;
+        }
+
+        #content::after {
+            content: ' ';
+            clear: both;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="content">
+  <h2>With Clearfix</h2>
+  <img class="img2" src="https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2021/05/24193024/pineapple-1.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+
+</div>
+
+</body>
+</html>
