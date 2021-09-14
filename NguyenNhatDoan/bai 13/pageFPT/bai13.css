@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    position: relative;
+  }
+  
+  #header {
+    position: relative;
+  }
+  .header__top {
+    position: fixed;
+    background-color: #cd1818;
+    width: 100%;
+    height: 65px;
+  }
+  
+  .header__top-content {
+    display: flex;
+    line-height: 60px;
+    justify-content: space-between;
+    position: relative;
+    width: 85%;
+    height: inherit;
+    background-color: #e91f1f;
+    margin: 0px auto;   
+  }
+  .fpt_photo{
+    min-width: 100px ;
+    height: 50px;
+    margin-top:7px;
+    margin-bottom: 5px;
+}
+  .header__top--form{
+      margin-right: 80px;
+
+  }
+  .list{
+      display: flex;
+      justify-content: space-around;
+      margin: 0px auto;
+      font-size:13px; 
+    }
+  .header_top-content, 
+  .list__item {
+    list-style: none;
+    float: left;
+    padding: 0px 5px;
+    margin: 5px;
+  }
+  .header_top-content,
+  .list  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .form__input {
+    border: none;
+    border-radius: px;
+    width: 300px;
+    height: 40px;
+  }
+  .form__submit {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    background-color: #363636;
+    color: white;
+  }
+  
+  .header__menu2 {
+    position: absolute;
+    background-color: #1a1919;
+    top:  60px;
+    width: 100%;
+    height: 50px;
+  }
+  .header__menu2-content {
+
+    margin: 0px auto;
+    padding-left: 10px;
+  }
+  .menu__navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  .menu__navbar li {
+    list-style: none;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+  .menu__navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size:14px;
+    padding-left: 8px; 
+  }
+  
+  #main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  .menu-navbar-list1 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    padding-left: 10px;
+    display: none;
+  }
+  .menu-navbar-list2 {
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    padding-left: 10px;
+    display: none;
+  }
+  .menu__navbar-item:hover
+   {
+    display: block;
+  }
+  /* .sub li:hover .sub-nav-2 {
+    display: block;
+  } */
+  /* .sub li a:hover {
+    color: rgb(194, 194, 194);
+  } */
+  
