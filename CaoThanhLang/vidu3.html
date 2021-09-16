@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
-    div + p {
-        background-color: yellow;
-    }
+    <style>
+        
+            div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
 
-</style>
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 300px;
+}
+        
+    </style>
 </head>
 <body>
+    <h1>The transition-timing-function Property</h1>
 
-<h2>Adjacent Sibling Selector</h2>
+<p>Hover over the div elements below, to see the different speed curves:</p>
 
-<p>The + selector is used to select an element that is directly after another specific element.</p>
-<p>The following example selects the first p element that are placed immediately after div elements:</p>
+<div id="div1">linear</div><br>
+<div id="div2">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div><br>
 
-<div>
-<p>Paragraph 1 in the div.</p>
-<p>Paragraph 2 in the div.</p>
-</div>
-
-<p>Paragraph 3. After a div.</p>
-<p>Paragraph 4. After a div.</p>
-
-<div>
-<p>Paragraph 5 in the div.</p>
-<p>Paragraph 6 in the div.</p>
-</div>
-
-<p>Paragraph 7. After a div.</p>
-<p>Paragraph 8. After a div.</p>
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
 
 </body>
 </html>

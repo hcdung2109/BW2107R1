@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        div p {
-            color: red;
-        }
+            div {
+          width: 100px;
+          height: 100px;
+          background: red;
+          transition: width 2s;
+}
+
+            div:hover {
+            width: 300px;
+}
+    
     </style>
 </head>
 <body>
+    <h1>The transition Property</h1>
 
-    <h2>Descendant Selector</h2>
-    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+<p>Hover over the div element below, to see the transition effect:</p>
+<div></div>
 
-    <div>
-        <p>Paragraph 1 in the div.</p>
-        <p>Paragraph 2 in the div.</p>
-        <section>
-            <p>Paragraph 3 in the div.</p>
-        </section>
-    </div>
-
-    <p>Paragraph 4. Not in a div.</p>
-    <p>Paragraph 5. Not in a div.</p>
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
 
 </body>
 </html>
