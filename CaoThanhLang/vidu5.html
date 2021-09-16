@@ -5,95 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    body{
-        font-family: Arial, Tahoma;
-        font-size: 12px;
-    }
-     
-    #main{
-        width: 1000px;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    <head>
+        <style>
+            /* unvisited link */
+            a:link {
+                color: red;
+            }
     
-    #head{
-        height: 100px;
-        background-color: #391be494;
-        border: 1px solid #CDCDCD;
-        margin-bottom:5px;
-        text-align: center;
-    }
+            /* visited link */
+            a:visited {
+                color: green;
+            }
     
-    #head-link{
-         height: 30px;
-         line-height: 30px;
-         padding-left: 10px;
-         padding-right: 10px;
-         border: 1px solid #CDCDCD;
-         background-color: yellow;
-         margin-bottom:5px;
-         clear: both;
-         text-align: center;
-    }
+            /* mouse over link */
+            a:hover {
+                color: hotpink;
+            }
     
-    #left{
-         width: 150px;
-         min-height: 400px;
-         border: 1px solid #CDCDCD;
-         float:left;
-         background-color: #004C00;
-         margin-bottom: 5px;
-         text-align: center;
-    }
+            /* selected link */
+            a:active {
+            color: blue;
+            }
     
-    #content{
-         width: 600px;
-         min-height: 400px;
-         border: 1px solid #CDCDCD;
-         float:left;
-         margin-left: 5px;
-         margin-right: 5px;
-         margin-bottom: 5px;
-         text-align: center;
-         background-color: cyan;
-    }
+        </style>
+    </head>
+    <body>
     
-    #right{
-         width: 234px;
-         min-height: 400px;
-         border: 1px solid #CDCDCD;
-         float:right;
-         margin-bottom: 5px;
-         background-color: coral;
-         text-align: center;
-    }
+    <h2>CSS Links</h2>
+    <p>
+        <b>
+            <a href="/" target="_blank">This is a link</a>
+        </b>
+    </p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
     
-    #footer{
-         height: 50px;
-         clear: both;
-         border: 1px solid #CDCDCD;
-         background-color: #2b0ae4;
-         text-align: center;
-    }
-</style>
-</head>
-<body>
-    
-    <div id="main">
-        <div id="head"> head
-        </div>
-        <div id="head-link"> head-link
-        </div>
-        <div id="left"> left
-        </div>
-        <div id="content"> content
-        </div>
-        <div id="right"> right
-        </div>
-        <div id="footer"> footer
-        </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
