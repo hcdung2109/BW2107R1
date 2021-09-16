@@ -5,22 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .right {
-  position: absolute;
-  right: 0px;
-  width: 300px;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-    </style>
+</head>
+<style>
+    div + p {
+        background-color: yellow;
+    }
+
+</style>
 </head>
 <body>
-    <h2>Right Align</h2>
-<p>An example of how to right align elements with the position property:</p>
 
-<div class="right">
-  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+<h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div>
+<p>Paragraph 1 in the div.</p>
+<p>Paragraph 2 in the div.</p>
 </div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div>
+<p>Paragraph 5 in the div.</p>
+<p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+
 </body>
 </html>

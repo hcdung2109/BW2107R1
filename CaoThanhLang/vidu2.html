@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+</head>
+<head>
     <style>
-        
-            img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-            }
+        div > p {
+            background-color: yellow;
+        }
+
     </style>
 </head>
 <body>
-    <h2>Center an Image</h2>
-<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
 
-<img src="https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2021/05/24191335/paris.jpg" alt="Paris" style="width:40%">
+<h2>Child Selector</h2>
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section>
+        <p>Paragraph 3 in the div.</p>
+    </section> <!-- not Child but Descendant -->
+    <p>Paragraph 4 in the div.</p>
+
+    <div>
+        <p>Paragraph 7 in the div</p>
+    </div>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
 
 </body>
 </html>
