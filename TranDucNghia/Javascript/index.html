@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="item">
+    <div class="item1">
+        <h1>Ẩn hiện phần tử</h1>
+        <button onclick="show ()">Hiện</button>
+        <button onclick="hidde ()">Ẩn</button>
+        <div class="ex1">
+        </div>
+    </div>
+    <div class="item2">
+        <h1>Thay đổi kích thước</h1>
+        <button onclick="zoomin()">Phóng to</button>
+        <button onclick="zoomout()">Thu nhỏ</button>
+        <div class="ex2">
+        </div>
+    </div>
+    <div class="item3">
+        <h1>Thay đổi màu sắc</h1>
+        <button onclick="bgr()">Thay đổi màu</button>
+        <button onclick="bgr2()">trở về</button>
+        <div class="ex3">
+        </div>
+    </div>
+    
+</div>
+
+
+    <script>
+        function show() {
+            $('.ex1').show();
+        }
+        function hidde() {
+            $('.ex1').hide();
+        }
+        function bgr() {
+            $('.ex3').css('background-color', 'blue');
+        }
+        function bgr2() {
+            $('.ex3').css('background-color', 'red');
+        }
+        function zoomin() {
+            $('.ex2').css('height', '400px');
+        }
+        function zoomout() {
+            $('.ex2').css('height', '');
+        }
+    </script>
+</body>
+</html>

@@ -40,7 +40,7 @@
     <button onclick="background()">thay đổi màu nền</button>
     <button onclick="resize()">thay đổi kích thước chiều rộng</button>
     <button onclick="resize2()">thay đổi kích thước chiều dài</button>
-
+    <button onclick="comeback()">Quay về ban đầu</button>
     <div class="example2" id="div1">
 
     </div>
@@ -70,23 +70,28 @@
             // element.css('thuộc tính','giá trị')
             $('.example2').css('background-color', 'blue');
         }
-
+        // thay đổi chiều rộng
         function resize()
         {
             $('#div1').css('width', '400px');
         }
-
+        // nút lên đầu trang
         function dautrang()
         {
             $('html,body').animate({ scrollTop: 0 }, 'fast');
 
         }
-
+        // thay đổi chiều cao
         function resize2(){
             $('#div1').css('height', '300px');
         }
 
-
+        // về lại ban đầu
+        function comeback(){
+            $("#div1").css("height",'200px');
+            $("#div1").css("width",'300px');
+            $("#div1").css("background",'white');
+        }
     </script>
 </body>
 </html>

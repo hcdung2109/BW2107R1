@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    #logo{
+        width: 300px;
+        border-radius: 4px;
+    }
+    .content{
+        width: 300px;
+        height: 200px;
+        border:2px solid black;
+        border-radius:10%;
+        margin:10px;
+    }
+    .to-top{
+        width: 50px;
+        height: 50px;
+        border:0.5px solid black;
+        border-radius: 10%;
+        background-color: burlywood;
+        position: fixed;
+        bottom:30px;
+        right: 30px;
+        cursor:pointer;
+    }
+</style>
+</head>
+<body>
+    <h1>thuc hanh jquery</h1>
+    <div class="container-1">
+        <h3>show & hide</h3>
+        <div>
+            <button id="btnshow" onclick="show()">Show</button>
+            <button id="btnhide" onclick="hide()">Hide</button>
+        </div>
+        <img src="/image/logo.jpg" alt="" id="logo">
+    </div>
+    <div class="container-2">
+        <h3>chinh su css</h3>
+        <div>
+            <button id="btn-1" onclick="background()">background</button>
+            <button id="btn-2" onclick="body1()">Body</button>
+            <button id="btn-3" onclick="body2()">Body Height</button>
+        </div>
+        <p class="content" id="content1"></p>
+        <p class="content" id="content2"></p>
+    </div>
+    <div class="container-3">
+        <div class="to-top" onclick="len()"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function show(){
+            $("#logo").show();
+        }
+        function hide(){
+            $("#logo").hide();
+        }
+        function background(){
+            $(".content").css("background-color","green");
+        }
+        function body1(){
+            $("#content1").css("width","400px");
+            // alert(1434);
+        }
+        function body2(){
+            $("#content2").css("height","400px");
+            // alert(1434);
+        }
+        function len(){
+            $("html,body").animate({scrollTop:0},"fast");
+            //  alert(1434);
+        }
+    </script>
+    
+</body>
+</html>

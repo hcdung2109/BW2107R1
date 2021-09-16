@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            width: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100px;
+            padding: 100px;
+            background-color: brown;
+            animation: exercise 5s infinite alternate;
+        }
+        @keyframes exercise{
+            0%{
+                width: 200px;
+                height:200px;
+                transform: translateX(50%);
+            }
+            25%{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                background-color: chartreuse;
+                transform: translateY(50px);
+            }
+            50%{
+                transform: translate(65px,65px);
+            }
+            100%{
+                width: 300px;
+                height: 300px;
+                transform: rotate(45deg);
+            }
+        }
+        .container:hover{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

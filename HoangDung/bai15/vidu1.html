@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,20 +27,21 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Bài 15 </h1>
 
     <h3>ẩn hiện thành phần</h3>
-    <button id="btnShow" onclick="show()" >Show</button>
-    <button id="btnHide" onclick="hide()" >Hide</button>
+    <button id="btnShow" onclick="show()">Show</button>
+    <button id="btnHide" onclick="hide()">Hide</button>
 
-    <img id="img1" style="display: block;"  src="codo.png" alt="" width="300">
+    <img id="img1" style="display: block;" src="codo.png" alt="" width="300">
 
     <h3>thiết lập css sử dụng js</h3>
 
     <button onclick="background()">thay đổi màu nền</button>
     <button onclick="resize()">thay đổi kích thước chiều rộng</button>
-    <button >thay đổi kích thước chiều dài</button>
+    <button>thay đổi kích thước chiều dài</button>
 
     <div class="example2" id="div1">
 
@@ -65,19 +67,16 @@
         }
 
         // thay đổi màu nền
-        function background()
-        {
+        function background() {
             // element.css('thuộc tính','giá trị')
             $('.example2').css('background-color', 'blue');
         }
 
-        function resize()
-        {
+        function resize() {
             $('#div1').css('width', '400px');
         }
 
-        function dautrang()
-        {
+        function dautrang() {
             $('html,body').animate({ scrollTop: 0 }, 'fast');
 
         }
@@ -85,4 +84,5 @@
 
     </script>
 </body>
+
 </html>

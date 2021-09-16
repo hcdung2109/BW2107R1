@@ -1,0 +1,27 @@
+
+
+.item button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.box button:hover{
+    background-color: #333;
+    color: #ccc;
+    cursor: pointer;
+
+}
+.box1, .box2, .box3{
+    text-align: left;
+}
+.ex1,.ex2,.ex3 {
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(18, 151, 1);
+    border-radius: 5px;
+}
+
