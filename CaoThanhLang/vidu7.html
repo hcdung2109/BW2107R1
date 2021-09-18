@@ -1,50 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
     <style>
-        p::before {
-            content: 'phia truoc ';
-        }
+        div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
 
-        h3::after {
-            content: ' phia sau';
-        }
-
-        p::first-line {
-            background-color: yellow;
-            color: red;
-        }
-
-        h3::first-letter {
-            color: red;
-        }
-
-        h4.exe2::first-letter {
-            color: yellow;
-            font-size: 200%;
-        }
-
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
     </style>
+<head>
 </head>
 <body>
-    <p>text before</p>
-    <h3>text after</h3>
 
-    <p>Phần tử giả  ::first-line được sử dụng để thêm một kiểu đặc biệt vào dòng đầu tiên của văn bản.
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
 
-        Ví dụ sau định dạng dòng đầu tiên của văn bản trong tất cả các phần tử Phần tử giả  ::first-line được sử dụng để thêm một kiểu đặc biệt vào dòng đầu tiên của văn bản.
+<div></div>
 
-        Ví dụ sau định dạng dòng đầu tiên của văn bản trong tất cả các phần tử Phần tử giả  ::first-line được sử dụng để thêm một kiểu đặc biệt vào dòng đầu tiên của văn bản.
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
 
-        Ví dụ sau định dạng dòng đầu tiên của văn bản trong tất cả các phần tử Phần tử giả  ::first-line được sử dụng để thêm một kiểu đặc biệt vào dòng đầu tiên của văn bản.
-
-        Ví dụ sau định dạng dòng đầu tiên của văn bản trong tất cả các phần tử </p>
-
-    <h4 class="exe1">example 1 </h4>
-    <h4 class="exe2">example 1 </h4>
 </body>
 </html>
