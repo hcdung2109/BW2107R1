@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+/* header */
+div#header {
+    width: 100%;
+}
+#header .header-top {
+    width: 100%;
+    background: #000;
+}
+.header-top a{
+    text-decoration: none;
+    color:#fff;
+}
+.header-top>div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+}
+a.header-logo {
+    flex-basis: 10%;
+    height: 35px;
+    padding-right: 0px;
+    border-right: 1px solid #fff;
+    line-height: 20px;
+    position: relative;
+}
+.header-logo img {
+    width: 95%;
+    height: 25px;
+    position: absolute;
+    top: 4px;
+}
+a.header-address {
+    flex-basis: 12%;
+    font-size: 11px;
+    line-height: 15px;
+    height: 30px;
+    margin-right: 15px;
+    padding-left: 15px;
+}
+.header-address span {
+    color: #daf307;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 15px;
+    position: relative;
+}
+.header-address span::after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #daf307;
+    position: absolute;
+    right: -4px;
+    bottom: 32%;
+}
+.header-address.active span::after {
+    transition: 0.3s;
+    transform: rotate(-180deg);
+}
+.header-top .header-search {
+    position: relative;
+    flex-basis: 18.5%;
+    background: #fff;
+    border-radius: 4px;
+}
+.header-search input.input-search {
+    border: none;
+    padding: 8px 35px 8px 13px;
+    font-size: 12px;
+    line-height: 12px;
+    height: 30px;
+    border-radius: 4px;
+    width: 100%;
+}
+.header-search button {
+    position: absolute;
+    right: 6px;
+    background: transparent;
+    border: none;
+    top: 5px;
+    font-size: 17px;
+}
+a.header-car {
+    flex-basis: 9.5%;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+i.fa.fa-shopping-cart {
+    margin-right: 12px;
+}
+a.header-history {
+    flex-basis: 5%;
+    font-size: 12px;
+    text-align: center;
+    padding-right: 0.8%;
+    border-right: 1px solid;
+    height: 36px;
+    padding: 4px 0;
+}
+a.header-hot {
+    flex-basis: 16%;
+}
+.header-listtop {
+    display: inherit;
+}
+.header-listtop {
+    display: inherit;
+    align-items: center;
+    height: 36px;
+    flex-basis: 27%;
+    justify-content: space-around;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.divitem {
+    height: 100%;
+    text-align: center;
+    flex-basis: 33%;
+}
+.header-top a {
+    text-decoration: none;
+    color: #fff;
+}
+.divitem a span {
+    display: block;
+}
+.divitem:nth-child(2), .divitem:last-child {
+    line-height: 36px;
+}
+.divitem:nth-child(2){
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+ /* css-menu */
+ .header-main {
+    width: 100%;
+    background: #eadf0b;
+}
+ul.menu-main {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.header-main .menu-main li>a {
+    color: #000;
+    font-size: 14px;
+    display: inline-block;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    padding: 0 9px;
+    transition: background-color 0.5s;
+}
+.header-main .menu-main a:hover {
+    background-color: white;
+}
+.menu-main i.fa {
+    margin-right: 5px;
+    font-size: 17px;
+}
+li.phukien {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li.phukien:hover .navpk {
+    display: block;
+}
+li.phukien:hover {
+    background-color: #fff;
+}
+li.phukien::after {
+    content: "";
+    /* position: absolute; */
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000;
+    /* right: -2px; */
+    /* top: 20px; */
+    line-height: 43px;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.phukien .navpk {
+    position: absolute;
+    background-color: #fff;
+    top: 43px;
+    width: 770px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    left: 0;
+    display: none;
+}
+.phukien .PKDD {
+    width: 33%;
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+.phukien .navpk strong {
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0 0 10px 5px;
+    border-bottom: 1px solid #ccc;
+    margin: 5px;
+    color: #000;
+}
+.phukien .navpk div a {
+    display: block;
+    text-align: left;
+    padding: 10px 0px 0 6px;
+    font-size: 10px;
+    transition: color 0.5s;
+    color: #000;
+}
+.phukien .navpk div a:hover {
+    color: #1dc4c1;
+}
+.navpk .nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 65%;
+    justify-content: space-around;
+}
+.nav-right .PKLT {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+} 
+.nav-right .PKCH {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+}
+.nav-right .TBAT {
+    flex-basis: 48%;
+}
+.nav-right .TBLT {
+    margin-top: 10px;
+}
+.nav-right .PKK {
+    flex-basis: 48%;
+}

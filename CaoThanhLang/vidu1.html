@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-                   .center {
-        text-align: center;
-        border: 3px solid green;
+            div {
+          width: 100px;
+          height: 100px;
+          background: red;
+          transition: width 2s;
 }
+
+            div:hover {
+            width: 300px;
+}
+    
     </style>
 </head>
 <body>
-    <h2>Center Text</h2>
+    <h1>The transition Property</h1>
 
-<div class="center">
-  <p>This text is centered.</p>
-</div>
+<p>Hover over the div element below, to see the transition effect:</p>
+<div></div>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
 </body>
 </html>
