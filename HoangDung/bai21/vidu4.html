@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {color: red;}
+
+        .test1 {color: blue;}
+
+        p[class] {
+            color: yellow;
+        }
+
+        .test4, .test5, .test6 {
+            color: violet;
+        }
+
+        h3[class*="test"] {
+            color: yellowgreen;
+        }
+
+        [class="test8"] {
+            color: saddlebrown !important;
+        }
+
+        h5 {
+            color: slateblue !important;
+        }
+        h5 {
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selector  Bộ chọn thuộc tính</h1>
+    <p class="test1" id="test1">Test 1</p>
+    <p class="test2" id="test2">Test 2</p>
+    <p>Test 3</p>
+
+    <h3 class="test4">Test 4</h3>
+    <h3 class="test5">Test 5</h3>
+    <h3 class="test6">Test 6</h3>
+    <h3 class="test7">Test 7</h3>
+    <h3 class="test8">Test 8</h3>
+
+
+    <h5>important 1</h5>
+    <h5>important 2</h5>
+
+</body>
+</html>
