@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            padding: 50px;
+            text-align: center;
+            background-color: brown;
+            color: white;
+        }
+
+        .menu {
+            background-color: teal;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .left {
+            width: 30%;
+            height: 600px;
+            background-color: tomato;
+            float: left;
+        }
+
+        .right {
+            float: right;
+            width: 70%;
+            height: 600px;
+            background-color: darkgoldenrod;
+        }
+
+        .wrapper::after {
+            content : '';
+            clear : both;
+            display : table;
+        }
+
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 5px;
+            background-color: black;
+        }
+
+        .top {
+            border-radius: 50%;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        @media screen and (min-width: 320px) {
+           .left,.right{
+               width: 100%;
+               text-align: center;
+           }
+            .left{
+                height: 200px;
+               line-height: 200px;
+               color:floralwhite;
+           } 
+           .right{
+                height: 400px;
+                line-height: 400px;
+                color:#000;
+           }
+           html,body{
+               overflow: auto;
+           }
+        }
+        /*Tablet nhỏ(480 x 640)*/
+        @media only screen and (min-width: 480px){
+           .left{
+               display: none;
+           }
+        }
+        /*Ipad dọc(768 x 1024)*/
+        @media screen and (min-width: 768px){
+           .left{
+               width: 40%;
+               height: 400px;
+               color:green;
+               line-height: 400px;
+               display: block;
+           }
+           .right{
+               width: 60%;
+               color:pink;
+           }
+        }
+        /*Ipad ngang(1024 x 768)*/
+        @media screen and (min-width: 1024px){
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Head</h1>
+    </div>
+
+    <div class="menu">
+        <h1>My Menu</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="left">
+            <h1>Left</h1>
+        </div>
+        <div class="right">
+            <h1>Right</h1>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h1>My Footer</h1>
+    </div>
+
+    <div class="top" onclick="toTop()"></div>
+
+    <script type="text/javascript">
+        function toTop() {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
+        }
+    </script>
+</body>
+</html>
+
