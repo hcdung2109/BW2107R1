@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: auto;
+}
+p,h2,h5 {
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 23%;
+}
+.gallery {
+    border: 1px solid #ccc;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.responsive:hover .gallery img {
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 5px 7px 0px;
+}
+
+.gallery img {
+    background-color: rgb(250, 173, 173);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.6;
+}
+
+.desc {
+    text-align: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 700px) {
+    .responsive {
+        width: 47%;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }  
+}

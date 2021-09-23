@@ -1,0 +1,510 @@
+.main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+.header  {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.21) 0px 6px 14px 2px;
+    
+}
+.header a {
+    color: #d6d6d6;
+}
+
+
+#head-link ul li:hover a {
+    color: lightcoral;
+}
+
+
+
+#login a:hover {
+    color: lightcoral;
+}
+#head-link ul {
+    display: inline-flex;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+
+#side-bar ul {
+    list-style-type: none;
+}
+#side-bar a {
+    text-decoration: none;
+    color: gray;
+}
+#side-bar a:hover {
+    color: black;
+}
+
+
+
+.footer p {
+    text-align: center;
+}
+
+
+/* Tất cả các màn hình có độ phân giải thấp nhất là 1001px */
+@media all and (min-width: 1001px){
+
+    .header, .main-content {
+        width: 100%;
+    }
+   
+    #logo {
+        position: absolute;
+        float: left;
+        left: 2%;
+        top: 15%;
+    }
+    #logo img {
+        width: 40px;
+        height: 40px;
+    }
+    #head-link {
+        float: left;
+        position: relative;
+        left: 10%;
+        transition: none 0s ease 0s;
+        cursor: move;
+    
+    }
+    #head-link ul li:hover a {
+        color: lightcoral;
+    }
+    #login {
+        position: absolute;
+        float: left;
+        display: flex;
+        right: 2%;
+        top: 15%;
+    }
+    #login img {
+        width: 40px;
+        height: 40px;
+    }
+    #login a {
+        padding-top: 0px;
+        position: relative;
+        top: 9px;
+        left: 3px;
+        transition: none 0s ease 0s;
+        cursor: move;
+    }
+    #head-link ul li {
+        list-style-type: none;
+        margin: 5px 30px ;
+    }
+        
+    .main-content {
+        display: flex;
+        margin-top: 65px;
+        z-index: -1;
+        margin-bottom: 5px;
+    }
+    #side-bar {
+        width: 20%;
+        margin-right: 5px;
+        background-color: turquoise;
+    }
+  
+
+    #content {
+        width: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: justify;
+    }
+    #aside {
+        width: 30%;
+        margin-left: 5px;
+        background-color: thistle;
+        z-index: inherit;
+    }
+    .footer {
+        position: relative;
+        line-height: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background: azure;
+        width: 100vw;
+        left: calc(((100vw - 500px)/2)*-1);
+        
+    }
+    #ad-1 {
+        background-color: brown;
+        aspect-ratio: 1;
+        width: 60%;
+        padding: 0px;
+        position: relative;
+        left: 25%;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: inherit;
+    }
+    #ad-2 {
+        margin-top: 10px;
+        background-color: yellowgreen;
+        aspect-ratio: 1;
+        width: 60%;
+        padding: 0px;
+        position: relative;
+        left: 25%;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* Màn hình có độ phân giải tối đa 1000px */ 
+@media screen and (max-width: 1000px) {
+
+    .header, .main-content {
+        width: 100%;
+    }
+   
+    #logo {
+        position: absolute;
+        float: left;
+        left: 2%;
+        top: 15%;
+    }
+    #logo img {
+        width: 40px;
+        height: 40px;
+    }
+    #head-link {
+        float: left;
+        position: relative;
+        left: 10%;
+        transition: none 0s ease 0s;
+        cursor: move;
+    
+    }
+    #head-link ul li:hover a {
+        color: lightcoral;
+    }
+    #login {
+        position: absolute;
+        float: left;
+        display: flex;
+        right: 2%;
+        top: 15%;
+    }
+    #login img {
+        width: 40px;
+        height: 40px;
+    }
+    #login a {
+        padding-top: 0px;
+        position: relative;
+        top: 9px;
+        left: 3px;
+        transition: none 0s ease 0s;
+        cursor: move;
+    }
+    #head-link ul li {
+        list-style-type: none;
+        margin: 5px 30px ;
+    }
+        
+    .main-content {
+        display: flex;
+        margin-top: 65px;
+        z-index: -1;
+        margin-bottom: 5px;
+    }
+    #side-bar {
+        width: 20%;
+        margin-right: 5px;
+        background-color: turquoise;
+    }
+  
+
+    #content {
+        width: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: justify;
+    }
+    #aside {
+        width: 30%;
+        margin-left: 5px;
+        background-color: thistle;
+        z-index: inherit;
+    }
+    .footer {
+        position: relative;
+        line-height: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background: azure;
+        width: 100vw;
+        left: calc(((100vw - 500px)/2)*-1);
+        
+    }
+    #ad-1 {
+        background-color: brown;
+        aspect-ratio: 1;
+        width: 60%;
+        padding: 0px;
+        position: relative;
+        left: 25%;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: inherit;
+    }
+    #ad-2 {
+        margin-top: 10px;
+        background-color: yellowgreen;
+        aspect-ratio: 1;
+        width: 60%;
+        padding: 0px;
+        position: relative;
+        left: 25%;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    
+}
+
+/* Màn hình có độ phân giải tối đa 750px */  
+@media screen and (max-width: 750px){
+
+    .header, .main-content {
+        width: 100%;
+    }
+   
+    #logo {
+        position: absolute;
+        float: left;
+        left: 2%;
+        top: 15%;
+    }
+    #logo img {
+        width: 40px;
+        height: 40px;
+    }
+    #head-link {
+        float: left;
+        position: relative;
+        left: 10%;
+        transition: none 0s ease 0s;
+        cursor: move;
+    
+    }
+    #head-link ul li:hover a {
+        color: lightcoral;
+    }
+    #login {
+        position: absolute;
+        float: left;
+        display: flex;
+        right: 2%;
+        top: 15%;
+    }
+    #login img {
+        width: 40px;
+        height: 40px;
+    }
+    #login a {
+        padding-top: 0px;
+        position: relative;
+        top: 9px;
+        left: 3px;
+        transition: none 0s ease 0s;
+        cursor: move;
+    }
+    #head-link ul li {
+        list-style-type: none;
+        margin: 5px 30px ;
+    }
+        
+    .main-content {
+        display: flex;
+        margin-top: 65px;
+        z-index: -1;
+        margin-bottom: 5px;
+    }
+    #side-bar {
+        width: 20%;
+        margin-right: 5px;
+        background-color: turquoise;
+    }
+  
+
+    #content {
+        width: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: justify;
+    }
+    #aside {
+        width: 30%;
+        margin-left: 5px;
+        background-color: thistle;
+        z-index: inherit;
+    }
+    .footer {
+        position: relative;
+        line-height: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background: azure;
+        width: 100vw;
+        left: calc(((100vw - 500px)/2)*-1);
+        
+    }
+    #ad-1 {
+        background-color: brown;
+        aspect-ratio: 1;
+        width: 60%;
+        padding: 0px;
+        position: relative;
+        left: 25%;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: inherit;
+    }
+    #ad-2 {
+        margin-top: 10px;
+        background-color: yellowgreen;
+        aspect-ratio: 1;
+        width: 60%;
+        padding: 0px;
+        position: relative;
+        left: 25%;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    
+}
+/* Màn hình có độ phân giải tối đa 540px */ 
+@media screen and (max-width: 540px) {
+    .header, .main-content {
+        width: 100%;
+    }
+   
+    #logo {
+        position: absolute;
+        float: left;
+        left: 2%;
+        top: 15%;
+    }
+    #logo img {
+        width: 40px;
+        height: 40px;
+    }
+    #head-link {
+        float: left;
+        position: relative;
+        left: 10%;
+        transition: none 0s ease 0s;
+        cursor: move;
+    
+    }
+    #head-link ul li:hover a {
+        color: lightcoral;
+    }
+    #login {
+        position: absolute;
+        float: left;
+        display: flex;
+        right: 2%;
+        top: 15%;
+    }
+    #login img {
+        width: 40px;
+        height: 40px;
+    }
+    #login a {
+        padding-top: 0px;
+        position: relative;
+        top: 9px;
+        left: 0px;
+        transition: none 0s ease 0s;
+        cursor: move;
+    }
+    #head-link ul li {
+        list-style-type: none;
+        margin: 5px 10px ;
+    }
+        
+    .main-content {
+        display: block;
+        margin-top: 65px;
+        z-index: -1;
+        margin-bottom: 5px;
+    }
+    #side-bar {
+        width: 100%;
+        background-color: turquoise;
+        min-height: 50px;
+        text-align: center;
+    }
+    #side-bar a {
+        float: left;
+        margin-top: 5% ;
+        margin-right: 15%;
+    }
+
+    #content {
+        width: 100%;
+        text-align: justify;
+    }
+    #aside {
+        width: 100%;
+        background-color: thistle;
+        z-index: inherit;
+        visibility: hidden;
+        display: none;
+    }
+    .footer {
+        position: relative;
+        line-height: 30px;
+        padding: 17px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background: azure;
+        width: 100vw;
+        left: 0px
+        
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
