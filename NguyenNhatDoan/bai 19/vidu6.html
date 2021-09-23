@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+
+        @keyframes example {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+
+    #vidu7 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    }
+    @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+    /* vi du 8 */
+    #vidu8 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: 2s;
+    }
+
+    /* vi du 9 */
+    #vidu9 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+    </style>
+</head>
+
+<body>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+    <div></div>
+
+    <div></div>
+
+    <p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<!-- vi du 7  -->
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+<div id="vidu7"></div>
+
+<!-- vi du 8 -->
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+<div id="vidu8"></div>
+
+<!-- vi du 9 -->
+<p>Using negative values: Here, the animation will start as if it had already been playing for 2 seconds:</p>
+
+<div id="vidu9"></div>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    
+</body>
+
+</html>

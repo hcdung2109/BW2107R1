@@ -1,0 +1,73 @@
+[class*="test"] {
+    background: purple;
+    color: white
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    
+    border: 1px solid #ccc;
+    background-color: chartreuse;
+    margin-bottom: 20px;
+    height: 50px;   
+}
+
+/* vi du 3 */
+.col-1 {width: 8.33%;}
+
+.col-1 {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: chartreuse;
+    height: 50px;   
+}
+
+/* vi du 5 */
+
+p {color: red;}
+
+.test1 {color: blue;}
+
+p[class] {
+    color: yellow;
+}
+
+.test4, .test5, .test6 {
+    color: violet;
+}
+
+h3[class*="test"] {
+    color: yellowgreen;
+}
+
+[class="test8"] {
+    color: saddlebrown !important;
+}
+
+h5 {
+    color: slateblue !important;
+}
+h5 {
+    color: salmon;
+}

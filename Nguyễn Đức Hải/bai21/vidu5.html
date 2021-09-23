@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            background-color: salmon;
+            height: 300px;
+            width: 300px;
+        }
+
+        @media screen and (min-width: 320px) {
+            div { 
+                background-color: red;
+            }
+        }
+        /*Tablet nhỏ(480 x 640)*/
+        @media screen and (min-width: 480px){
+            div { 
+                background-color: green;
+            }
+        }
+        /*Ipad dọc(768 x 1024)*/
+        @media screen and (min-width: 768px){
+            div { 
+                background-color: yellow;
+            }
+        }
+        /*Ipad ngang(1024 x 768)*/
+        @media screen and (min-width: 1024px){
+            div { 
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        test media
+    </div>
+</body>
+</html>
