@@ -1,0 +1,43 @@
+@media screen and (min-width: 320px) {
+
+    .left {
+        width: 100%;
+        height: 300px;
+        background-color: tomato;
+        float: left;
+    }
+    .right {
+        width: 100%;
+        height: 600px;
+        background-color: rgb(71, 255, 102);
+        float: left;
+    }
+    .right .wrp-bot{
+        display: block ;
+    }
+    .left .wrp-top{
+        display: block;
+    }
+    .right .wrp-right{
+        display: none; ;
+    }
+    .left .wrp-left{
+        display: none;
+    }
+        
+            
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+
+   
+   
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+   
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    
+}
