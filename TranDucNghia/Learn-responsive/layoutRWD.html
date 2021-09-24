@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header{
+            width: 100%;
+            height: 50px;
+            background-color: #333;
+        }
+        .menu li{
+            display: inline-block;
+            line-height: 50px;
+            float: left;
+            padding: 0px 10px;
+            font-size: 14px;
+        }
+        .menu li:nth-child(1){
+            font-size: 25px;
+        }
+        .menu li:nth-child(2){
+            background-color: black;
+        }
+        .menu li a {
+            color: #fff;
+        }
+        .login{
+            float: right;
+            line-height: 50px;
+            padding-right: 10px;
+        }
+        .login a {
+            color: #fff;
+        }
+        /* content */
+
+        #content{
+            display: flex;
+        }
+        .content-left{
+            width: 15%;
+            height: 600px;
+            background-color: rgb(238, 238, 238);
+        }
+        .content-left li {
+            padding: 20px 80px;
+        }
+        .content-center{
+            width: 70%;
+            height: 600px;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .content-right{
+            width: 15%;
+            height: 600px;
+            background-color: rgb(238, 238, 238);
+        }
+        .content-right .box {
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px;
+            box-shadow: 0px 0px 5px;
+            border: 1px rgb(143, 133, 133);
+            width: 80%;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px 25px;
+        }
+        /* footer */
+        #footer{
+            height: 60px;
+            background-color: #333;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+        }
+        /* mobile and tablet width <1024px */
+        @media screen and (max-width:1024px) {
+            #content{
+        flex-direction: column;
+    }
+    .content-left{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+    .content-left li {
+        display: inline;
+        padding-top: 20px;
+    }
+    .content-center{
+        width: 100%;
+        height: 350px;
+    }
+    .content-right{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+
+    }
+}      
+
+        /* Mobile: width < 740px */
+@media screen and (max-width:740px) {
+    .content-center{
+        overflow-y: scroll;
+    }
+    .content-left li{
+        padding: 10px;
+    }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media screen and (min-width:740px) and (max-width:1024px) {
+    #content{
+        flex-direction: column;
+    }
+    .content-left{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+    .content-left li {
+        display: inline;
+        padding-top: 20px;
+    }
+    .content-center{
+        width: 100%;
+        height: 350px;
+    }
+    .content-right{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <!-- head -->
+        <div id="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="login"><a href="#"><i class="fas fa-sign-in-alt" style="margin-right: 5px;"></i>Login</a></div>
+        </div>
+
+        <!-- content -->
+        <div id="content">
+            <div class="content-left">
+                <ul class="link">
+                    <li><a href="link">Link</a></li>
+                    <li><a href="link">Link</a></li>
+                    <li><a href="link">Link</a></li>
+                </ul>
+            </div>
+            <div class="content-center">
+                <h1>Welcome</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur vero neque quod fugit voluptatibus doloremque fugiat sed quibusdam, sunt quos a amet distinctio debitis, vitae totam laborum perspiciatis modi eveniet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatum aspernatur iure doloremque aliquid, esse voluptatibus possimus. Totam dolores eaque enim quisquam eos! Repudiandae saepe ex nostrum nemo laudantium provident.</p><br>
+                <hr><br>
+                <h2>Text</h2>
+                <p>Lorem...</p>
+
+            </div>
+            <div class="content-right">
+                <div class="box">ADS</div>
+                <div class="box">ADS</div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer">Footer Text</div>
+    </div>
+</body>
+</html>
