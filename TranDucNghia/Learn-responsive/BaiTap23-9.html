@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./BaiTap23-9.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>My Head</h1>
+    </div>
+
+    <div class="menu">
+        <h1>My Menu</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="left">
+            <h1>Left</h1>
+        </div>
+        <div class="right">
+            <h1>Right</h1>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h1>My Footer</h1>
+    </div>
+
+    <div class="top" onclick="toTop()"></div>
+
+    <script type="text/javascript">
+        function toTop() {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
+        }
+    </script>
+</body>
+</html>

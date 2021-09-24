@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 50px;
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+
+.menu {
+    background-color: teal;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.left {
+    width: 30%;
+    height: 600px;
+    background-color: tomato;
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 70%;
+    height: 600px;
+    background-color: darkgoldenrod;
+}
+
+.wrapper::after {
+    content : '';
+    clear : both;
+    display : table;
+}
+
+
+.footer {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    background-color: black;
+}
+
+.top {
+    border-radius: 50%;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+/* Mobile: width < 740px */
+@media screen and (max-width:740px) {
+    *{
+        font-size: 30px;
+    }
+    .header{
+        background-color: lightcoral;
+    }
+    .menu {
+        background-color: indigo;
+    }
+    .left {
+        line-height: 200px;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+        background-color: aqua;
+    }
+    
+    .right {
+        line-height: 200px;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+        background-color: green;
+    }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media screen and (min-width:740px) and (max-width:1024px) {
+    .header{
+        background-color: lightgreen;
+    }
+    .menu {
+        background-color: lightslategrey;
+    }
+    .left {
+        width: 50%;
+        height: 600px;
+        background-color: mediumblue;
+        float: left;
+    }
+    
+    .right {
+        float: right;
+        width: 50%;
+        height: 600px;
+        background-color: maroon;
+    }
+}
+/* PC: width > 1024px */

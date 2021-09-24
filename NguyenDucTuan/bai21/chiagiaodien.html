@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chiagiaodien.css">
+    <link rel="stylesheet" href="reponsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+ 
+</head>
+<body>
+    <div class="header">
+        <h1>Tuan PiPo</h1>
+    </div>
+
+    <div class="menu">
+        <h1>My Menu</h1>
+    </div>
+
+    
+    <div class="wrapper">
+      <div class="left">
+          <h1 class="wrp-left">Left</h1>
+          <h1 class="wrp-top">Top</h1>
+      </div>
+      <div class="right">
+          <h1 class="wrp-right">Right</h1>
+          <h1 class="wrp-bot">Bot</h1>
+      </div>
+    </div>
+
+
+    <div class="footer">
+        <h1>My footer</h1>
+    </div>
+
+    <div class="top" onclick="totop()">
+
+    </div>
+
+    <script type="text/javascript">  
+        function totop() {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
+        }
+    </script>
+</body>
+</html>
