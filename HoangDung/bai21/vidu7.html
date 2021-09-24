@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,15 +70,43 @@
         }
 
         @media screen and (min-width: 320px) {
-            
+           .left,.right{
+               width: 100%;
+               text-align: center;
+           }
+            .left{
+                height: 200px;
+               line-height: 200px;
+               color:floralwhite;
+           } 
+           .right{
+                height: 400px;
+                line-height: 400px;
+                color:#000;
+           }
+           html,body{
+               overflow: auto;
+           }
         }
         /*Tablet nhỏ(480 x 640)*/
-        @media screen and (min-width: 480px){
-           
+        @media only screen and (min-width: 480px){
+           .left{
+               display: none;
+           }
         }
         /*Ipad dọc(768 x 1024)*/
         @media screen and (min-width: 768px){
-           
+           .left{
+               width: 40%;
+               height: 400px;
+               color:green;
+               line-height: 400px;
+               display: block;
+           }
+           .right{
+               width: 60%;
+               color:pink;
+           }
         }
         /*Ipad ngang(1024 x 768)*/
         @media screen and (min-width: 1024px){
