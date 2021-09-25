@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .p1::after{
-            content: "-nguyen cong";
-        }
-        .p2::before{
-            content: "lean-";
-        }
-        .boder{
-            
-        }
+       p[class*="p"]{
+           color: red;
+       }
+       @media screen and (min-width: 480px)
+       {
+       div{
+        background-color:green;
+       }
+    }   
+       
 
     </style>
 
@@ -26,5 +27,6 @@
 
     <p class="p1">hoc html can ban</p>
     <p class="p2">thuc hanh html </p>
+    <p class="p3">test 1</p>
 </body>
 </html>
