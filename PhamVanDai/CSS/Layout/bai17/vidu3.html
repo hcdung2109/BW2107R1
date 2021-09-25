@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul {
-            list-style-image: url('sqpurple.gif');
+
+        #before::before {
+            content: ' Test before ';
+        }
+
+        #after::after {
+            content: ' Test after ';
         }
     </style>
 </head>
 <body>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-      </ul>
-    
+    <h1>after và before</h1>
+
+    <p id="before">Example use pseudo-element before</p>
+    <p id="after">Example use pseudo-element after</p>
 </body>
 </html>
