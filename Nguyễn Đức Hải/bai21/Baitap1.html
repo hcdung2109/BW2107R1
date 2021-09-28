@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://css.gg/log-in.css' rel='stylesheet'>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        #menu{
+            width: 100%;
+            height: 60px;
+            background-color: #2d2c2c;
+        }
+        #menu a{
+            text-align: center;
+            float: left;
+            height: 100%;
+            width: 70px;
+            display: block;
+            text-decoration: none;
+            color: white;
+            opacity: 0.6;
+            padding: 20px 5px;
+        }
+        #menu a:hover{
+            opacity: 1;
+            background-color: black;
+        }
+        #content{
+            width: 100%;
+            height: 450px;
+        }
+        #content #left{
+            float: left;
+            width: 15%;
+            height: 450px;
+            background-color: #F1F1F1;
+        }
+        #content #left a{
+            text-decoration: none;
+            color: blue;
+        }
+        #content #left ul li{
+            margin: 20px 50%;
+            list-style: none;
+        }
+        #content #mid{
+            float: left;
+            width: 70%;
+            height: 450px;
+        }
+        #content #mid section{
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        #content #mid hr{
+            margin-top: 30px;
+            opacity: 0.4;
+        }
+        #content #mid section h1,p{
+            color: black;
+            font-size: 30px;
+        }
+        #content #right{
+            float: left;
+            width: 15%;
+            height: 450px;
+            background-color: #F1F1F1;
+        }
+        #content #right div{
+            width: 160px;
+            height: 70px;
+            background-color: #F5F5F5;
+            margin: 20px auto;
+            border: 3px solid #9b9292;
+            border-radius: 5px;
+            
+        }
+        #content #right p{
+            font-size: 15px;
+            display: block;
+            margin-left: 60px;
+            margin-top: 15px;
+        }
+        #footer{
+            width: 100%;
+            height: 70px;
+            background-color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <a href="#" style="font-size: larger;padding: 17px 5px;">Logo</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+        <a href="#" class="fas login" style="float: right; margin-right: 20px;"><i class="gg-log-in" style="float: left;"></i>Login</a>
+    </div>
+    <div id="content">
+        <div id="left">
+            <ul style="margin-top: 40px;">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div id="mid">
+            <section>
+                <h1>Welcome</h1>
+                <p>Lorem eIpsum is simply dummy text of the priting and typeseeint industry. Lorem Ipsum has been the industry's standsard dummy text ever since the 1500s, when an unkown printer took a gally of type and scrambled it make a type secimen book.</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Test</h2>
+                <p>Lorem eIpsum is simply dummy text of the priting and typeseeint industry.</p>
+            </section>
+        </div>
+        <div id="right">
+            <div><p>ADS</p></div>
+            <div><p>ADS</p></div>
+        </div>
+    </div>
+    <div id="footer">
+        <p style="font-size: 20px; color: white; margin-left: 600px;padding-top: 15px;">Footer Text</p>
+    </div>
+</body>
+</html>
