@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .header{
+        width: 100%;
+        background-color: cadetblue;
+        height: 50px;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:1;
+    }
+    .header .header-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-menu .header-logo{
+        flex-basis: 25%;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .header-logo a img{
+        width:100%;
+        height:40px;
+        border-radius:4px;
+    }
+    .header-menu .header-btn{
+        flex-basis: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 35px;
+        padding: 5px;
+    }
+    .header-menu .header-btn a{
+        flex-basis: 33%;
+        height: 40px;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    .header-menu .header-btn a:hover{
+        background-color: cornflowerblue;
+    }
+    /* end-header */
+    .main{
+        margin-top:50px;
+        width: 95%;
+        margin:auto;
+    }
+    /* banner */
+    .main .banner img{
+        width: 100%;
+        
+    }
+    /* end-banner */
+    /* project */
+    .title{
+        text-align: center;
+    }
+    .title h3{
+        font-size: 30px;
+        position: relative;
+    }
+    .title h3::after {
+        content: "";
+        height: 70px;
+        width: 50px;
+        background: linear-gradient(rgba(22, 201, 138,0.6),#fff);
+        border-top-left-radius: 58%;
+        border-bottom-right-radius: 60%;
+        transform: rotate(25deg);
+        position: absolute;
+        top: -24px;
+        left: 45.5%;
+        z-index: -1;
+    }
+    .project{
+        margin-top:25px;
+    }
+    .project .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .project .container .project-item {
+        flex-basis: 25%;
+        border-radius: 5px;
+        position: relative;
+    }
+    .project .container .project-item img{
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .project .container .project-item p {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 50%;
+        height: 30px;
+        text-align: center;
+        background: #000;
+        border-radius: 5px;
+        color: #fff;
+        line-height: 30px;
+    }
+    /* end-project */
+    /* about */
+    .About{
+        margin-top:20px;
+    }
+    .About .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top:10px;
+    }
+    .About .container .About-item{
+        flex-basis:25%;
+        border-radius: 5px;
+    }
+    .About .container .About-item img{
+        width: 100%;
+        border-radius: 12px;
+        padding:0 5px;
+    }
+    .About .container .About-item span{
+        opacity: 0.5;
+    }
+    .About .container .About-item p{
+        opacity: 0.7;
+        padding: 3px;
+    }
+    /* end-about */
+    /* contact */
+    .Contact{
+        margin-top:25px;
+    }
+    .Contact .contact-text{
+        margin-top:5px;
+    }
+    .Contact .contact-text p{
+        font-size: 20px;
+    }
+    .Contact .contact-text input,textarea{
+        width: 100%;
+        margin:10px 0;
+    }
+    .Contact .contact-text button{
+        background-color:#ccc ;
+    }
+    /* end contact */
+    /* footer */
+    .footer{
+        margin-top:20px;
+        width: 100%;
+        background-color: #000;
+        height:50px;
+        text-align: center;
+    }
+    .footer p{
+        height: 50px;
+        line-height: 50px;
+        color:white;
+    }
+    .footer p a{
+        color:yellow;
+        text-decoration: none;
+    }
+    /* end footer */
+    @media only screen and (min-width:320px)
+    {   .main{
+        margin-top: 60px;
+        }
+        .header-menu .header-btn{
+            display: none;
+        }
+        .project .container .project-item {
+        flex-basis: 100%;
+        border-radius: 5px;
+        position: relative;
+        }
+        /* about */
+        .About .container .About-item{
+            flex-basis:100%;
+            border-radius: 5px;
+        }
+    }
+    @media only screen and (min-width:580px)
+    {
+        .header-menu .header-btn{
+            display: block;
+            flex-basis: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            line-height: 35px;
+            padding: 5px;
+        }
+        .header-menu .header-btn a{
+            flex-basis: 33%;
+            height: 40px;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+        }
+        .header-menu .header-btn a:hover{
+            background-color: cornflowerblue;
+        }
+        .project .container .project-item {
+            flex-basis: 50%;
+            border-radius: 5px;
+            position: relative;
+        }
+        .About .container .About-item{
+            flex-basis:50%;
+            border-radius: 5px;
+        }
+    }
+    @media only screen and (min-width:768px)
+    {
+        
+        .project .container .project-item {
+        flex-basis: 25%;
+        border-radius: 5px;
+        position: relative;
+        }
+        .About .container .About-item{
+            flex-basis:25%;
+            border-radius: 5px;
+        }
+        .About .container .About-item img{
+            width: 100%;
+            border-radius: 12px;
+            padding:0 5px;
+        }
+        .About .container .About-item span{
+            opacity: 0.5;
+        }
+        .About .container .About-item p{
+            opacity: 0.7;
+            padding: 3px;
+        }
+    }
+</style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header" id="header_id">
+        <div class="header-menu">
+            <div class="header-logo">
+                <a href="#header_id"><img src="/image/logo.jpg" alt=""></a>
+            </div>
+            <div class="header-btn">
+                <a href="#project_id">Projects</a>
+                <a href="#About-id">About</a>
+                <a href="#Contact-id">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- end-header -->
+    <!-- main -->
+    <div class="main">
+        <div class="banner">
+            <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+        </div>
+        <!-- Project -->
+        <div class="project" id="project_id">
+            <div class="title">
+                <h3>PROJECT</h3>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="project-item">
+                <div class="image"><img src="https://www.w3schools.com/w3images/house2.jpg" alt=""></div>
+                <p>LAUGH HOUSE</p>
+                </div>
+                <div class="project-item">
+                    <div class="image"><img src="https://www.w3schools.com/w3images/house2.jpg" alt=""></div>
+                    <p>LAUGH HOUSE</p>
+                </div>
+                <div class="project-item">
+                    <div class="image"><img src="https://www.w3schools.com/w3images/house2.jpg" alt=""></div>
+                    <p>LAUGH HOUSE</p>
+                </div>
+                <div class="project-item">
+                    <div class="image"><img src="https://www.w3schools.com/w3images/house2.jpg" alt=""></div>
+                    <p>LAUGH HOUSE</p>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div class="About" id="About-id">
+            <div class="title">
+                <h3>ABOUT</h3>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="About-item">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                    <h3>John Doe</h3>
+                    <span>CEO & Founder</span>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta provident quasi nesciunt ut illum consequatur dicta veniam sed repudiandae, 
+                        quisquam hic aut esse ullam culpa ipsam cumque quos saepe architecto.
+                    </p>
+                </div>
+                <div class="About-item">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                    <h3>John Doe</h3>
+                    <span>CEO & Founder</span>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta provident quasi nesciunt ut illum consequatur dicta veniam sed repudiandae, 
+                        quisquam hic aut esse ullam culpa ipsam cumque quos saepe architecto.
+                    </p>
+                </div>
+                <div class="About-item">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                    <h3>John Doe</h3>
+                    <span>CEO & Founder</span>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta provident quasi nesciunt ut illum consequatur dicta veniam sed repudiandae, 
+                        quisquam hic aut esse ullam culpa ipsam cumque quos saepe architecto.
+                    </p>
+                </div>
+                <div class="About-item">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                    <h3>John Doe</h3>
+                    <span>CEO & Founder</span>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta provident quasi nesciunt ut illum consequatur dicta veniam sed repudiandae, 
+                        quisquam hic aut esse ullam culpa ipsam cumque quos saepe architecto.
+                    </p>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="Contact" id="contact-id">
+                <div class="title">
+                    <h3>CONTACT</h3>
+                    <hr>
+                </div>
+                <div class="contact-text">
+                    <p class="text">Lets get in touch and talk about your next project.</p>
+                    <form action="#" method="GET">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email " name="email" placeholder="Email" >
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea type="" name="comment" placeholder="Comment"></textarea>
+                        <button>SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer-id">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </div>
+</body>
+</html>
