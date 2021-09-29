@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+	margin:0;
+	padding:0;
+}
+.header{
+	background-color: lightgray;
+	align-items: center;
+	width:100%;
+	height:50px;
+padding-top:24px;
+position:fixed;
+z-index:1;
+margin:0;
+}
+
+.logo{
+	float:left;
+}
+.right{
+	float:right;
+}
+.right a{
+text-decoration: none;
+margin:7px;
+color:black
+}
+.right a:hover{
+	background-color:white;
+}
+.main img{
+	height:auto;
+	width:100%;
+	box-sizing: border-box;
+	
+
+}
+.title{
+	height:20px;
+	background-color:black;color:white;
+	padding:5px
+}
+.project{
+	flex-wrap: wrap;
+	display:flex;
+}
+.primg img{
+	padding:5px;
+	width:400px
+}
+.primg{
+	width:100%;
+	margin-left:20px;
+	margin-bottom:16px;
+	float:left;
+	margin-right:20px;
+	margin-top:10px
+}
+.wrapper{
+position:relative;
+}
+.prc{
+	position:absolute;
+	color:black;
+	background-color:aqua;
+	font-size: 20px;
+	padding:10px;
+	left:25px;
+	top:15px;
+	border-radius:4px;
+}
+.about{
+	background-color:lightpink;
+	padding:5px;
+	clear:both;
+
+}
+.a-box{
+	line-height:20px
+}
+.a-img{
+box-sizing: border-box;
+	width:20%;
+	margin-bottom: 16px !important;
+	float:left;
+	margin:10px;
+	margin-left:50px
+}
+.a-img img{
+	width:100%
+}
+.article{
+	text-align:center;
+	height:50px
+}
+.hover{
+	margin:30px;
+	text-align: center;
+	width:90%;
+	background-color:lightgrey
+}
+.hover p:hover{
+	background-color:red;
+}
+.footer{
+	background-color:black;color:white;
+	text-align:center;
+	clear:both;
+}
+.footer span:hover{
+background-color:green
+}
+.a-content{
+	margin:5px;
+	padding:5px;
+	height:120px;
+	font-size:20px;
+}
+
+@media screen and (max-width:500px){
+	.a-content{
+		font-size:14px;
+	}
+	.primg{
+		margin-left:31px;
+	}
+	.prc{
+		left:50px
+	}
+	.a-img {
+		width:30%;
+	}
+	.article{
+		font-size:12px;
+		text-align: left;
+	}
+	.hover{
+		width:100px;
+		margin-left:10px;
+	}
+
+}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+		<h3>BR Architect</h3>
+		</div>
+		<div class="right">
+
+			<a href="#">Project</a>
+
+			<a href="#">About</a>
+
+			<a href="#">Contact</a>
+		</div>
+	</div>
+	<div class="main">
+		<img src="architect.jpg" alt="" class="bigimg">
+<div class="title"><h3>Projects</h3></div>
+<div class="project">
+	<div class="wrapper">
+<div class="primg"><img src="house5.jpg" alt=""></div>
+<div class="prc">Summer House</div>
+	</div>
+	<div class="wrapper">
+		<div class="primg"><img src="house5.jpg" alt=""></div>
+		<div class="prc">Summer House</div>
+			</div>
+			<div class="wrapper">
+				<div class="primg"><img src="house5.jpg" alt=""></div>
+				<div class="prc">Summer House</div>
+					</div>
+	
+</div>
+<div class="about"><h3>About</h3></div>
+<hr>
+<div class="a-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	</div>
+	<div class="a-box">
+		<div class="a-img">
+     <img src="team2.jpg" alt="">
+	 <div class="article">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+	<div class="hover"><p>Contact</p></div>
+		</div>
+		<div class="a-img">
+			<img src="team2.jpg" alt="">
+			<div class="article">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+	<div class="hover"><p>Contact</p></div>
+			   </div>
+			   <div class="a-img">
+				<img src="team2.jpg" alt="">
+				<div class="article">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+	<div class="hover"><p>Contact</p></div>
+				   </div>
+				   <div class="a-img">
+					<img src="team2.jpg" alt="">
+					<div class="article">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+	<div class="hover"><p>Contact</p></div>
+					   </div>
+	</div>
+	<div class="footer">
+		<p>power by <span>W3.CSS</span></p>
+
+	</div>
+</body>
+</html>
