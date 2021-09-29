@@ -1,0 +1,50 @@
+/* Reponsive */
+/* Mobile */
+@media screen and (max-width:740px) {
+    #header .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: inline;
+        line-height: 54px;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    .slider-text{
+        font-size: 30px;
+    }
+    .projects-item{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+    .list-about{
+        flex-direction: column;
+    }
+    .member{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact form button{
+        width: 100%;
+    }
+    #footer{
+        font-size: 18px;
+    }
+}
+/* tablet */
+@media screen and (min-width:741px) and (max-width:1023px) {
+    .item{
+        width: 49%;
+    }
+    .list-about{
+        flex-wrap: wrap;
+    }
+    .member{
+        width: 49%;
+    }
+    .contact form button{
+        width: 100%;
+    }
+}

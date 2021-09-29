@@ -1,0 +1,191 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 54px;
+}
+#header{
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 0px 20px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #cccccc;
+}
+#header .logo a {
+    font-size: 25px;
+    line-height: 54px;
+}
+.navbar li:hover {
+    background-color: #333;
+    transform: 0.5s;
+}
+.navbar li:hover a {
+    color: #fff;
+}
+.menu-mobile{
+    display: none;
+}
+/* slider */
+#slider{
+    width: 98%;
+    margin: 0px auto;
+    position: relative;
+    padding-top: 50%;
+    background-image: url('https://www.w3schools.com/w3images/architect.jpg');
+background-size: cover;
+}
+.slider-text{
+    text-shadow: 0px 1px 2px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 50px;
+    color: white;
+}
+
+/* content */
+
+#content{
+    margin: 50px 20px;
+}
+
+/* project */
+
+
+.project{
+    margin-bottom: 50px;
+}
+hr {
+    margin: 20px 0px;
+}
+.projects-item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item {
+    position: relative;
+    width: 24%;
+    height: 234px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 10px;
+
+}
+.text-item{
+    position: absolute;
+    top: 0px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+
+/* about */
+.about-title{
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* member */
+.list-about{
+margin: 50px 0px;
+display: flex;
+justify-content: space-between;
+}
+.member {
+    width: 24%;
+    overflow: hidden;
+}
+.member-photo img{
+    width: 100%;
+    height: 234px;
+    object-fit: cover;
+}
+.member-title > h2 {
+    padding: 10px 0px;
+    font-weight: lighter;
+}
+.member-title .word{
+    font-size: 18px;
+    opacity: 0.8;
+}
+.member-title .comment {
+    padding: 10px 0px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.member-title>.btn {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #cccccc;
+    color: #333;
+    cursor: pointer;
+}
+.member-title>.btn:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+.contact form label {
+    display: block;
+}
+.contact form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+}
+.contact form button {
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 20px 0px;
+    width: 15%;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.contact form button:hover{
+    background-color: #cccccc;
+    color: #333;
+}
+.contact .map {
+    margin-top: 30px;
+    padding-top: 50%;
+    background-image: url('https://www.w3schools.com/w3images/map.jpg');
+    background-size: cover;
+}
+#footer {
+    margin-top: -35px;
+    background-color: black;
+    color: #fff;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#footer>a{
+    color: #fff;
+    text-decoration: underline;
+}
+#footer>a:hover{
+    color: lawngreen;
+}
+
