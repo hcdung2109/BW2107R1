@@ -1,0 +1,227 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+.container {
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: black
+}
+a:hover {
+    background-color: darkgray;
+}
+.navbar {
+    z-index: 99;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.navbar a {
+    letter-spacing: 4.1px;
+}
+.logo {
+    position: absolute;
+    left: 2%;
+}
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 2;
+    justify-content: center;
+}
+.header img {
+    z-index: -2;
+    position: absolute;
+}
+.header .highlight {
+    position: absolute;
+    z-index: -1;
+    color: seashell;
+    
+}
+.header b {
+    background-color: black;
+    color: seashell;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    border-radius: 15px;
+    height: 50px;
+    opacity: 0.6;
+}
+.header h1 {
+    letter-spacing: 4.1px;
+}
+.project {
+    padding: 10px 0px !important;
+}
+.project-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project-head h3 {
+    font-size: 24px;
+}
+.project-tag-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    color: blanchedalmond;
+    opacity: 0.5;
+}
+.about-title> h3 {
+    font-size: 24px;
+}
+.about-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.about-title p {
+    padding: 5px;
+    text-align: justify;
+}
+
+.about-item h3 {
+    font-size: 24px;
+}
+.about-item-job {
+    opacity: 0.60;
+}
+.about-item-btn {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #000!important;
+    background-color: #f1f1f1;
+}
+.about-item-btn:hover {
+    background-color: gray;
+}
+.contact-title {
+    font-size: 24px;
+}
+.contact {
+    margin: 10px;
+}
+.contact input {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 3px 0px;
+    font-size: 15px;
+}
+.contact-submit-btn {
+    letter-spacing: 3.1;
+    width: auto;
+    height: 50px;
+    font-weight: 600;
+    background-color: black;
+    color: honeydew;
+}
+footer {
+    display: flex;
+    text-align: center !important;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: ivory;
+    box-sizing: border-box;
+    align-items: center;
+}
+footer a {
+    color: ivory;
+}
+/* Tất cả các màn hình có độ phân giải thấp nhất là 1001px */
+@media all and (min-width: 1001px){
+	.nav-link {
+        position: absolute;
+        right: 5%;
+    }
+    .project-tag {
+        position: relative;
+        width: 24%;
+    }
+    .about-item {
+        padding: 10px;
+        width: 23.5%;
+    }   
+}
+
+/* Màn hình có độ phân giải tối đa 1000px */ 
+@media screen and (max-width: 1000px) {
+	.nav-link {
+        position: absolute;
+        right: 4%;
+    }
+    .project-tag {
+        position: relative;
+        width: 49%;
+    }
+    .about-item {
+        padding: 10px;
+        width: 47%;
+    }
+   
+}
+
+/* Màn hình có độ phân giải tối đa 750px */  
+@media screen and (max-width: 750px) {
+    .nav-link {
+        position: absolute;
+        right: 3%;
+    }
+    .project-tag {
+        position: relative;
+        width: 49%;
+    }
+    .about-item {
+        padding: 10px;
+        width: 47%;
+    }
+}
+
+/* Màn hình có độ phân giải tối đa 540px */ 
+@media screen and (max-width: 540px) {
+    .nav-link {
+        visibility: hidden;
+    }
+    .project-tag {
+        position: relative;
+        width: 100%;
+    }
+    .about-item {
+        padding: 10px 0px;
+        width: 100%;
+    }
+}
