@@ -5,10 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="giaodien.css">
 	<style>
-		*{
-	margin:0;
-	padding:0;
+*{
+		margin:0;
+		padding:0;
 }
 .header{
 	background-color: lightgray;
@@ -39,8 +40,6 @@ color:black
 	height:auto;
 	width:100%;
 	box-sizing: border-box;
-	
-
 }
 .title{
 	height:20px;
@@ -53,18 +52,20 @@ color:black
 }
 .primg img{
 	padding:5px;
-	width:400px
+	
 }
 .primg{
 	width:100%;
-	margin-left:20px;
+	margin-left:1px;
 	margin-bottom:16px;
 	float:left;
-	margin-right:20px;
 	margin-top:10px
 }
 .wrapper{
 position:relative;
+width:25%;
+flex-wrap: wrap;
+display:flex;
 }
 .prc{
 	position:absolute;
@@ -72,7 +73,7 @@ position:relative;
 	background-color:aqua;
 	font-size: 20px;
 	padding:10px;
-	left:25px;
+	left:6px;
 	top:15px;
 	border-radius:4px;
 }
@@ -98,7 +99,8 @@ box-sizing: border-box;
 }
 .article{
 	text-align:center;
-	height:50px
+	height:50px;
+	opacity:0.6;
 }
 .hover{
 	margin:30px;
@@ -122,28 +124,105 @@ background-color:green
 	padding:5px;
 	height:120px;
 	font-size:20px;
+	
+}
+.name{
+width:85%;
+margin-left:30px;
+padding:4px;
+margin-bottom: 16px;
+margin-top:10px
+}
+.send{
+	width:150px;
+	height:30px;
+	background-color:black;
+	color:white;
+	text-align:center;
+margin-left:30px;
+}
+.foot-img{
+	margin:20px;
+	box-sizing: border-box;
+}
+.foot-img img{
+	width:100%;
 }
 
-@media screen and (max-width:500px){
+@media  screen and (min-width:320px){
 	.a-content{
 		font-size:14px;
 	}
-	.primg{
-		margin-left:31px;
+	.wrapper{
+		position: relative;
+		width:100%;
 	}
-	.prc{
-		left:50px
+	.a-img{
+		box-sizing: border-box;
+		flex-basis:25%;
+		width:85%;
+		margin:35px;
 	}
-	.a-img {
-		width:30%;
+	.a-img img {
+		width:100%;
 	}
-	.article{
-		font-size:12px;
-		text-align: left;
-	}
-	.hover{
-		width:100px;
-		margin-left:10px;
+	@media only screen and (min-width:580px){
+		.wrapper{
+			width:50%;
+		}
+		.a-content{
+			font-size:16px
+		}
+		.a-img{
+    box-sizing: border-box;
+	width:30%;
+	margin-bottom: 16px !important;
+	float:left;
+	margin:10px;
+	margin-left:60px
+}
+.a-img img{
+	width:100%
+}
+.article{
+	font-size:12px;
+}
+}
+	@media only screen and (min-width:768px){
+		.primg{
+	width:100%;
+	margin-left:1px;
+	margin-bottom:16px;
+	float:left;
+	margin-top:10px
+}
+.wrapper{
+position:relative;
+width:25%;
+flex-wrap: wrap;
+display:flex;
+}
+.prc{
+	position:absolute;
+	color:black;
+	background-color:aqua;
+	font-size: 20px;
+	padding:10px;
+	left:6px;
+	top:15px;
+	border-radius:4px;
+}
+	.a-img{
+    box-sizing: border-box;
+	width:20%;
+	margin-bottom: 16px !important;
+	float:left;
+	margin:10px;
+	margin-left:50px
+}
+.a-img img{
+	width:100%
+}
 	}
 
 }
@@ -156,16 +235,16 @@ background-color:green
 		</div>
 		<div class="right">
 
-			<a href="#">Project</a>
+			<a href="#project">Project</a>
 
-			<a href="#">About</a>
+			<a href="#about">About</a>
 
-			<a href="#">Contact</a>
+			<a href="#contact">Contact</a>
 		</div>
 	</div>
 	<div class="main">
 		<img src="architect.jpg" alt="" class="bigimg">
-<div class="title"><h3>Projects</h3></div>
+<div class="title" id="project"><h3>Projects</h3></div>
 <div class="project">
 	<div class="wrapper">
 <div class="primg"><img src="house5.jpg" alt=""></div>
@@ -179,9 +258,13 @@ background-color:green
 				<div class="primg"><img src="house5.jpg" alt=""></div>
 				<div class="prc">Summer House</div>
 					</div>
+					<div class="wrapper">
+						<div class="primg"><img src="house5.jpg" alt=""></div>
+						<div class="prc">Summer House</div>
+							</div>
 	
 </div>
-<div class="about"><h3>About</h3></div>
+<div class="about" id="about"><h3>About</h3></div>
 <hr>
 <div class="a-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 	</div>
@@ -194,7 +277,7 @@ background-color:green
 		<div class="a-img">
 			<img src="team2.jpg" alt="">
 			<div class="article">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
-	<div class="hover"><p>Contact</p></div>
+	<div class="hover" ><p>Contact</p></div>
 			   </div>
 			   <div class="a-img">
 				<img src="team2.jpg" alt="">
@@ -207,9 +290,23 @@ background-color:green
 	<div class="hover"><p>Contact</p></div>
 					   </div>
 	</div>
+	<div class="contact">
+		<div class="about" id="contact"><h3>Contact</h3></div>
+		<input type="text" placeholder="Name" class="name"> 
+		<input type="text" placeholder="Email" class="name"> 
+		<input type="text" placeholder="Subject" class="name"> 
+		<input type="text" placeholder="Comment" class="name"> 
+			</div>
+			<button class="send">
+			Send Message</button>
+			<div class="foot-img">
+				<img src="map.jpg" alt="">
+			</div>
 	<div class="footer">
 		<p>power by <span>W3.CSS</span></p>
-
 	</div>
+	
+
+	
 </body>
 </html>
