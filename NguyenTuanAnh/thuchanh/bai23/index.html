@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        /* header */
+        .header .header-banner{
+            position: relative;
+        }
+        .header .header-banner img{
+            width: 100%;
+        }
+        .header .header-banner .banner-text {
+            position: absolute;
+            left: 42%;
+            top: 44%;
+            text-align: center;
+            color: white;
+            border: 2px solid #fff;
+            padding: 20px 40px;
+            border-radius: 4px;
+        }
+        .header .header-banner .banner-text h1{
+            margin-bottom:10px;
+        }
+        .header .banner-nav{
+            background-color: #ccc;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        ul{
+            list-style: none;
+        } 
+        ul li{
+            display: inline-block;
+        }
+        /*end header*/
+        /* main */
+        .main{
+            margin: 10px 0;
+        }
+        .main .produce{
+            margin-bottom: 10px;
+        }
+        .main .produce .picture-item{
+            border-radius: 40px;
+        }
+        .main .produce .picture-item img{
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 40px;
+        }
+        /* end produce */
+        /* contact */
+        .main .contact{
+            background-color: #ccc;
+        }
+        .main .contact h2{
+            padding:30px 0;
+            text-align: center;
+            font-size: 40px;
+        }
+        .contact p{
+            opacity: 0.8;
+            padding: 20px;
+        }
+        .contact form label{
+            margin-left:20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .contact form{
+            padding-bottom:20px;
+        }
+        .contact form input, button{
+            margin: 2px  20px;
+            width: 92%;
+        }
+        .contact form button{
+            padding: 5px 0;
+            background-color: #3d2f2f;
+        }
+        /* end contact */
+        /* footer */
+        .footer{
+            background-color: #000;
+            height: 50px;
+            text-align: center;
+            color: white;
+            line-height: 50px;
+        }
+        .footer a{
+            color:yellow;
+        }
+        /* endd footer */
+        .totop{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ccc;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            line-height: 55px;
+            text-align: center;
+        }
+        .totop i{
+            font-size: 20px;
+            
+        }
+        @media only screen and (min-width:320px){
+            /* header*/
+            .header .header-banner .banner-text{
+                padding: 10px 20px;
+                font-size: 10px;
+                left:40%;
+                top:40%;
+            }
+            .header .header-banner .banner-text h5{
+                display:none;
+            }
+            .header .banner-nav,ul{
+                height: 50px;
+            }
+            ul li a{
+                width: 100px;
+                display: block;
+                height: 30px;
+                margin:10px 0;
+                line-height: 30px;
+                border-radius: 5px;
+                transition: 1s;
+            }
+            ul li a:hover{
+                background-color: burlywood;
+            }
+            /* end header */
+            /* main */
+            .main{
+                width: 90%;
+                margin:10px auto;
+                
+            }
+        }
+        @media only screen and (min-width:570px){
+            .header{
+                position: relative;
+            }
+            .header .banner-nav {
+                position: absolute;
+                bottom: -19px;
+                left: 20%;
+                border-radius: 10px;
+                width: 60%;
+            }
+            .main{
+                margin-top:30px;
+
+            }
+        }
+        @media only screen and (min-width:768px){
+            .header .header-banner .banner-text{
+                padding: 10px 20px;
+                font-size: 20px;
+                left:40%;
+                top:40%;
+            }
+            .header .header-banner .banner-text h5{
+                display:block;
+            }
+            .main{
+                width: 60%;
+                margin:30px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-banner" id="banner-id">
+            <img src="https://www.w3schools.com/w3images/photographer.jpg" alt="">
+            <div class="banner-text">
+                <h1>JANE DOE</h1>
+                <h5>PHOTOGRAPHER</h5>
+            </div>
+        </div>
+        <div class="banner-nav">
+            <ul>
+                <li><a href="#banner-id">HOME</a></li>
+                <li><a href="#produce-id">PRODUCE</a></li>
+                <li><a href="#contact-id">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END-HEADER -->
+    <div class="main">
+        <div class="produce" id="produce-id">
+            <div class="picture-item">
+                <img src="https://www.w3schools.com/w3images/ocean.jpg" alt="">
+            </div>
+            <div class="picture-item">
+                <img src="https://www.w3schools.com/w3images/ocean2.jpg" alt="">
+            </div>
+            <div class="picture-item">
+                <img src="https://www.w3schools.com/w3images/falls2.jpg" alt="">
+            </div>
+            <div class="picture-item">
+                <img src="https://www.w3schools.com/w3images/mountainskies.jpg" alt="">
+            </div>
+            <div class="picture-item">
+                <img src="https://www.w3schools.com/w3images/mountains2.jpg" alt="">
+            </div>
+        </div>
+        <!-- and produce -->
+        <div class="contact" id="contact-id">
+            <h2>Contact</h2>
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
+            <form action="#" method="GET">
+                <label>Name:</label> <br>
+                <input type="text" required> <br>
+                <label>Email:</label> <br>
+                <input type="email"> <br>
+                <label>Message:</label> <br>
+                <input type="email"> <br>
+                <button>SEND</button>
+            </form>
+        </div>
+        <!-- and contact -->
+    </div>
+    
+    <!-- end main -->
+    <div class="footer" id="footer-id">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </div>
+    <div class="totop" onclick="totop()"> <i class="fa fa-stop"></i>   </div>
+    <script type="text/javascript">
+        function totop()
+        {
+            $('html,body').animate({scrollTop:0},'fast');
+        }
+    </script>
+</body>
+</html>
