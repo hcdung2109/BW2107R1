@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	.header img{
+		width:100%;
+	}
+	.header{
+		position:relative;
+	}
+	.h-mid{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		color:white;
+		border: 1px solid #ccc;
+		padding: 12px 24px;
+	}
+	.nav-bar{
+		display:inline-block;
+		position:absolute;
+		left:50%;
+		transform: translate(-50%,-59%);
+		background-color:aqua;
+		padding:20px;
+		box-sizing: border-box;
+		border-radius:4px;
+	}
+	.nav-bar a{
+		text-decoration: none;
+		margin:20px;
+		color:black;
+		font-size:20px;
+	}
+	.nav-bar :hover{
+		color:red;
+	}
+	.main{
+		margin-left:150px;
+		box-sizing: border-box;
+	}
+	.main img{
+		width:80%;
+	}
+	.main img{
+	border-radius:4px
+}
+	.contact{
+		width:71%;
+		border:1px solid black;
+		background-color:lightgray;
+		margin-left:150px;
+		box-sizing: border-box;
+		padding:15px
+	}
+	.contact h2 {
+		padding:30px;
+		text-align: center;
+	}
+	.content{
+		padding:30px;
+		font-size:18px;
+		
+	}
+	.form{
+		padding-top:0px;
+		padding:30px;
+	}
+	.form input{
+		width:100%;
+		height:30px;
+	}
+	
+@media  screen and (min-width:320px){
+	
+.nav-bar{
+	width:100%;
+	left:50%;
+	top:37%;
+text-align: center;
+}
+.main{
+	margin-top:70px;
+	box-sizing: border-box;
+	border-radius:4px;
+	padding:5px;
+	margin-left:80px
+}
+.contact{
+width:80%;
+	margin-left:50px;
+	box-sizing: border-box;
+}
+@media only screen and (min-width:580px){
+	.nav-bar{
+		display:inline-block;
+	top:39%;
+		left:56%;
+		transform: translate(-50%,-59%);
+		background-color:aqua;
+		padding:20px;
+		box-sizing: border-box;
+		border-radius:4px;
+		width:400px
+	}
+	.main{
+		margin-left:150px;
+		box-sizing: border-box;
+	}
+	.main img{
+		width:80%;
+	}
+	.contact{
+		width:71%;
+		border:1px solid black;
+		background-color:lightgray;
+		margin-left:130px;
+		box-sizing: border-box;
+		padding:15px
+	}
+}
+}
+
+@media only screen and (min-width:768px){
+	.nav-bar{
+		display:inline-block;
+	top:82%;
+		left:50%;
+		transform: translate(-50%,-59%);
+		background-color:aqua;
+		padding:20px;
+		box-sizing: border-box;
+		border-radius:4px;
+		width:400px
+	}
+	.main{
+		margin-left:150px;
+		box-sizing: border-box;
+	}
+	.main img{
+		width:80%;
+	}
+	.contact{
+		width:71%;
+		border:1px solid black;
+		background-color:lightgray;
+		margin-left:150px;
+		box-sizing: border-box;
+		padding:15px
+	}
+}
+
+
+</style>
+</head>
+<body>
+	<div class="header">
+<img src="photographer.jpg" alt="">
+<div class="h-mid">
+<h1>JANE DOE</h1>
+<h3>PHOTOGRAPHER</h3>
+</div>
+	</div>
+	<!-- End header -->
+	<div class="nav-bar">
+<a href="#">Home</a>
+<a href="#">Portfolio</a>
+<a href="#">Contact</a>
+	</div>
+<!--End nav-->
+<div class="main">
+<img src="ocean.jpg" alt="">
+<img src="ocean2.jpg" alt="">
+<img src="falls2.jpg" alt="">
+<img src="falls3.jpg" alt="">
+<img src="winter.jpg" alt="">
+</div>
+<!--End main-->
+<div class='contact'>
+	<h2>Contact</h2>
+<div class="content">
+	Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.
+</div>
+<div class='form'>
+<p>Name</p>
+<input type="text">
+<p>Email</p>
+<input type="text">
+<p>Message</p>
+<input type="text">
+</div>
+</div>
+</body>
+</html>
