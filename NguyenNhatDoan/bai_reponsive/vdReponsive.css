@@ -1,0 +1,106 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.navbar{
+    position: fixed;
+    top: 0 ; 
+    background-color: rgb(233, 246, 248);
+    width: 100%;
+    padding: 8px 16px!important;
+    height: 55px;
+    display: flex; 
+    justify-content: space-between;    
+    align-items: center;
+    letter-spacing:  4px;
+    z-index: 1;
+    
+}
+
+.navbar-bar .navbar-bar-logo {
+    font-size: 25px;
+    line-height: 54px;
+}
+.navbar-bar-logo{
+    text-decoration: none;
+    color: #111010
+}
+.navbar-bar-menu{
+    margin-right: 5px;
+}
+.menu-item{
+    text-decoration: none;
+    color: #111010
+}
+.header{  
+    margin-top: 16px !important;
+    max-width: 1400px; 
+    text-align: center;   
+}
+
+.display-large{
+    display: block;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.img{
+    
+    text-align:center;
+    color: #fff; 
+}
+.header-dislay-middle-center{
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+}
+#BR{
+    font-size: 2.4rem; 
+    background-color: rgba(0,0,0,0.5);
+    padding: 8px 16px; 
+    color: #fff;
+    margin: 10px 0 ; 
+}
+.text-light-grey{ 
+    color: #fff; 
+    font-size: 30px
+}
+.projects-row-padding{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.project-item-col{
+    width: 24%; 
+    height: 234px;
+    margin-top: 10px;
+    position: relative;
+
+}
+.text{
+    padding-left: 10px;
+    font-size: 24px;
+    
+}
+.text__border-padding{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+.border-light-gray{
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.05);
+}
