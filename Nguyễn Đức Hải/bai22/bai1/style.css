@@ -307,17 +307,18 @@ header #right a:hover {
     text-align: center;
 }
 
+/*Tablet*/
 @media only screen and (max-width: 992px) {
     #content #project #picture .pic,
     #content #about .people {
         width: 50%;
     }
-    header #right{
+    /* header #right{
         visibility: hidden;
-    }
+    } */
   
 }
-
+/*Mobile*/
 @media only screen and (max-width: 600px) {
     #content #project #picture .pic,
     #content #about .people {
@@ -328,5 +329,14 @@ header #right a:hover {
     }
     #content #about .people{
         margin-bottom: 20px;
+    }
+    #content #banner span{
+        visibility: hidden;
+    }
+    #content #banner b{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
     }
 }
