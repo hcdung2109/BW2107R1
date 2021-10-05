@@ -8,75 +8,241 @@
 
 }
 
-.header{
-    position: fixed;
-    background-color: White;
-    width: 100%;
-    height: 70px;
-    z-index: 1;
-    font-family: Verdana,sans-serif;
+#Projects1{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.header a {
-    text-decoration: none;
-    color: black;
-}
-
-
-#head-logo{
-    float: left;
-    text-align: center;
-    display: block;
-    padding: 20px;
-    box-sizing: inherit;
-    font-size: 20px;
-}
-.head-menu{
-    float: right;
-   display: block;
-   text-align: center;
-   padding: 20px;
-   box-sizing: inherit;
-   font-size: 20px;
-}
-.menu-item{
-    display: inline-block;
-    padding: 5px;
+#About{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
 
-#img-header{
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    display: block;
-    color: white;
-}
-#img-header span{
-    padding: 10px;
-    background-color: rgb(80, 75, 75);
-}
 
-.projects-item{
-    display: block;
-    box-sizing: inherit;
+
+@media only screen and (min-width: 1024px){
+    .header{
+        position: fixed;
+        background-color: White;
+        width: 100%;
+        height: 70px;
+        z-index: 1;
+        font-family: Verdana,sans-serif;
+    }
+    .header a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+    #head-logo{
+        float: left;
+        text-align: center;
+        display: block;
+        padding: 20px;
+        box-sizing: inherit;
+        font-size: 20px;
+    }
+    .head-menu{
+        float: right;
+       display: block;
+       text-align: center;
+       padding: 20px;
+       box-sizing: inherit;
+       font-size: 20px;
+    }
+    .menu-item{
+        display: inline-block;
+        padding: 5px;
+
+    }
+    #banner{
+        position: relative;
+    }
+
+    #img-header{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        display: block;
+        color: white;
+    }
+    #img-header span{
+        padding: 10px;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .projects-item{
+        display: block;
+        box-sizing: inherit;
+      
+    }
+    .item-containers{
+        display: block;
+        width: 24%;
+        padding: 0px 5px;
+        float: left;
+        box-sizing: inherit;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    
+    .item-title{
+        position: absolute;
+        color: #fff;
+        background-color: #000;
+        padding: 8px 16px;
+        left: 0;
+        top: 0;
+        box-sizing: inherit;
+        margin-left: 5px;
+    }
+    #about-item{
+        display: block;
+        box-sizing: inherit;
+        padding: 0px 8px;
+    }
+    #about-content{
+        display: block;
+        font-family: Verdana,sans-serif;
+    }
+    .about-items{
+        display: block;
+        box-sizing: inherit;
+        margin: 15px 0px ;
+    }
+
+    .about-items-containers{
+        display: block;
+        width: 23%;
+        padding: 10px 5px;
+        margin: 0px 5px;
+        float: left;
+        box-sizing: inherit;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .items-button{
+        display: block;
+        width: 100%;
+        background-color: gray;
+        text-align: center;
+        padding: 10px;
+    }
+    .items-button:hover{
+        background-color: rgb(177, 49, 49);
+    }
+
+    .footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        clear: both;
+        height: 50px;
+        padding-top: 25px;
+    }
+    
+}
+@media only screen and (max-width: 1023px){
+    .header{
+        position: fixed;
+        background-color: White;
+        width: 100%;
+        height: 70px;
+        z-index: 1;
+        font-family: Verdana,sans-serif;
+    }
+    .header a {
+        text-decoration: none;
+        color: black;
+    }
+    #banner{
+        position: relative;
+    }
+    
+    #head-logo{
+        float: left;
+        text-align: center;
+        display: block;
+        padding: 20px;
+        box-sizing: inherit;
+        font-size: 20px;
+    }
+    .head-menu{
+        float: right;
+       display: block;
+       text-align: center;
+       padding: 20px;
+       box-sizing: inherit;
+       font-size: 20px;
+    }
+    .menu-item{
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    #img-header{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        display: block;
+        color: white;
+    }
+    #img-header span{
+        padding: 10px;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .projects-item{
+        display: block;
+        box-sizing: inherit;
+      
+    }
+    .item-containers{
+        display: block;
+        width: 49%;
+        padding: 0px 2px;
+        float: left;
+        box-sizing: inherit;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    
+    .item-title{
+        position: absolute;
+        color: #fff;
+        background-color: #000;
+        padding: 8px 16px;
+        left: 0;
+        top: 0;
+        box-sizing: inherit;
+        margin-left: 5px;
+    }
+
   
 }
-.item-containers{
-    display: block;
-    width: 24%;
-    padding: 0px 5px;
-    float: left;
-    box-sizing: inherit;
-    position: relative;
-    margin-bottom: 15px;
+
+
+@media only screen and (max-width: 520px){
+    .head-menu{
+        visibility: hidden;
+    }
+    #banner{
+        position: relative;
+    }
+
+    .item-containers{
+        display: block;
+        width: 100%;
+        padding: 0px 5px;
+        float: left;
+        box-sizing: inherit;
+        position: relative;
+        margin-bottom: 15px;
+    }
 }
 
-.item-title{
-    position: absolute;
-    color: #fff;
-    background-color: #000;
-    padding: 8px 16px;
-    left: 0;
-    top: 0;
-    box-sizing: inherit;
-    margin-left: 5px;
-}
+
