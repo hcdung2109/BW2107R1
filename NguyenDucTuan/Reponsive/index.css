@@ -1,0 +1,231 @@
+:root{
+    --red : #f9032f;
+    --black : #333;
+    --white : #fff;
+    --pink : rgb(224, 135, 184);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+    background:var(--white);
+    height:60px;
+    width: 100%;
+    padding:30px;
+     display:flex;
+    justify-content:space-between; 
+    align-items: center;
+    position: relative;
+    position:fixed;
+    box-shadow:  0px 0px 0px 5px rgba(180, 178, 178, 0.2);
+    z-index: 1;
+
+}
+
+
+.navbar__logo{
+    color: var(--black);
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.navbar__link{
+    color: var(--black);
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.imgBrArchitects{
+
+  
+   width:100%;
+}
+
+.Br__content{
+    position: relative;
+    width:100%;
+    color:var(--white);
+    line-height:1;
+    margin:auto;
+
+}
+
+.Br__content h1 {
+    font-size:50px;
+ /* position:absolute; */
+
+}
+.Br__content img {
+    width: 100%;
+}
+
+/* project */
+.proj{
+    padding: 45px;
+    width: 100%;
+    position: relative;
+    height: 600px;
+}
+
+
+.project{
+    padding: 15px 0;
+    
+}
+.project h1 {
+    padding: 15px 0 ;
+}
+
+
+
+.tieudeanh{
+   position: relative;
+   width:24.99999%;
+   float:left;
+   padding: 10px;
+    
+    
+}
+.tieude_hinh{
+    width: 300px;
+}
+
+
+.tieude_anh{
+    padding:15px;
+    background: var(--black);
+    color: var(--white);
+    display: inline;
+    position: absolute;
+}
+
+
+
+/* About  */
+
+
+.aboutt{
+    padding: 45px;
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    
+}
+
+.aboutt h3{
+    font-size:30px;
+    padding: 30px 0;
+}
+.aboutt p {
+    padding:30px 0;
+}
+
+.Noidung{
+    position: relative;
+    width: 24.99999%;
+    float: left;
+    padding:15px;
+}
+
+.Noidungcut p {
+    width: 100%;
+}
+
+.Noidung input {
+    
+    width: 100%;
+    height:35px;
+}
+
+/* Contact */
+
+.contact{
+    padding: 45px;
+    position: relative;
+    width: 100%;
+    height: 1210px;
+    
+}
+
+.contact_noidung h3 {
+    padding: 30px 0;
+    font-size:30px;
+}
+.contact_noidung p {
+    padding: 30px 0;
+
+}
+
+.contact_noidung input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+ .btn {
+     border: none;
+     width: 20% !important;
+    background: var(--black);
+    color: var(--white);
+ }
+
+ .btn:hover {
+    border: none;
+    width: 20% !important;
+   background: var(--red);
+   color: var(--white);
+}
+
+/* Footer */
+
+.footer{
+    padding: 45px;
+    width: 100%;
+    height: 100px;
+    background: var(--black);
+    color: var(--white);
+}
+
+.footer h1 {
+    font-size:15px;
+    text-align: center;
+}
+
+
+/* Reponsive */
+
+@media screen and (max-width:760px){
+
+    .navbar__menu{
+        display:none;
+    }
+
+    .imgBrArchitects{
+       
+        
+     
+    
+       
+    }
+    
+    .Br__content{
+        color:var(--white);
+        line-height:1;
+        margin:auto;
+    
+    }
+    
+    .Br__content h1 {
+        font-size:50px;
+     
+    
+    }
+}
