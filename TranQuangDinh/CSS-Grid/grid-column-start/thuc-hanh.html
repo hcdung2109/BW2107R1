@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        CSS | grid-column-start Property
+    </title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+          
+        .grid-container div {
+            background-color: green;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            color: white;
+        }
+          
+        .item1 {
+        
+            grid-column-start: auto;
+        }
+    </style>
+</head>
+  
+<body>
+  
+    <center>
+        <h1>
+         The grid-column-start Property
+        </h1>
+        <h3>auto value</h3>
+        <strong>the item will be placed
+               following the initial flow</strong>
+   </center>
+  
+    <div class="grid-container">
+        <div class="item1">G</div>
+        <div class="item2">e</div>
+        <div class="item2">e</div>
+        <div class="item3">k</div>
+        <div class="item4">s</div>
+        <div class="item5">f</div>
+        <div class="item6">o</div>
+        <div class="item6">r</div>
+        <div class="item1">G</div>
+        <div class="item2">e</div>
+        <div class="item2">e</div>
+        <div class="item3">k</div>
+        <div class="item4">s</div>
+    </div>
+  
+</body>
+  
+</html>

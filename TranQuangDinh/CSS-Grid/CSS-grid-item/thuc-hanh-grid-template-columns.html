@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid-template-columns</title>
+    <style>
+        .geeks {
+            display: grid;
+            grid-template-columns: auto auto 200px 150px;
+            grid-gap: 10px;
+            background-color: #cccccc;
+            padding: 30px;
+        }
+        .GFG {
+            text-align: center;
+            border: 2px solid black;
+            background-color: coral;
+            font-size: 30px;
+        }
+        .geeks1 {
+            display: grid;
+            grid-template-columns: min-content max-content 400px max-content;
+            grid-gap: 10px;
+            background-color: #cccccc;
+            padding: 30px;
+        }
+        .GFG1 {
+            text-align: center;
+            background-color: coral;
+            border: 2px solid black;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>ví dụ 1:</p>
+    <div class="geeks">
+        <div class="GFG">A</div>
+        <div class="GFG">B</div>
+        <div class="GFG">C</div>
+        <div class="GFG">D</div>
+        <div class="GFG">E</div>
+        <div class="GFG">F</div>
+        <div class="GFG">G</div>
+        <div class="GFG">H</div>
+    </div>
+    <p>ví dụ 2:</p>
+    <div class="geeks1">
+        <div class="GFG1">Geeks1</div>
+        <div class="GFG1">GFG1</div>
+        <div class="GFG1">C1</div>
+        <div class="GFG1">D1</div>
+        <div class="GFG1">E1</div>
+        <div class="GFG1">F1</div>
+        <div class="GFG1">G1</div>
+        <div class="GFG1">H1</div>
+    </div>
+</body>
+</html>

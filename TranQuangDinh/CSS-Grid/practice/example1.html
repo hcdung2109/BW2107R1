@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  height: 200px;
+  align-content: flex-start;
+  grid-template-columns: auto auto auto;
+  
+  grid-gap: 20px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  
+  font-size: 30px;
+}
+.item7 {
+    grid-column: 1 / span 3  ;
+    background-color: #2196F3 !important;
+    text-align: right !important; 
+}
+.item7 button {
+    width: 80px; 
+    height: 30px; 
+    padding: 5px 10px; 
+    margin: 0px 10px; 
+    background-color: #fff; 
+    color: blue;
+    font-weight: 600;
+}
+div > input {
+    width: 100%;
+    height: 50px;
+    
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div><input type="text"></div>
+  <div><input type="text"></div>
+  <div><input type="text"></div>  
+  <div><input type="text"></div>
+  <div><input type="text"></div>
+  <div><input type="text"></div>
+  <div class="item7">
+      <button type="reset" >RESET</button>
+      <button type="button" >SEARCH</button>
+  </div>  
+</div>
+
+
+</body>
+</html>
