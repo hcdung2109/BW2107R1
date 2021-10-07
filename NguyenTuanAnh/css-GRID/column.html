@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: cornflowerblue;
+            padding: 10px;
+            grid-gap:10px;
+        }
+        .grid-item{
+            background-color: darkgreen;
+            color:floralwhite;
+            border:2px solid #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+        .container1{
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: cornflowerblue;
+            padding: 10px;
+            grid-gap:10px;
+            justify-content: space-between;
+        }
+        .container2{
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: cornflowerblue;
+            padding: 10px;
+            grid-gap:10px;
+            justify-content: space-around;
+        }
+        .container3{
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: cornflowerblue;
+            padding: 10px;
+            grid-gap:10px;
+            justify-content: end;
+        }
+        .container4{
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px 100px 100px 100px;
+            height:600px;
+            background-color: cornflowerblue;
+            padding: 10px;
+            grid-gap:10px;
+            justify-content: space-around;
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+    </div>
+    <h1>justify-content</h1>
+    <h3>space-between</h3>
+    <div class="container1">
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+    </div>
+    <h3>space-around</h3>
+    <div class="container2">
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+    </div>
+    <h3>end</h3>
+    <div class="container3">
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+    </div>
+    <h1>justify-content and align-content</h1>
+    <div class="container4">
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">A</div>
+    </div>
+</body>
+</html>

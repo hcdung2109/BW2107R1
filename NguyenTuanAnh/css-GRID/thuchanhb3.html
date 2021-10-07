@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        grid-gap:10px;
+        background-color: yellowgreen;
+        border:2px solid #000;
+        box-shadow: 2px 0 2px #ccc;
+        padding: 10px;
+    }
+    .item{
+        border:2px solid #000;
+        border-radius:4px ;
+        padding: 10px;
+        font-size:20px;
+        text-align: center;
+    }
+    .item.i1,.item.i5{
+        grid-column: 1/3;
+        background-color: aqua;
+    }
+    .item.i3{
+        background-color: burlywood;
+        grid-area:1/4/3/5;
+    }
+    .item.i6{
+        background-color: chartreuse;
+        grid-area:3/1/span 3/3;
+    }
+    .item.i8{
+       background-color: crimson;
+       grid-area:3/3/span 3/5; 
+    }
+    .item.i9{
+        background-color: #ccc;
+        grid-area:2/5/span 3/6;
+    }
+    .item.i13{
+       background-color: crimson;
+       grid-area:6/3/7/5; 
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">1</div>
+        <div class="item">2</div>
+        <div class="item i3">3</div>
+        <div class="item">4</div>
+        <div class="item i5">5</div>
+        <div class="item i6">6</div>
+        <div class="item">7</div>
+        <div class="item i8">8</div>
+        <div class="item i9">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item i13">13</div>
+        <div class="item">14</div>
+    </div>
+</body>
+</html>

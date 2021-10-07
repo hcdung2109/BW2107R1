@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .ft{
+        width: 90%;
+        background-color: cadetblue;
+        margin: auto;
+        border: 2px solid #000;
+        border-radius: 10px;
+        position: relative;
+    }
+    .ft::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .container{
+        padding: 10px;
+        display:grid;
+        grid-template-columns:auto auto auto;
+        grid-gap:10px;
+    }
+    .item{
+        border:2px solid #000;
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px;
+        font-size: xx-large;
+        color:chartreuse;
+        font-family: system-ui;
+    }
+    .btn{
+        width: 50%;
+        /* float: right; */
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        position: absolute;
+        right: 0;
+        bottom:0;
+    }
+    .btn-1{
+        border-radius: 4px;
+        background-color: darkgoldenrod;
+       
+    }
+    a{ 
+        color:white;
+        text-decoration: none;
+        font-size:20px;
+    }
+    .btn-1:hover a{
+        color:violet;
+    }
+</style>
+</head>
+<body>
+    <div class="ft">
+        <div class="container">
+            <div class="item">input1</div>
+            <div class="item">input2</div>
+            <div class="item">input3</div>
+            <div class="item">input4</div>
+            <!-- <div class="item">input5</div>
+            <div class="item">input6</div> -->
+        </div>
+        <div class="btn">
+            <button class="btn-1"> <a href="#">RESET</a></button>
+            <button class="btn-1"> <a href="#">SEARCH</a></button>
+        </div>
+    </div>
+</body>
+</html>
