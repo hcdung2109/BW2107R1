@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<style>
+		.Geeks {
+			width: 385px;
+			height: 70px;
+			display: flex;
+		}
+		
+		.Geeks div {
+			flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: 80px;
+			
+			/* For Safari 6.1 and above browsers */
+			-webkit-flex-grow: 0;
+			-webkit-flex-shrink: 0;
+			-webkit-flex-basis: 80px;
+		}
+		
+		.Geeks div:nth-of-type(2) {
+			flex-basis: 50%;
+		}
+		.Geeks div:nth-of-type(3) {
+			flex-basis: auto;
+		}
+		.Geeks div:nth-of-type(4) {
+			flex-basis: initial;
+		}
+		.Geeks div:nth-of-type(5) {
+			flex-basis: inherit;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		
+		<h1>
+			The flex-basis Property
+		</h1>
+		
+		<div class = "Geeks">
+			
+			<div style = "background-color:green;">
+				number 80px
+			</div>
+			
+			<div style = "background-color:lightgreen;">
+				percentage
+			</div>
+			
+			<div style = "background-color:green;">
+				auto
+			</div>
+			
+			<div style = "background-color:lightgreen;">
+				initial
+			</div>
+			
+			<div style = "background-color:green;">
+				inherit
+			</div>
+		</div>
+		
+	</center>
+</body>
+
+</html>					

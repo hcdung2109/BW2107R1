@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<style>
+		.Geeks {
+			width: 560px;
+			height: 100px;
+			border: 1px solid black;
+			display: flex;
+		}
+		
+		.Geeks div {
+			flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: 80px;
+		}
+		.Geeks div:nth-of-type(2) {
+			flex-basis: 200px;
+		}
+		.Geeks div:nth-of-type(5) {
+			flex-basis: 120px;
+		}
+		h3{
+			color:Green;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		
+		<h1>
+			The flex-basis Property
+		</h1>
+		
+		<div class = "Geeks">
+			<div style="background-color:green">
+				80px
+			</div>
+			
+			<div style="background-color:lightgreen">
+				GeeksforGeeks <br>200px
+			</div>
+			
+			<div style="background-color:green">
+				80px
+			</div>
+			
+			<div style="background-color:lightgreen">
+				80px
+			</div>
+			
+			<div style="background-color:green">
+				120px
+			</div>
+		</div>
+	</center>
+</body>
+
+</html>					
