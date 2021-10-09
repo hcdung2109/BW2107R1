@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h3,strong{
+            text-align: center;
+            display: block;
+        }
+        .grid-container{
+            display: grid;
+            background-color: lightgreen;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        .grid-container > div{
+            background-color: green;
+            color: white;
+            padding: 20px 0px;
+            font-size: xx-large;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+  
+        <h1>
+            The grid-column-start Property
+        </h1>
+        <h3>auto value</h3>
+        <strong>
+            the item will be placed
+            following the initial flow
+        </strong>   
+
+       
+    <div class="grid-container">
+        <div class="item1">G</div>
+        <div class="item2">e</div>
+        <div class="item2">e</div>
+        <div class="item3">k</div>
+        <div class="item4">s</div>
+        <div class="item5">f</div>
+        <div class="item6">o</div>
+        <div class="item6">r</div>
+        <div class="item1">G</div>
+        <div class="item2">e</div>
+        <div class="item2">e</div>
+        <div class="item3">k</div>
+        <div class="item4">s</div>
+    </div>
+</body>
+</html>
