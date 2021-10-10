@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.header{
+		
+			align-items: center;
+		}
+		.header img{
+			width:200px;
+			margin-left:200px;
+			margin-top:50px;
+			align-items: center;
+			flex:50%;
+		}
+		.header button{
+			margin-left:-5px;
+			height:28px;
+		}
+		.search{
+			width:180px ;
+			height:30px;
+		  	justify-content:end;
+			flex:50%;
+			align-items:center;
+		}
+		.menu{
+			background-color:#f05123;
+			width:100%;
+			margin-top:20px;
+			padding:10px;
+			align-items:center;
+			box-sizing: border-box;
+		}
+		.menu li{
+			display: inline-block;
+			margin:10px;
+			font-size:18px;
+		}
+		.menu li a{
+			color:white;
+			text-decoration: none;
+			list-style: none;
+			position: relative;
+		}
+		li a::after{
+			content:"";
+			width:0;
+			height:3px;
+			position:absolute;
+			background-color:blue;
+			bottom:-5px;
+			left:30%;
+		}
+		li a:hover::after{
+			width:50%;
+			transition: width 0.3s;
+		}
+		.main{
+			display:flex;
+			flex-wrap: wrap;
+		}
+		.nav-bar{
+			flex:30%;
+			background-color:lightgrey;
+			padding:20px;
+		}
+
+		.fakeimg {
+		background-color: #aaa;
+		width: 100%;
+		}
+
+		.content{
+			flex:70%;
+			padding:20px;
+		}
+
+		.content h2{
+			background-color:#f05123;
+			color:white;
+			width:100%;
+		}
+		.title{
+			background-color:white;
+			color:chocolate;
+			text-align:center;
+			margin-top:20px;
+		}
+		.contact{
+			margin-top:20px;
+			display:flex;
+			flex-direction:column;	
+			align-items:center;
+			justify-content:center;
+		}
+		.contact input{
+			width:300px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.footer{
+			display:flex;
+			flex-wrap: wrap;
+			height:200px;
+			margin-top:20px;
+			box-sizing: border-box;
+			border-top:1px solid #f05123;
+			align-items:center;
+			justify-content:center;
+		}
+		.footer .box{
+			width:300px;
+			padding:20px;
+		}
+		.footer .box h4{
+			color:#f05123;
+		}
+		@media  (min-width: 570px) {
+			.header{
+				display:block;
+			}
+			.search{
+				margin-left:200px;
+			}
+			.fa{
+				margin-left:0px;
+			}
+			.main{
+				flex-direction:column;
+			}
+			.footer{
+				height:300px;
+			}
+			
+		}
+		@media (min-width:800px) {
+			.main{
+				flex-direction:row;
+			}
+			.search{
+			width:180px !important;
+			height:30px;
+		  	margin-left:600px;
+			  margin-top:50px;
+		}
+			.footer{
+				height:200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="https://daihoc.fpt.edu.vn/media/2016/12/Logo-FU-01.png" alt="">
+		<input type="search" placeholder="Tìm kiếm..." class="search">
+		<button>
+		<i class="fa fa-cloud" style="width:40px;height:22px;font-size:20px;color:lightpink"></i>
+	</button>
+	</div>
+<div class="menu">
+	<li><a href="">Trang chủ</a></li>
+	<li><a href="">Tin tức</a></li>
+	<li><a href="">Giới thiệu</a></li>
+</div>
+	</div>
+	<div class="main">
+		<div class="nav-bar">
+			<h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+		</div>
+		<div class="content">
+			<h2>Kĩ thuật phần mềm</h2>
+			Tại Đại học FPT, Kỹ thuật phần mềm là chuyên ngành học có tiếng và lâu đời nhất. Hiện tại, sinh viên Đại học FPT đã và đang làm việc, học tập tại các quốc gia như Mỹ, Đức, Nhật Bản, Singapore – những thị trường CNTT quan trọng của thế giới. Đây là kết quả của chương trình đào tạo chuẩn quốc tế, chú trọng đào tạo ngoại ngữ, phát triển kỹ năng mềm cùng định hướng đầu ra đáp ứng nhu cầu doanh nghiệp.
+
+			Chương trình được thiết kế theo chuẩn của Hiệp hội Máy tính (Association for Computing Machinery-ACM), chuẩn đào tạo kỹ sư phần mềm của Accreditation Board for Engineering and Technology (ABET – Mỹ), Hiệp hội Phần mềm Việt Nam (VINASA), Chương trình Đào tạo của EC-Council, Học viện Mạng và Phần cứng Jetking (Ấn Độ); với sự tư vấn của các chuyên gia và doanh nghiệp CNTT như Tập đoàn FPT, Tập đoàn IBM, đồng thời tích hợp các chuẩn kiến thức của giới công nghiệp như Oracle, Cisco… Nội dung đào tạo chuyên ngành Kỹ thuật phần mềm của Đại học FPT tích hợp cân bằng giữa kiến thức nền tảng với công nghệ, kỹ thuật mới: không chỉ bao gồm các kiến thức về khoa học cơ bản của nhóm ngành CNTT mà còn đào tạo đầy đủ về quy trình phát triển phần mềm, từ phương pháp, kỹ thuật, công nghệ trong phân tích, thiết kế, phát triển, kiểm thử, bảo trì phần mềm và quản lý dự án phần mềm cũng như các ứng dụng CNTT; cân bằng giữa lý thuyết với ứng dụng và thực hành: thời gian học lý thuyết chiếm chỉ tối đa một nửa thời gian của hầu hết các môn học.
+
+			Địa điểm học: Hà Nội, Đà Nẵng, TP.Hồ Chí Minh, Cần Thơ
+			<h3 class="title">ĐĂNG KÍ TƯ VẤN</h3>
+			<div class="contact">
+				<label for="">Họ và Tên:</label>
+				<input type="text" required>
+				<label for="">Email:</label>
+				<input type="text" required>
+				<label for="">Điện thoại:</label>
+				<input type="text" required>
+				<label for="">Tỉnh/thành phố:</label>
+				<input type="text" required>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	<div class="box">
+		<h4>TP. HỒ CHÍ MINH</h4> <br>
+		Lô E2a-7, Đường D1 Khu Công nghệ cao, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh
+		
+		Điện thoại: 028 7300 1866
+		
+		Email: daihocfpt@fpt.edu.vn
+	</div>
+	<div class="box">
+		<h4>HÀ NỘI</h4> <br>
+		Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+
+		Điện thoại: 024 7300 1866
+
+		Email: daihocfpt@fpt.edu.vn
+	</div>
+	</div>
+</body>
+</html>
