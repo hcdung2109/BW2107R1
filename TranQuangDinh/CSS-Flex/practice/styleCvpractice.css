@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+.flex-container {
+    display: flex;
+}
+i {
+    color: black;
+}
+h1 {
+    margin-top: 30px;
+    color: #48ab50;
+    font-weight: bolder;
+}
+body {
+    width: 60%;
+    margin: 0px auto;
+    background-color: #daf0dc;
+}
+.side-bar {
+    display: flex;
+    flex-direction: column;
+}
+.side-bar .breakline {
+    width: 95%;
+    border-bottom: 2px solid #cfcfcf;
+    margin-bottom: 20px !important;
+}
+.side-bar .breakline div {
+    height: 5px;
+    background-color: #cfcfcf;
+    width: 100px;
+}
+.main-content .breakline {
+    width: 95%;
+    border-bottom: 2px solid #494d4a;
+    margin-bottom: 20px !important;
+}
+.main-content .breakline div {
+    height: 5px;
+    background-color: #494d4a;
+    width: 100px;
+}
+.side-bar {
+    background-color: #494d4a;
+}
+.info {
+    background-color: #48ab50;
+    opacity: 0.8;
+    width: 100%;
+}
+#name-info {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0px 10px;
+}
+#job-info {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.info-item {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.info {
+    position: absolute;
+    bottom: 0px;
+}
+.avatar {
+    text-align: center;
+}
+.contact-item p, .education-item p, .skills-item p {
+    color: #cfcfcf;
+    letter-spacing: -0.5px;
+}
+.contact-item, .education-item, .skills-item {
+    padding: 0px 10px;
+}
+.main-content {
+    background-color: #cfcfcf;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+.education-item .item {
+    margin: 20px 0px;
+}
+.item .head {
+    font-weight: 600;
+    letter-spacing: -2px !important;
+}
+
+.skills-item>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+[class *="index-"] {
+    width: 100px;
+    height: 5px;
+    background-color: #cfcfcf;
+}
+.index-wordpress>div {
+    height: inherit;
+    width: 80%;
+    background-color: #48ab50;
+}
+.index-html>div {
+    height: inherit;
+    width: 90%;
+    background-color: #48ab50;
+}
+.index-jquery>div {
+    height: inherit;
+    width: 89%;
+    background-color: #48ab50;
+}
+.index-pts>div {
+    height: inherit;
+    width: 79%;
+    background-color: #48ab50;
+}
+.index-illustrator>div {
+    height: inherit;
+    width: 70%;
+    background-color: #48ab50;
+}
+.index-marketing>div {
+    height: inherit;
+    width: 74%;
+    background-color: #48ab50;
+}
+.index-creativity>div {
+    height: inherit;
+    width: 85%;
+    background-color: #48ab50;
+}
+.index-comunication>div {
+    height: inherit;
+    width: 86%;
+    background-color: #48ab50;
+}
+.index-teamwork>div {
+    height: inherit;
+    width: 87%;
+    background-color: #48ab50;
+}
+
+div.about-item > p {
+    width: 95%;
+    text-align: justify;
+}
+div.work-experience-item > div {
+    margin-bottom: 25px;
+    width: 95%;
+    text-align: justify;
+}
+div.work-experience-item li {
+    margin: 0 5%;
+}
+
+.content-reference {
+    display: flex;
+}
+.content-reference div {
+    margin-right: 60px;
+    
+}
+.left .head {
+    font-weight: bold;
+}
+.right .head {
+    font-weight: bold;
+}

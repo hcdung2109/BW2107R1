@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .flex-container{
+            background-color: chartreuse;
+            margin: 10px;
+        }
+        div [class *= "row"] {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px;
+        }
+        div [class *= "row"] div {
+            padding: 10px;
+        }
+        .item-btns button {
+            margin: 10px;
+        }
+        .item-btns {
+            display: flex;
+            justify-content: flex-end;
+        }
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            div [class *= "row"] {
+                flex-direction: column;
+            }
+            div [class *= "row"] input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="row1">
+            <div class="item"><input type="text"></div>
+            <div class="item"><input type="text"></div>
+            <div class="item"><input type="text"></div>
+        </div>
+        <div class="row2">
+            <div class="item" style="flex: 1;"><input type="text"></div>
+            <div class="item-btns" style="flex: 2">
+                <button type="reset">RESET</button>
+                <button type="button">SEARCH</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
