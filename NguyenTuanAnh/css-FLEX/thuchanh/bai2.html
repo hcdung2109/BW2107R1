@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            border:2px solid #000;
+            border-radius: 10px;
+            width:95%;
+            margin: auto;
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .top>div{
+            border:2px solid #000;
+            padding: 10px;
+            border-radius: 4px;
+            flex-grow: 1;
+            margin-right: 5px;
+            text-align: center;
+        }
+        .top>.btn{
+            flex-grow: 2;
+            border: none;
+            display: flex;
+            justify-content:flex-end;
+            flex-wrap: wrap;
+        }
+        .top>.btn button{
+            flex-basis: 30%;
+            margin-left: 5px;
+            border: 2px solid #000;
+            border-radius: 4px;
+            padding: 2px;
+            transition: 0.5s;
+        }
+        .top>.btn button:hover{
+            transform: translateY(-3px);
+        }
+        .top>.btn button:hover a{
+            color: chartreuse;
+        }
+        a{
+            text-decoration: none;
+            color:brown;
+        }
+        @media only screen and (max-width:800px) {
+            .top{
+                flex-direction: column;
+            }
+            .top>div{
+                margin-bottom: 10px;
+            }
+            .top:last-child{
+                padding-top:0 ;
+                margin-top:-10px ;
+            }
+            .top>.btn{
+                justify-content: space-between;
+            }
+            .top>.btn button{
+                flex-basis: 46%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="item">input1</div>
+            <div class="item">input2</div>
+            <div class="item">input3</div>
+        </div>
+        <div class="top">
+            <div class="item">input4</div>
+            <div class="btn">
+                <button type="reset" class="btn-1"> <a href="#">RESET</a></button>
+                <button type="button" class="btn-1"> <a href="#">SEARCH</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 95%;
+            margin: auto;
+            border:2px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        div [ class*="a"]{
+            display: flex;
+            justify-content: space-between;
+            margin:10px 10px 10px 0;
+        }
+        .header>.green{
+            background-color: green;
+            flex:1;
+            /* border:2px solid #000; */
+            padding: 100px;
+            margin-left:10px ;
+
+        }
+        #banner>.blue {
+            background-color: blue;
+            flex:1;
+            border:2px solid #000;
+            padding:150px 100px;
+            margin-left:10px ;
+        }
+        #body>.pink{
+            background-color: pink;
+            flex:1;
+            border:2px solid #000;
+            padding: 200px 100px;
+            margin-left:10px ;
+        }
+        @media only screen and (max-width:800px)
+        {
+            [class*="a"]{flex-direction: column;}
+            .header>.green{
+                margin-bottom: 10px;
+            }
+            #banner>.blue{
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header a">
+            <div class="green"></div>
+            <div class="green"></div>
+            <div class="green"></div>
+        </div>
+        <div id="banner" class="a">
+            <div class="blue"></div>
+            <div class="blue"></div>
+        </div>
+        <div id="body" class="a">
+            <div class="pink"></div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
