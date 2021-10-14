@@ -58,7 +58,7 @@
     display: block;
     width: 100px;
     height: 5px;
-    background-color: yellow;
+    background-color: #fff;
 }
 .title hr{
     background-color: white;
@@ -83,6 +83,36 @@
 }
 .text p{
     margin-bottom: 10px;
+}
+/* css skill */
+.skill{
+    width: 80%;
+    margin: auto;
+}
+.skill-text{
+    margin: 10px 0;
+}
+.skill-box{
+    display: flex;
+}
+.skill-box>p{
+    flex: 1;
+}
+.skill-box .skill-nav{
+    /* display: block; */
+    margin:5px 0;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+}
+.skill-box .skill-nav::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    top:0;
+    width: 80%;
+    background-color: aqua;
+    z-index: 1;
 }
 /* css right */
 .right{
