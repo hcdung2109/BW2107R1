@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+   display: block;
+}
+header{
+    position: relative;
+}
+.shopping-mall{
+    position: absolute;
+    bottom: 20px;
+    font-variant: small-caps;
+}
+.shopping-mall>h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.3px;
+    color:white;
+    text-shadow: 0 0  2px black;
+    padding-bottom: 0;
+    border-bottom: 2px dotted pink;
+    margin:0;
+}
+.shopping-mall>h5{
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+.pull-right{
+    float:right!important;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* navigation */
+a.navbar-brand{
+    font-size: 20px;
+}
+a>span{
+    font-family: serif;
+    font-weight: bold;
+}
+.dropdown-menu{
+    top:41px;
+}
+.nav-link{
+    font-size: 15px;
+}
+/* body */
+.poly-prod{
+    text-align: center;
+    padding: 5px;
+}
+.card-default{
+    border-color:#ddd;
+}
+.poly-prod .card-body img{
+    height: 150px;
+    max-width: 95%;
+}
+.row{
+    margin-top:10px;
+}
+
+aside,aside>.poly-cart,aside>.card-defauft{
+    margin-top: 10px;
+}
+aside .card-defauft span{
+    font-weight: bolder;
+    font-size: 18px;
+}
+/* footer */
+footer{
+    margin-top: 20px;
+}
