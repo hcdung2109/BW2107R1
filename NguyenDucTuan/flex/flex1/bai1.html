@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container
+            {
+                display: flex;
+                background-color:rgb(195, 224, 64);
+                flex-direction: column;
+               
+            }
+        .flex-1 {   
+           display: flex;
+           /* justify-content:space-between; */
+
+
+        }
+        .flex-2 { 
+            display: flex;
+            justify-content:space-between;
+        }
+
+        .flex-3 { 
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            
+        }
+        .btn1{
+          
+            
+            width: 50px;
+            padding: 10px;
+
+
+        }
+        .gr-btn{
+            
+            
+        }
+        .flex-item{
+            flex: 1;
+            background-color:#333;
+            font-size: 30px;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">  
+        <div class="flex-1">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>  
+        </div>
+
+        <div class="flex-2">
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>  
+        </div>
+        
+        <div class="flex-3">
+            <div class="btn1">
+                <input class="gr-btn" type="button"  value="Reset"> 
+            </div>
+            <div class="btn1">
+                <input class="gr-btn" type="button"  value="Search"> 
+            </div>
+        </div>
+      
+      </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.body{
+
+}
+
+.cv{
+    width: 50%;
+    background-color: rgb(116, 107, 107);
+    display : flex;
+    margin : auto;
+
+}
+
+.columns-left{
+    width: 30%;
+    background-color:rgb(72, 75, 68);
+}
+.profile-prf {
+    position: relative;
+    width: 100%;
+}
+
+.profile-prf .img-ls{
+    width: 100%;
+}
+.text  {
+    width: 100%;
+    background-color: rgba(37, 190, 32, 0.7);
+    position: absolute;
+    bottom: 4px;
+    text-align: center;
+}
+
+.text .prf-ls{
+    font-size: 25px;
+}
+
+
+/* contact left */
+.contact {
+    padding : 10px 10px;
+}
+
+.contact h1 {
+    margin: 5px 0;;
+    font-size: 20px;
+    color: rgb(67, 238, 124);
+}
+
+.title{
+    display: flex;
+    justify-content:center;
+}
+.contact .title ul li {
+    padding : 5px 0;
+    color: #fff;
+    
+
+}
+
+.contact-edu{
+    display: block;
+}
+.contact-edu h2{
+    color: #fff;
+    font-size: 12px;
+    padding : 5px 0;
+    margin: 5px 0;
+}
+
+/* Skill */
+.skill-6{
+    padding-bottom: 10px;
+}
+.skill-6 h2{
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 0;
+}
+.skill-3 h2{
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+
+/* Right */
+.columns-right{
+    background-color:rgb(153, 149, 149);
+    width: 70%;
+    padding: 10px 10px;
+}
+
+.about h1 {
+    color: rgb(67, 238, 124);
+    font-size: 20px;
+    padding: 6px 0;
+}
+
+.about p {
+    color: #fff;
+    font-size: 13px;
+    padding : 10px 0;
+}
+ /* work */
+ .jobt-1{
+     padding : 10px 0;
+ }
+ .jobt-1 h2 {
+     color: #333;
+     font-size: 15px;
+ }
+ .jobt-1 p {
+    color: #333;
+    font-size: 15px;
+    
+ }
+ .jobt-1 ul li {
+     margin: 10px 30px;
+ }
+
+ /* Ref */
+
+ .refer{
+    
+ }
+
+ .rf{
+     display: flex;
+     justify-content: space-between;
+ }
+ .tl{
+     display: block;
+     width: 100%;
+ }
+ .ref-left h2{
+     font-size: 14px;
+     padding: 5px 0;
+ }
+
+ .ref-right h2{
+    font-size: 14px;
+    padding: 5px 10px;
+}

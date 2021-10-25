@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    border: 1px solid rgba(143, 39, 39, 0.8);
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(241, 231, 231, 0.8);
+    padding: 30px;
+    font-size: 30px;
+    color: #FFF;
+  }
+
+  .grid-itembtn{
+      border: none;
+      display:block;
+      padding:30px 0;
+  }
+
+
+  .btnr{
+        display: inline-block;
+        float:right;
+  }
+
+  .btns{
+            display: inline-block;
+            float:right;
+  }
