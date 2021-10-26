@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: blue;
+            padding: 10px;
+        }
+        .row1,.row2{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .input{
+            height: 30px;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            flex-grow: 1;
+        }
+        @media screen and (max-width: 700px) {
+            .row1,.row2{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="row1">
+            <div class="input">input 1</div>
+            <div class="input">input 2</div>
+            <div class="input">input 3</div>
+        </div>
+        <div class="row2">
+            <div class="input"> input 4</div>
+            <div class="input" style="flex-grow: 2; display: flex; justify-content: flex-end; background-color: blue;">
+                <button style="margin: 0px 10px; padding: 0px;">RESET</button>
+                <button style="padding: 0px;">SEARCH</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

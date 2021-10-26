@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            margin: auto;
+            display: flex;
+            background-color: blue;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .input{
+            height: 30px;
+            width: 30%;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+        }
+        .button{
+            height: 30px;
+            margin: 10px;
+            text-align: end;
+            flex-grow: 3;
+        }
+        @media screen and (max-width: 1250px){
+            .input{
+                width: 45%;
+            }
+            .button{
+                flex-grow: 2;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            .flex-container{
+                flex-direction: column;
+            }
+            .input{
+                width: 90%;
+            }
+            .button{
+                flex-grow: 1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="input">input1</div>
+        <div class="input">input2</div>
+        <div class="input">input3</div>
+        <div class="input">input4</div>
+        <div class="input">input5</div>
+        <div class="input">input6</div>
+        <div class="button">
+            <button>Reset</button>
+            <button>Search</button>
+        </div>
+    </div>
+</body>
+</html>

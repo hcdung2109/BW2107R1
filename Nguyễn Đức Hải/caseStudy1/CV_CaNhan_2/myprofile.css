@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #ccc;
+}
+.container {
+    margin: auto;
+    display: flex;
+    width: 90vw;
+    background-color: white;
+}
+.left-info {
+    flex: 3;
+    background-color: #333;
+}
+.right-info {
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.portrait-name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+.portrait-name img {
+    width: 100%;
+    height: auto;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(3, 255, 3, 0.5);
+}
+.fullname {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+.carrer {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.detail-left {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.title-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.detail-title {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.underline-title {
+    display: flex;
+}
+
+.hr1 {
+    display: flex;
+    flex: 1;
+    border: none;
+    border-bottom: solid 4px white;
+}
+.hr2 {
+    display: flex;
+    flex-grow: 5;
+    border: none;
+    border-bottom: solid 1px white;
+}
+
+.detail-left ul {
+    list-style: none;
+}
+.detail-left ul li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+ion-icon {
+    color: rgb(31, 29, 29);
+    font-size: 20px;
+}
+.certification {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.type-certification {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.list-skill {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.detail-skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0px;
+}
+.name-skill {
+    width: max-content;
+}
+.point-skill {
+    height: 5px;
+    width: 30%;
+    border-radius: 2px;
+}
+.skill1 {
+    background-image: linear-gradient(
+          to right,
+          green 0%,
+          green 75%,
+          gray 75%,
+          gray 100%
+    );
+}
+.skill2 {
+    background-image: linear-gradient(
+          to right,
+          green 0%,
+          green 85%,
+          gray 85%,
+          gray 100%
+    );
+}
+.skill3 {
+    background-image: linear-gradient(
+          to right,
+          green 0%,
+          green 95%,
+          gray 95%,
+          gray 100%
+    );
+}
+.skill4 {
+    background-image: linear-gradient(
+          to right,
+          green 0%,
+          green 80%,
+          gray 80%,
+          gray 100%
+    );
+}
+.skill5 {
+    background-image: linear-gradient(
+          to right,
+          green 0%,
+          green 60%,
+          gray 60%,
+          gray 100%
+    );
+}
+.about,
+.experience,
+.references {
+    flex-grow: 1;
+}
+.right-info .title-info {
+    margin-top: 25px;
+}
+.detail-title {
+    color: rgb(4, 197, 4);
+}
+.right-info .hr1 {
+    border-bottom: solid 4px black;
+}
+.right-info .hr2 {
+    flex-grow: 8;
+    border-bottom: solid 1px black;
+}
+.job {
+    margin-top: 15px;
+}
+.name-job {
+    font-size: 15px;
+    font-weight: 600;
+}
+.office,
+.about-job,
+.detail-job {
+    margin-top: 5px;
+}
+.detail-job {
+    margin-left: 50px;
+}
+.refer-company {
+    display: flex;
+    justify-content: space-evenly;
+}
+.company {
+    margin: 20px;
+}
+.name-manager,
+.company-name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.type-manager,
+.company-phone,
+.company-mail {
+    font-size: 13px;
+    font-weight: 300;
+}
+@media only screen and (min-width: 1023px) {
+}
+
+@media only screen and (max-width: 420px) {
+    .container {
+          flex-direction: column;
+          width: 95%;
+    }
+    .refer-company {
+          flex-direction: column;
+    }
+    .hr2 {
+          flex-grow: 2;
+    }
+    .right-info .hr2 {
+          flex-grow: 2;
+    }
+}
