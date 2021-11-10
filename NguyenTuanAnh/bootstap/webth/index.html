@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>TH</title>
+    <style>
+      #so1:hover #so2{
+        display: block !important;
+      }
+    </style>
+</head>
+<body>
+    <div id="wrapper" class="main">
+        <header id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-success">
+                    <a class="navbar-brand" href="#">
+                        <img src="	https://www.thmilk.vn/wp-content/themes/wp-th/assets/images/logo.png?%3E" alt="" class="logo">
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">CAU CHUYEN THAT TH</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SAN PHAM
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">CONG BO SAN PHAM</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KHUYEN MAI</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CUA HANG</a>
+                        </li>
+                        <li class="nav-item dropdown" id ="so1">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              TRUYEN THONG
+                            </a>
+                            <div class="dropdown-menu" id="so2" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">THONG TIN TU VAN SU DUNG SUA</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">BI QUYET KHOE DEP TU NHIEN</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">BI QUYET CHAM SOC CON CAI</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">PHONG CAC SONG XANH</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TUYEN DUNG</a>
+                        </li>
+                        <li class="nav-item option">
+                            <select name="country">
+                                <option value="VN">VN</option>
+                                <option value="RUS">RUS</option>
+                                <option value="USA">USA</option>
+                              </select>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 rounded-pill search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 rounded-circle" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <section class="banner">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://www.thmilk.vn/wp-content/uploads/2020/09/Banner_TH-MILK-Canh-dong-huong-duong.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.thmilk.vn/wp-content/uploads/2019/11/Banner-2-1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="	https://www.thmilk.vn/wp-content/uploads/2019/11/Banner-3-1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.thmilk.vn/wp-content/uploads/2021/04/Banner-All-product.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.thmilk.vn/wp-content/uploads/2021/04/Banner-Bev.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </section>
+            <!-- <section class="caro-menu">
+                <div class="owl-carousel">
+                    <div class="item">
+                      <img src="https://www.thmilk.vn/wp-content/uploads/2019/11/ic-suatietrung.png">
+                      <div class="caption">Caption 1</div>
+                    </div>
+                    <div class="item">
+                      <img src="https://www.thmilk.vn/wp-content/uploads/2019/11/ic-suathanhtrung.png">
+                      <div class="caption">Caption 2</div>
+                    </div>
+                    <div class="item">
+                      <img src="https://via.placeholder.com/627x200/?text=3">
+                      <div class="caption">Caption 3</div>
+                    </div>
+                    <div class="item">
+                      <img src="https://via.placeholder.com/627x300/?text=4">
+                      <div class="caption">Caption 4</div>
+                    </div>
+                    <div class="item">
+                      <img src="https://via.placeholder.com/627x400/?text=5">
+                      <div class="caption">Caption 5</div>
+                    </div>
+                    <div class="item">
+                      <img src="https://via.placeholder.com/255x200/?text=6">
+                      <div class="caption">Caption 6</div>
+                    </div>
+                </div>
+            </section> -->
+            <section class="produce container ">
+              <div class="title mb-30">
+                  <h1 class="text-center mb-20">Sản phẩm nổi bật</h1>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                  <div class="card">
+                    <img src="https://www.thmilk.vn/wp-content/uploads/2021/09/ice-cream-topkid-que-46g-dau-chuoi_457x396.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                  <div class="card">
+                    <img src="https://www.thmilk.vn/wp-content/uploads/2021/09/ice-cream-topkid-que-46g-dau-chuoi_457x396.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-2">
+                  <div class="card">
+                    <img src="https://www.thmilk.vn/wp-content/uploads/2021/09/ice-cream-topkid-que-46g-dau-chuoi_457x396.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-lg-3 col-xl-2">
+                  <div class="card">
+                    <img src="https://www.thmilk.vn/wp-content/uploads/2021/09/ice-cream-topkid-que-46g-dau-chuoi_457x396.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-lg-3 col-xl-2">
+                  <div class="card">
+                    <img src="https://www.thmilk.vn/wp-content/uploads/2021/09/ice-cream-topkid-que-46g-dau-chuoi_457x396.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          <section class="caro_produce container">
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                  <img src="	https://www.thmilk.vn/wp-content/uploads/2021/10/UHT-4tang1-T9-2021-HomePage-1171x661.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="	https://www.thmilk.vn/wp-content/uploads/2021/09/Website.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.thmilk.vn/wp-content/uploads/2021/05/Chanh-Day-Chia-Cai-tien_1920x1080px.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="	https://www.thmilk.vn/wp-content/uploads/2021/03/Banner-SP-Home-Gao-lut-do-01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="https://www.thmilk.vn/wp-content/uploads/2020/11/Thumbnail-Web-t%C3%BAi-v%E1%BA%A3i.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" style="opacity: 0;" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="carousel-control-next" style="opacity: 0;" type="button" data-target="#carouselExampleInterval" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
+          </section>
+          <section class="shop-th container mt-10">
+            <div class="row">
+              <div class="col-md-6 mt-10">
+                <div class="text">
+                  <h3 class="text-center mb-10 ">TH true mart</h3>
+                  <p>TH true mart là chuỗi cửa hàng phân phối hiện đại, chuyên cung cấp trực tiếp các sản phẩm thực phẩm sạch, 
+                  an toàn, tươi ngon và bổ dưỡng, đạt chuẩn Quốc tế tới tận tay người tiêu dùng.</p>
+                </div>
+                <div class="btn row">
+                  <button class="col-xl-5 p-10 m-10">Tim cua hang <i class="fa fa-search ml-3"></i></button>
+                  <button class="col-xl-5 p-10 m-10">Mua hang truc tuyen<i class="fa fa-home ml-3"></i></button>
+                </div>
+              </div>
+              <div class="col-md-6 mt-10">
+                <img src="https://www.thmilk.vn/wp-content/uploads/2019/11/true-mart.png" alt="">
+              </div>
+            </div>
+          </section>
+        </main>
+      <footer class=" bg-success mt-20" >
+        <div class="row">
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Dignissimos aliquam tenetur quod fugit dolorum minus, dolores animi eius ad eos beatae cum totam officia odio.
+              Ad voluptas repellat doloribus asperiores!
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Dignissimos aliquam tenetur quod fugit dolorum minus, dolores animi eius ad eos beatae cum totam officia odio.
+              Ad voluptas repellat doloribus asperiores!
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Dignissimos aliquam tenetur quod fugit dolorum minus, dolores animi eius ad eos beatae cum totam officia odio.
+              Ad voluptas repellat doloribus asperiores!
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum tenetur nesciunt, numquam dolorem non consectetur magni quia ut deserunt facere! Sint,
+              repellat pariatur ut eius nobis maxime voluptates ipsa delectus!</p>
+          </div>
+          <div class="col-8 row">
+            <div>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-phone"></i>
+              <i class="fa fa-clock"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="container-3">
+      <div class="to-top" onclick="len()"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function len(){
+            $("html,body").animate({scrollTop:0},"fast");
+            //  alert(1434);
+        }
+    </script>
+</body>
+</html>

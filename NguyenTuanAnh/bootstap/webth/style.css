@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* css header */
+html, body{
+    overflow-x:hidden;
+}
+header#header{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    background-color: #eadede;
+    z-index: 1;
+}
+#header .container{
+    position: relative;
+}
+.option{
+    position: absolute;
+    right: 12px;
+    top:30%;
+}
+
+.dropdown-item{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 90%;
+}
+.dropdown-menu{
+    width: 300px;
+}
+.dropdown-item:hover{
+    transform: translateX(10px);
+    color: blue !important;
+    background-color: white;
+}
+.search{
+    visibility: hidden !important;
+    
+}
+form{
+    position: absolute;
+    top: 29%;
+    right: 74px;
+
+}
+form.my-2:hover .search{
+    visibility: visible !important;
+}
+/* main */
+.banner{
+    height: 90vh;;
+}
+.banner img{
+    height: 90vh;
+}
+
+/* produce */
+
+.produce{
+    margin-top: 40px;
+    background-color: rgba( green, 0.5);
+}
+.produce>.row{
+    justify-content: center;
+}
+.produce .title{
+    margin-bottom: 20px;
+    color:aqua;
+}
+.produce .card{
+    width: 100%;
+}
+.produce .col-lg-3 .card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 10px #ccc;
+}
+.produce .col-lg-3:nth-child(3),.produce .col-lg-3:nth-child(4){
+    display: none;
+}
+.produce .col-lg-3:last-child{
+    display: none;
+} 
+.caro_produce{
+    margin-top: 40px;
+}
+.shop-th .btn{
+width: 100%;
+}
+.shop-th .btn button{
+    border-radius: 10px;
+    background-color: rgb(47, 47, 228);
+    height: 50px;
+    color:white;
+    border:1px solid rgb(47, 47, 228);
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.shop-th .btn button:hover{
+    background-color: white;
+    color:rgb(47, 47, 228);
+}
+.shop-th img{
+    width: 100%;
+}
+.produce .col-lg-3:nth-child(3),.produce .col-lg-3:nth-child(4){
+    display: none;
+}
+.produce .col-lg-3:last-child{
+    display: none;
+}
+footer{
+    margin-top:20px;
+}
+@media only screen and (min-width:768px){
+    main{
+        margin-top:70px;
+    }
+    .produce .col-lg-3:nth-child(3){
+        display: block;
+    }
+
+}
+@media only screen and (min-width:992px){
+    #header .navbar ul li.nav-item{
+        font-size: 12px;
+        margin-left:20px
+    }
+    .banner{
+        height: 90vh;;
+    }
+    .banner img{
+        height: 90vh;
+    }
+    .produce .col-lg-3:nth-child(4){
+        display: block;
+    }
+}
+@media only screen and (min-width:1200px){
+    .produce .col-lg-3:last-child{
+        display: block;
+    }
+    #header .navbar ul li.nav-item{
+        font-size: 16px;
+        margin-left:20px
+    }
+    #header .container{
+        height: 100px;
+        padding-top:3vmin ;
+    }
+    .shop-th .text{
+        padding-top: 80px;
+    }
+}
+.to-top{
+    width: 50px;
+    height: 50px;
+    border:0.5px solid black;
+    border-radius: 50%;
+    background-color: rgb(135, 170, 222);
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    cursor:pointer;
+}
