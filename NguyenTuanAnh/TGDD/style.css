@@ -73,6 +73,9 @@ header .header_top{
     right: 0;
     bottom: 5px;
 }
+a.header_address.col-xl-2:hover {
+    color: #fff;
+}
 /* header_form*/
 .header_top form{
     position: relative;
@@ -761,19 +764,304 @@ a.xemthem:hover::after{
     .media-slider img{
         max-width: 960px;
     }
+    .menu li>a i {
+        font-size: 14px;
+        margin-right: 2px;
+    }
+    .menu li>a{
+       padding: 0 5px;
+    } 
+    .header_menu .row{
+        flex-wrap: wrap;
+    }
+    .header_menu .row>li {
+        flex-grow: 1;
+        flex-basis: 10%;
+        padding: 5px 0;
+    }
+    /*bar-top*/
+    /*banner main*/
+    .main_banner img{
+        height: 274px !important;
+    }
+    .item_img>img {
+        width: 167px;
+    }
+    .item_img {
+        width: 176px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .list>a>h3{
+        width: 156px;
+        font-size: 15px;
+    }
+    .computer img {
+        height: 120px;
+    }
+    .box_common_link a {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+    .computer h3{
+        height: 74px !important;
+    }
+    .application {
+        flex-direction: column;
+    }
+    .bt_main {
+        flex-basis: 60%;
+    }
+    .bt_right {
+        flex-basis: 40%;
+    }
+    .bt_main_img img {
+       width: 100%;
+    }
+    .right_main img {
+        width: 100%;
+        height: 92%;
+    }
+    .game-box-img {
+        flex-basis: 6%;
+    }
+    button.btn-game {
+        top: 258px;
+    }
+    .footer-col {
+        font-size: 13px;
+    }
+    .footer-bottom.container {
+        padding: 10px 10px;
+        font-size: 11px;
+        border-radius: 5px;
+    }
 }
 @media only screen and (max-width:992px){
     .media-slider img{
         max-width: 720px;
+    }
+    .header-listtop.row {
+        display: none;
+    }
+    a.header_hot {
+        display: none;
+    }
+    form.header_search {
+        flex-grow: 1;
+    }
+    .header_menu {
+        display: none;
+    }
+    .preorder_hot {
+        display: none;
+    }
+    .main_banner {
+        width: 100%;
+    }
+    .home_nav{
+        display: block !important; 
+        margin:20px 0;
+    }
+    .nav_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .nav_list>a {
+        min-width: 40px;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .nav_list>a {
+        min-width: 40px;
+        flex-basis: 19%;
+        text-align: center;
+        border: 1px solid #e0e0e0;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-size: 12px;
+        margin: 0px 0 17px 0px;
+        border-radius: 8px;
+        padding: 10px 0;
+        box-shadow: 0 3px 10px #ccc;
+        position: relative;
+    }
+    span.simthe {
+        right: -7px;
+        padding: 0 10px;
+        z-index: 10;
+    }
+    .carousel-item>.list a:nth-child(4),.carousel-item>.list a:nth-child(5) {
+        display: none;
+    }
+    .list>a{
+        width: 33.3%;
+    }
+    .listproduct {
+        position: relative;
+    }
+    button.btn-c {
+        position: absolute;
+        display: inline-block;
+        height: max-content;
+        width: max-content;
+        top: 46%;
+    }
+    .btn-r{
+        right:0
+    }
+    .btn-l{
+        left:0;
+    }
+    .box_common_top {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .box_common_top {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .list_product {
+        grid-template-columns: auto auto auto;
+    }
+    .item_product.list>a {
+        flex-basis: 100%;
+    }
+    .item_product.list:nth-child(n+7) {
+        display: none !important;
+    }
+    .dongho_left {
+        flex-basis: 30%;
+    }
+    .dongho_left img {
+        width: 100%;
+    }
+    .dongho_right {
+        flex-basis: 70%;
+    }
+    ul.dongho_top>li {
+        font-size: 12px;
+        padding: 4px;
+    }
+    a.bt_main {
+        display: none;
+    }
+    .bt_right {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .right_main>.box {
+        width: 100%;
+    }
+    .right_main img {
+        height: 71px;
+    }
+    .mob-none{
+        display: none;
+    }
+    .footer-top.container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .listtel>p {
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+    }
+    a.right_main {
+        flex-direction: column;
+    }
+    .f-sicial img {
+        width: 10%;
+    }
+    .f-sicial {
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+    }
+    .f-citify img {
+        width: 43%;
+    }
+    .f-citify {
+        border-bottom: 1px solid #333;
+    }
+    .website img {
+        width: 38%;
+    }
+    .website {
+        border-bottom: 1px solid #333;
     }
 }
 @media only screen and (max-width:768px){
     .media-slider img{
         max-width: 540px;
     }
+    a.header_logo.desktop {
+        display: none;
+    }
+    a.header_logo.mobie {
+        display: block !important;
+        width: 7%;
+    }
+    .main_banner img {
+        height: 174px !important;
+    }
+    .item_img>img {
+        width: 100px;
+    }
+    .list>a>h3 {
+        width: 142px;
+        font-size: 14px;
+    }
+    i.fa.fa-star {
+        font-size: 10px;
+    }
+    .item_rating {
+        align-items: center;
+    }
+    .item_img {
+        width: 100px;
+    }
+    .computer img {
+        height: 74px;
+    }
+    .computer h3 {
+        height: 58px !important;
+    }
+    .box_common_link a {
+        padding: 3px 5px;
+        margin-left: 1px;
+    }
+    button.btn-game {
+        top: 136px;
+    }
 }
 @media only screen and (max-width:576px){
     .media-slider img{
         max-width: 100%;
+    }
+    a.header_address.col-xl-2 {
+        display: none;
+    }
+    .list>a>h3 {
+        width: 125px;
+    }
+    .computer h3 {
+        height: 65px !important;
+    }
+    a.mb_5 {
+        display: none;
+    }
+    button.btn-game {
+        top: 123px;
     }
 }

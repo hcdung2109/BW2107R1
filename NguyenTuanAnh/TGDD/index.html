@@ -22,9 +22,10 @@
     <header class="header">
         <div class="header_top">
             <div class="row container">
-                <a href="" class="header_logo">
+                <a href="" class="header_logo desktop">
                     <img src="img/logo.jpg" alt="">
                 </a>
+                <a href="" class="header_logo mobie" style="display: none;"><img src="img/logo2.jpeg" alt=""></a>
                 <div class="bordercol"></div>
                 <a href="#" class="header_address col-xl-2">Xem giá, khuyến mãi tại
                     <span>Hà Nội</span>
@@ -264,6 +265,22 @@
             </div>
             <!-- end -->
         </div>
+        <section class="home_nav" style="display: none;">
+            <div class="nav_list">
+                <a href="">Điện thoại</a>
+                <a href="">Laptop</a>
+                <a href="">Tablet</a>
+                <a href="">Phụ kiện</a>
+                <a href="">Đồng hồ <br> thông minh</a>
+                <a href="">Đồng hồ <br> thời trang</a>
+                <a href="">PC <br> Máy in</a>
+                <a href="">Máy cũ <br> giá rẻ</a>
+                <a href="">Sim <br> thẻ cào
+                <span class="simthe">-5%</span>
+                </a>
+                <a href="">Điện nước <br> trả góp</a>
+            </div>
+        </section>
         <div class="prd_promo">
             <div class="prd_promo_top clearfix">
                 <p class="pro_promo_tilte">Săn Sale Online Mỗi Ngày</p>
@@ -768,11 +785,11 @@
                             </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev btn-l" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
+                    <button class="carousel-control-prev btn-l btn-c" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
                       <span class="carousel-control-prev-icon btn" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </button>
-                    <button class="carousel-control-next btn-r" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
+                    <button class="carousel-control-next btn-r btn-c" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
                       <span class="carousel-control-next-icon btn" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </button>
@@ -1081,7 +1098,7 @@
                 <h3  class="box_common_titlle">LAPTOP, TABLET NỔI BẬT NHẤT</h3>
                 <div class="box_common_link">
                     <a href="#">Laptop ASUS</a>
-                    <a href="#">Laptop HP</a>
+                    <a href="#" class="mb_5">Laptop HP</a>
                     <a href="#">iPad Ari 4 wifi 64GB</a>
                     <a href="#">Xem tất cả <b>174</b> Laptop</a>
                     <a href="#">Xem tất cả <b>41</b> Tablet</a>
@@ -1355,11 +1372,11 @@
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev btn-l" type="button" data-target="#carouselExampleControlsNoTouching-2" data-slide="prev">
+                    <button class="carousel-control-prev btn-l btn-c" type="button" data-target="#carouselExampleControlsNoTouching-2" data-slide="prev">
                       <span class="carousel-control-prev-icon btn" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </button>
-                    <button class="carousel-control-next btn-r" type="button" data-target="#carouselExampleControlsNoTouching-2" data-slide="next">
+                    <button class="carousel-control-next btn-r btn-c" type="button" data-target="#carouselExampleControlsNoTouching-2" data-slide="next">
                       <span class="carousel-control-next-icon btn" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </button>
@@ -1652,11 +1669,11 @@
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev btn-l" type="button" data-target="#carouselExampleControlsNoTouching-1" data-slide="prev">
+                    <button class="carousel-control-prev btn-l btn-c" type="button" data-target="#carouselExampleControlsNoTouching-1" data-slide="prev">
                       <span class="carousel-control-prev-icon btn" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </button>
-                    <button class="carousel-control-next btn-r" type="button" data-target="#carouselExampleControlsNoTouching-1" data-slide="next">
+                    <button class="carousel-control-next btn-r btn-c" type="button" data-target="#carouselExampleControlsNoTouching-1" data-slide="next">
                       <span class="carousel-control-next-icon btn" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </button>
@@ -1900,11 +1917,11 @@
                             </div>
                           </div>
                         </div>
-                        <button class="carousel-control-prev btn-l" type="button" data-target="#carouselExampleControlsNoTouching-4" data-slide="prev">
+                        <button class="carousel-control-prev btn-l btn-c" type="button" data-target="#carouselExampleControlsNoTouching-4" data-slide="prev">
                           <span class="carousel-control-prev-icon btn" aria-hidden="true"></span>
                           <span class="sr-only">Previous</span>
                         </button>
-                        <button class="carousel-control-next btn-r" type="button" data-target="#carouselExampleControlsNoTouching-4" data-slide="next">
+                        <button class="carousel-control-next btn-r btn-c" type="button" data-target="#carouselExampleControlsNoTouching-4" data-slide="next">
                           <span class="carousel-control-next-icon btn" aria-hidden="true"></span>
                           <span class="sr-only">Next</span>
                         </button>
@@ -2105,7 +2122,7 @@
     </section>
     <footer class="footer">
         <div class="footer-top container">
-            <div class="footer-col">
+            <div class="footer-col mob-none">
                 <ul>
                     <li class="mb_10"><a href="">Lịch sử mua hàng</a></li>
                     <li class="mb_10"><a href="">Cộng tác bán hàng cùng TGDD</a></li>
@@ -2114,7 +2131,7 @@
                     <li class="mb_10"><a href="" class="xemthem">Xem thêm</a></li>
                 </ul>
             </div> 
-            <div class="footer-col">
+            <div class="footer-col mob-none">
                 <ul>
                     <li class="mb_10"><a href="">Giới thiệu công ty (MWG.vn)</a></li>
                     <li class="mb_10"><a href="">Tuyển dụng</a></li>
